@@ -45,10 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\Ifc.NET.csproj">
-      <Project>{f1442c7f-190f-4518-b803-1b829dc03888}</Project>
-      <Name>Ifc.NET</Name>
-    </ProjectReference>
+    <None Include="SampleFiles\CAFM-Connect  products.ifcxml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
