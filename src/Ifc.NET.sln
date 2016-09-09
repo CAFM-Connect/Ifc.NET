@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleReader", "SampleReader\SampleReader.csproj", "{42DC146E-BE86-480A-9C35-E6DB3D2569FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleIfcReader", "SampleReader\SampleIfcReader.csproj", "{42DC146E-BE86-480A-9C35-E6DB3D2569FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ifc.NET", "Ifc.NET\Ifc.NET.csproj", "{F1442C7F-190F-4518-B803-1B829DC03888}"
 EndProject

@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ifc.NET</RootNamespace>
     <AssemblyName>Ifc.NET</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,10 +30,13 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,17 +44,95 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Attributes\Attributes.cs" />
+    <Compile Include="CustomModel\CustomAssembly.cs" />
+    <Compile Include="CustomModel\CustomEnumTypeConverter.cs" />
+    <Compile Include="CustomModel\CustomProperties.cs" />
+    <Compile Include="CustomModel\CustomProperty.cs" />
+    <Compile Include="CustomModel\CustomPropertyData.cs" />
+    <Compile Include="CustomModel\CustomPropertyDescriptor.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="Documents.cs" />
+    <Compile Include="DynamicIfcBaseClasses.cs" />
+    <Compile Include="DynamicIfcClassesFromXsd.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="DynamicIfcDocument.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="GlobalId.cs" />
+    <Compile Include="Partial\IfcBuilding.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcBuildingStorey.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcClassificationReference.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcObjectDefinition.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcPostalAddress.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcProject.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcPropertySet.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcRoot.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcSite.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcSlab.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcSpace.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
+    <Compile Include="Partial\IfcSpatialStructureElement.cs">
+      <SubType>etaskcode</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Scheme\IFC4_ADD2.Designer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pset\PSET_IFC4.cs" />
+    <Compile Include="Pset\Reader.cs" />
+    <Compile Include="Serialization\XmlSerializer.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="Units.cs" />
+    <Compile Include="Validation\Validation.cs" />
+    <Compile Include="Workspace.cs" />
+    <Compile Include="_DONT_DELETE.cs" />
+    <Compile Include="_TODO_GENERIC.cs" />
+    <Compile Include="_TODO_GENERIC_STILL_AT_WORK.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scheme\IFC4_ADD2.xsd">
+    <None Include="Ifc.NET.nuspec" />
+    <None Include="Pset\PSD_IFC4.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Scheme\ifcXML4.xsd">
+    <None Include="Schema\IFC4.exp" />
+    <None Include="Schema\ifcXML4.xsd">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.de.resx" />
+    <EmbeddedResource Include="Properties\Resources.en.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
