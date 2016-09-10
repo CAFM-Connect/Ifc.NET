@@ -6,18 +6,18 @@
     <title>Ifc.NET</title>
     <authors>CAFM Ring e.V.</authors>
     <owners>CAFM Ring e.V.</owners>
-    <licenseUrl>http://www.cafm-ring.org</licenseUrl>
-    <projectUrl>http://www.cafm-connect.org</projectUrl>
-    <iconUrl>http://www.cafm-connect.org/download/attachments/557061/Logo_cafm-connect.jpg</iconUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>IFC4.NET</description>
-    <releaseNotes>IFC4.NET</releaseNotes>
+    <licenseUrl>https://github.com/CAFM-Connect/Ifc.NET</licenseUrl>
+    <projectUrl>https://github.com/CAFM-Connect/Ifc.NET</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/CAFM-Connect/Ifc.NET/master/src/Ifc.NET/IfcIcon.PNG</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>IFC4.NET is a simple class library to read and write IFCXML files.</description>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright 2016</copyright>
-    <tags></tags>
+    <tags>IFC,IFC4,IFC4XML,CAFM-Connect,CAFM-Ring,buildingSMART</tags>
   </metadata>
   <files>
     <file src="Ifc.NET*.*" target="lib\net40"/> 
-	<file src="de\Ifc.NET*.*" target="lib\net40\de" /> 
-	<file src="en\Ifc.NET*.*" target="lib\net40\en" /> 
+	  <file src="de\Ifc.NET*.*" target="lib\net40\de"/> 
+	  <file src="en\Ifc.NET*.*" target="lib\net40\en"/> 
 </files>
 </package>
