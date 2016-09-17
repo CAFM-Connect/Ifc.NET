@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="SampleFiles\CAFM-Connect  products.ifcxml" />
     <None Include="SampleFiles\MyFirstIfcFile.ifcxml" />
   </ItemGroup>
   <ItemGroup>
@@ -60,7 +59,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="readme.txt" />
     <Content Include="SampleFiles\Pset_SpaceCommon.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

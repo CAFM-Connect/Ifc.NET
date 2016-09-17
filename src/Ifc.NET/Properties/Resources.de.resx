@@ -127,31 +127,31 @@
     <value>DE:doublewrapper</value>
   </data>
   <data name="CLASS_DOUBLEWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_DOUBLEWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_DOUBLEWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_DOUBLEWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_ENTITY_DisplayName" xml:space="preserve">
     <value>DE:Entity</value>
   </data>
   <data name="CLASS_ENTITY_PROPERTY_HREF_DisplayName" xml:space="preserve">
-    <value>DE:Href</value>
+    <value>URL-Referenz</value>
   </data>
   <data name="CLASS_ENTITY_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_ENTITY_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_ENTITY_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_ENTITY_PROPERTY_REF_DisplayName" xml:space="preserve">
     <value>DE:Ref</value>
@@ -169,31 +169,31 @@
     <value>DE:IfcAbsorbedDoseMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCABSORBEDDOSEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCABSORBEDDOSEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCABSORBEDDOSEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCABSORBEDDOSEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCACCELERATIONMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcAccelerationMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCACCELERATIONMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCACCELERATIONMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCACCELERATIONMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCACCELERATIONMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCACTIONREQUEST_DisplayName" xml:space="preserve">
     <value>DE:IfcActionRequest</value>
@@ -334,31 +334,31 @@
     <value>DE:IfcAmountOfSubstanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCAMOUNTOFSUBSTANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCAMOUNTOFSUBSTANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCAMOUNTOFSUBSTANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCAMOUNTOFSUBSTANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCANGULARVELOCITYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcAngularVelocityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCANGULARVELOCITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCANGULARVELOCITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCANGULARVELOCITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCANGULARVELOCITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCANNOTATIONFILLAREAINNERBOUNDARIES_DisplayName" xml:space="preserve">
     <value>DE:IfcAnnotationFillAreaInnerBoundaries</value>
@@ -502,7 +502,7 @@
     <value>DE:GivingApproval</value>
   </data>
   <data name="CLASS_IFCAPPROVAL_PROPERTY_IDENTIFIER_DisplayName" xml:space="preserve">
-    <value>DE:Identifier</value>
+    <value>IDentifier</value>
   </data>
   <data name="CLASS_IFCAPPROVAL_PROPERTY_LEVEL_DisplayName" xml:space="preserve">
     <value>DE:Level</value>
@@ -559,31 +559,31 @@
     <value>DE:IfcAreaDensityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCAREADENSITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCAREADENSITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCAREADENSITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCAREADENSITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCAREAMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcAreaMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCAREAMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCAREAMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCAREAMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCAREAMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCASSETOWNER_DisplayName" xml:space="preserve">
     <value>DE:IfcAssetOwner</value>
@@ -607,7 +607,7 @@
     <value>DE:DepreciatedValue</value>
   </data>
   <data name="CLASS_IFCASSET_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCASSET_PROPERTY_INCORPORATIONDATE_DisplayName" xml:space="preserve">
     <value>DE:IncorporationDate</value>
@@ -778,16 +778,16 @@
     <value>DE:IfcBooleanwrapper</value>
   </data>
   <data name="CLASS_IFCBOOLEANWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCBOOLEANWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCBOOLEANWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCBOOLEANWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCBOUNDARYCONDITION_DisplayName" xml:space="preserve">
     <value>DE:IfcBoundaryCondition</value>
@@ -1324,7 +1324,7 @@
     <value>DE:IfcCivilElement</value>
   </data>
   <data name="CLASS_IFCCLASSIFICATIONREFERENCEREFERENCEDSOURCE_DisplayName" xml:space="preserve">
-    <value>DE:IfcClassificationReferenceReferencedSource</value>
+    <value>Quellverweis</value>
   </data>
   <data name="CLASS_IFCCLASSIFICATIONREFERENCEREFERENCEDSOURCE_PROPERTY_ITEM_DisplayName" xml:space="preserve">
     <value>DE:Item</value>
@@ -1363,10 +1363,10 @@
     <value>Beschreibung</value>
   </data>
   <data name="CLASS_IFCCLASSIFICATION_PROPERTY_EDITIONDATE_DisplayName" xml:space="preserve">
-    <value>DE:EditionDate</value>
+    <value>Versionsdatum</value>
   </data>
   <data name="CLASS_IFCCLASSIFICATION_PROPERTY_EDITION_DisplayName" xml:space="preserve">
-    <value>DE:Edition</value>
+    <value>Version</value>
   </data>
   <data name="CLASS_IFCCLASSIFICATION_PROPERTY_LOCATION_DisplayName" xml:space="preserve">
     <value>DE:Location</value>
@@ -1450,13 +1450,13 @@
     <value>DE:IfcComplexNumberwrapper</value>
   </data>
   <data name="CLASS_IFCCOMPLEXNUMBERWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCCOMPLEXNUMBERWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCCOMPLEXNUMBERWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCCOMPLEXNUMBER_DisplayName" xml:space="preserve">
     <value>DE:IfcComplexNumber</value>
@@ -1591,13 +1591,13 @@
     <value>DE:IfcCompoundPlaneAngleMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCCOMPOUNDPLANEANGLEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCCOMPOUNDPLANEANGLEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCCOMPOUNDPLANEANGLEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCCOMPOUNDPLANEANGLEMEASURE_DisplayName" xml:space="preserve">
     <value>DE:IfcCompoundPlaneAngleMeasure</value>
@@ -1648,7 +1648,7 @@
     <value>DE:IfcConic</value>
   </data>
   <data name="CLASS_IFCCONIC_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCCONNECTEDFACESETCFSFACES_DisplayName" xml:space="preserve">
     <value>DE:IfcConnectedFaceSetCfsFaces</value>
@@ -1891,16 +1891,16 @@
     <value>DE:IfcContextDependentMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCCONTEXTDEPENDENTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCCONTEXTDEPENDENTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCCONTEXTDEPENDENTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCCONTEXTDEPENDENTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCCONTEXTDEPENDENTUNIT_DisplayName" xml:space="preserve">
     <value>DE:IfcContextDependentUnit</value>
@@ -1957,7 +1957,7 @@
     <value>DE:IfcControl</value>
   </data>
   <data name="CLASS_IFCCONTROL_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCCONVERSIONBASEDUNITWITHOFFSET_DisplayName" xml:space="preserve">
     <value>DE:IfcConversionBasedUnitWithOffset</value>
@@ -2092,16 +2092,16 @@
     <value>DE:IfcCountMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCCOUNTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCCOUNTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCCOUNTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCCOUNTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCCOVERINGTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcCoveringType</value>
@@ -2131,7 +2131,7 @@
     <value>DE:IfcCsgPrimitive3D</value>
   </data>
   <data name="CLASS_IFCCSGPRIMITIVE3D_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCCSGSOLIDTREEROOTEXPRESSION_DisplayName" xml:space="preserve">
     <value>DE:IfcCsgSolidTreeRootExpression</value>
@@ -2197,16 +2197,16 @@
     <value>DE:IfcCurvatureMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCCURVATUREMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCCURVATUREMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCCURVATUREMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCCURVATUREMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCCURVEBOUNDEDPLANEINNERBOUNDARIES_DisplayName" xml:space="preserve">
     <value>DE:IfcCurveBoundedPlaneInnerBoundaries</value>
@@ -2371,13 +2371,13 @@
     <value>DE:IfcDateTimewrapper</value>
   </data>
   <data name="CLASS_IFCDATETIMEWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCDATETIMEWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCDATETIMEWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCDATETIMEWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -2386,13 +2386,13 @@
     <value>DE:IfcDatewrapper</value>
   </data>
   <data name="CLASS_IFCDATEWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCDATEWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCDATEWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCDATEWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -2449,13 +2449,13 @@
     <value>DE:IfcDescriptiveMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCDESCRIPTIVEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCDESCRIPTIVEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCDESCRIPTIVEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCDESCRIPTIVEMEASUREWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -2626,7 +2626,7 @@
     <value>DE:ElectronicFormat</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_INTENDEDUSE_DisplayName" xml:space="preserve">
     <value>DE:IntendedUse</value>
@@ -2782,16 +2782,16 @@
     <value>DE:IfcDoseEquivalentMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCDOSEEQUIVALENTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCDOSEEQUIVALENTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCDOSEEQUIVALENTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCDOSEEQUIVALENTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCDRAUGHTINGPREDEFINEDCOLOUR_DisplayName" xml:space="preserve">
     <value>DE:IfcDraughtingPreDefinedColour</value>
@@ -2839,13 +2839,13 @@
     <value>DE:IfcDurationwrapper</value>
   </data>
   <data name="CLASS_IFCDURATIONWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCDURATIONWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCDURATIONWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCDURATIONWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -2854,16 +2854,16 @@
     <value>DE:IfcDynamicViscosityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCDYNAMICVISCOSITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCDYNAMICVISCOSITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCDYNAMICVISCOSITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCDYNAMICVISCOSITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCEDGECURVE_DisplayName" xml:space="preserve">
     <value>DE:IfcEdgeCurve</value>
@@ -2920,61 +2920,61 @@
     <value>DE:IfcElectricCapacitanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCELECTRICCAPACITANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCELECTRICCAPACITANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCELECTRICCAPACITANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCELECTRICCAPACITANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCELECTRICCHARGEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcElectricChargeMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCELECTRICCHARGEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCELECTRICCHARGEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCELECTRICCHARGEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCELECTRICCHARGEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCELECTRICCONDUCTANCEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcElectricConductanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCELECTRICCONDUCTANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCELECTRICCONDUCTANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCELECTRICCONDUCTANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCELECTRICCONDUCTANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCELECTRICCURRENTMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcElectricCurrentMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCELECTRICCURRENTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCELECTRICCURRENTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCELECTRICCURRENTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCELECTRICCURRENTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCELECTRICDISTRIBUTIONBOARDTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcElectricDistributionBoardType</value>
@@ -3028,16 +3028,16 @@
     <value>DE:IfcElectricResistanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCELECTRICRESISTANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCELECTRICRESISTANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCELECTRICRESISTANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCELECTRICRESISTANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCELECTRICTIMECONTROLTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcElectricTimeControlType</value>
@@ -3055,22 +3055,22 @@
     <value>DE:IfcElectricVoltageMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCELECTRICVOLTAGEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCELECTRICVOLTAGEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCELECTRICVOLTAGEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCELECTRICVOLTAGEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCELEMENTARYSURFACE_DisplayName" xml:space="preserve">
     <value>DE:IfcElementarySurface</value>
   </data>
   <data name="CLASS_IFCELEMENTARYSURFACE_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCELEMENTASSEMBLYTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcElementAssemblyType</value>
@@ -3157,16 +3157,16 @@
     <value>DE:IfcEnergyMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCENERGYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCENERGYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCENERGYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCENERGYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCENGINETYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcEngineType</value>
@@ -3313,7 +3313,7 @@
     <value>DE:IfcExternalReference</value>
   </data>
   <data name="CLASS_IFCEXTERNALREFERENCE_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCEXTERNALREFERENCE_PROPERTY_LOCATION_DisplayName" xml:space="preserve">
     <value>DE:Location</value>
@@ -3697,31 +3697,31 @@
     <value>DE:IfcForceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCFORCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCFORCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCFORCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCFORCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCFREQUENCYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcFrequencyMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCFREQUENCYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCFREQUENCYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCFREQUENCYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCFREQUENCYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCFURNISHINGELEMENTTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcFurnishingElementType</value>
@@ -3952,31 +3952,31 @@
     <value>DE:IfcHeatFluxDensityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCHEATFLUXDENSITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCHEATFLUXDENSITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCHEATFLUXDENSITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCHEATFLUXDENSITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCHEATINGVALUEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcHeatingValueMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCHEATINGVALUEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCHEATINGVALUEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCHEATINGVALUEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCHEATINGVALUEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCHUMIDIFIERTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcHumidifierType</value>
@@ -3994,13 +3994,13 @@
     <value>DE:IfcIdentifierwrapper</value>
   </data>
   <data name="CLASS_IFCIDENTIFIERWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCIDENTIFIERWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCIDENTIFIERWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCIDENTIFIERWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -4009,16 +4009,16 @@
     <value>DE:IfcIlluminanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCILLUMINANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCILLUMINANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCILLUMINANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCILLUMINANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCIMAGETEXTURE_DisplayName" xml:space="preserve">
     <value>DE:IfcImageTexture</value>
@@ -4054,46 +4054,46 @@
     <value>DE:IfcInductanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCINDUCTANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCINDUCTANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCINDUCTANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCINDUCTANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCINTEGERCOUNTRATEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcIntegerCountRateMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCINTEGERCOUNTRATEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCINTEGERCOUNTRATEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCINTEGERCOUNTRATEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCINTEGERCOUNTRATEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCINTEGERWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcIntegerwrapper</value>
   </data>
   <data name="CLASS_IFCINTEGERWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCINTEGERWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCINTEGERWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCINTEGERWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCINTERCEPTORTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcInterceptorType</value>
@@ -4153,16 +4153,16 @@
     <value>DE:IfcIonConcentrationMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCIONCONCENTRATIONMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCIONCONCENTRATIONMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCIONCONCENTRATIONMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCIONCONCENTRATIONMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCIRREGULARTIMESERIESVALUELISTVALUES_DisplayName" xml:space="preserve">
     <value>DE:IfcIrregularTimeSeriesValueListValues</value>
@@ -4237,16 +4237,16 @@
     <value>DE:IfcIsothermalMoistureCapacityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCISOTHERMALMOISTURECAPACITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCISOTHERMALMOISTURECAPACITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCISOTHERMALMOISTURECAPACITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCISOTHERMALMOISTURECAPACITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCJUNCTIONBOXTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcJunctionBoxType</value>
@@ -4264,28 +4264,28 @@
     <value>DE:IfcKinematicViscosityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCKINEMATICVISCOSITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCKINEMATICVISCOSITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCKINEMATICVISCOSITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCKINEMATICVISCOSITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLABELWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcLabelwrapper</value>
   </data>
   <data name="CLASS_IFCLABELWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLABELWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLABELWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLABELWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -4333,16 +4333,16 @@
     <value>DE:IfcLengthMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCLENGTHMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLENGTHMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCLENGTHMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLENGTHMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLIBRARYINFORMATIONPUBLISHER_DisplayName" xml:space="preserve">
     <value>DE:IfcLibraryInformationPublisher</value>
@@ -4465,7 +4465,7 @@
     <value>DE:LuminousFlux</value>
   </data>
   <data name="CLASS_IFCLIGHTSOURCEGONIOMETRIC_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCLIGHTSOURCEPOSITIONAL_DisplayName" xml:space="preserve">
     <value>DE:IfcLightSourcePositional</value>
@@ -4477,7 +4477,7 @@
     <value>DE:DistanceAttenuation</value>
   </data>
   <data name="CLASS_IFCLIGHTSOURCEPOSITIONAL_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCLIGHTSOURCEPOSITIONAL_PROPERTY_QUADRICATTENUATION_DisplayName" xml:space="preserve">
     <value>DE:QuadricAttenuation</value>
@@ -4519,61 +4519,61 @@
     <value>DE:IfcLinearForceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCLINEARFORCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLINEARFORCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCLINEARFORCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLINEARFORCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLINEARMOMENTMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcLinearMomentMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCLINEARMOMENTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLINEARMOMENTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCLINEARMOMENTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLINEARMOMENTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLINEARSTIFFNESSMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcLinearStiffnessMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCLINEARSTIFFNESSMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLINEARSTIFFNESSMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCLINEARSTIFFNESSMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLINEARSTIFFNESSMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLINEARVELOCITYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcLinearVelocityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCLINEARVELOCITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLINEARVELOCITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCLINEARVELOCITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLINEARVELOCITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLINE_DisplayName" xml:space="preserve">
     <value>DE:IfcLine</value>
@@ -4603,13 +4603,13 @@
     <value>DE:IfcLogicalwrapper</value>
   </data>
   <data name="CLASS_IFCLOGICALWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLOGICALWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLOGICALWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLOGICALWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -4642,76 +4642,76 @@
     <value>DE:IfcLuminousFluxMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCLUMINOUSFLUXMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLUMINOUSFLUXMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCLUMINOUSFLUXMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLUMINOUSFLUXMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYDISTRIBUTIONMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcLuminousIntensityDistributionMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYDISTRIBUTIONMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYDISTRIBUTIONMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYDISTRIBUTIONMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYDISTRIBUTIONMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcLuminousIntensityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCLUMINOUSINTENSITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXDENSITYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMagneticFluxDensityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXDENSITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXDENSITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXDENSITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXDENSITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMagneticFluxMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMAGNETICFLUXMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMANIFOLDSOLIDBREP_DisplayName" xml:space="preserve">
     <value>DE:IfcManifoldSolidBrep</value>
@@ -4753,61 +4753,61 @@
     <value>DE:IfcMassDensityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMASSDENSITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMASSDENSITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMASSDENSITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMASSDENSITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMASSFLOWRATEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMassFlowRateMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMASSFLOWRATEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMASSFLOWRATEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMASSFLOWRATEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMASSFLOWRATEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMASSMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMassMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMASSMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMASSMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMASSMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMASSMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMASSPERLENGTHMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMassPerLengthMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMASSPERLENGTHMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMASSPERLENGTHMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMASSPERLENGTHMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMASSPERLENGTHMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMATERIALCLASSIFICATIONRELATIONSHIPMATERIALCLASSIFICATIONS_DisplayName" xml:space="preserve">
     <value>DE:IfcMaterialClassificationRelationshipMaterialClassifications</value>
@@ -5230,121 +5230,121 @@
     <value>DE:IfcModulusOfElasticityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMODULUSOFELASTICITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMODULUSOFELASTICITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMODULUSOFELASTICITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMODULUSOFELASTICITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMODULUSOFLINEARSUBGRADEREACTIONMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcModulusOfLinearSubgradeReactionMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMODULUSOFLINEARSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMODULUSOFLINEARSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMODULUSOFLINEARSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMODULUSOFLINEARSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcModulusOfRotationalSubgradeReactionMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMODULUSOFSUBGRADEREACTIONMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcModulusOfSubgradeReactionMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMODULUSOFSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMODULUSOFSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMODULUSOFSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMODULUSOFSUBGRADEREACTIONMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMOISTUREDIFFUSIVITYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMoistureDiffusivityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMOISTUREDIFFUSIVITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMOISTUREDIFFUSIVITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMOISTUREDIFFUSIVITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMOISTUREDIFFUSIVITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMOLECULARWEIGHTMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMolecularWeightMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMOLECULARWEIGHTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMOLECULARWEIGHTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMOLECULARWEIGHTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMOLECULARWEIGHTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMOMENTOFINERTIAMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMomentOfInertiaMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMOMENTOFINERTIAMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMOMENTOFINERTIAMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMOMENTOFINERTIAMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMOMENTOFINERTIAMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMONETARYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcMonetaryMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCMONETARYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCMONETARYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCMONETARYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCMONETARYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCMONETARYUNIT_DisplayName" xml:space="preserve">
     <value>DE:IfcMonetaryUnit</value>
@@ -5377,43 +5377,43 @@
     <value>DE:IfcNonNegativeLengthMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCNONNEGATIVELENGTHMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCNONNEGATIVELENGTHMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCNONNEGATIVELENGTHMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCNONNEGATIVELENGTHMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCNORMALISEDRATIOMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcNormalisedRatioMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCNORMALISEDRATIOMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCNORMALISEDRATIOMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCNORMALISEDRATIOMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCNORMALISEDRATIOMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCNULLSTYLEWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcNullStylewrapper</value>
   </data>
   <data name="CLASS_IFCNULLSTYLEWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCNULLSTYLEWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCNULLSTYLEWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCNULLSTYLEWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -5422,16 +5422,16 @@
     <value>DE:IfcNumericMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCNUMERICMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCNUMERICMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCNUMERICMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCNUMERICMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCOBJECTDEFINITION_DisplayName" xml:space="preserve">
     <value>DE:IfcObjectDefinition</value>
@@ -5584,7 +5584,7 @@
     <value>Beschreibung</value>
   </data>
   <data name="CLASS_IFCORGANIZATION_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCORGANIZATION_PROPERTY_NAME_DisplayName" xml:space="preserve">
     <value>Name</value>
@@ -5650,22 +5650,22 @@
     <value>DE:IfcParameterizedProfileDef</value>
   </data>
   <data name="CLASS_IFCPARAMETERIZEDPROFILEDEF_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCPARAMETERVALUEWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcParameterValuewrapper</value>
   </data>
   <data name="CLASS_IFCPARAMETERVALUEWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPARAMETERVALUEWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPARAMETERVALUEWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPARAMETERVALUEWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPATHEDGELIST_DisplayName" xml:space="preserve">
     <value>DE:IfcPathEdgeList</value>
@@ -5806,7 +5806,7 @@
     <value>DE:GivenName</value>
   </data>
   <data name="CLASS_IFCPERSON_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCPERSON_PROPERTY_MIDDLENAMES_DisplayName" xml:space="preserve">
     <value>DE:MiddleNames</value>
@@ -5824,16 +5824,16 @@
     <value>DE:IfcPHMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCPHMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPHMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPHMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPHMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPHYSICALCOMPLEXQUANTITYHASQUANTITIES_DisplayName" xml:space="preserve">
     <value>DE:IfcPhysicalComplexQuantityHasQuantities</value>
@@ -5965,31 +5965,31 @@
     <value>DE:IfcPlanarForceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCPLANARFORCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPLANARFORCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPLANARFORCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPLANARFORCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPLANEANGLEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcPlaneAngleMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCPLANEANGLEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPLANEANGLEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPLANEANGLEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPLANEANGLEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPLANE_DisplayName" xml:space="preserve">
     <value>DE:IfcPlane</value>
@@ -6040,7 +6040,7 @@
     <value>DE:PolygonalBoundary</value>
   </data>
   <data name="CLASS_IFCPOLYGONALBOUNDEDHALFSPACE_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCPOLYLINEPOINTS_DisplayName" xml:space="preserve">
     <value>DE:IfcPolylinePoints</value>
@@ -6091,46 +6091,46 @@
     <value>DE:IfcPositiveLengthMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCPOSITIVELENGTHMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPOSITIVELENGTHMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPOSITIVELENGTHMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPOSITIVELENGTHMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPOSITIVEPLANEANGLEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcPositivePlaneAngleMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCPOSITIVEPLANEANGLEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPOSITIVEPLANEANGLEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPOSITIVEPLANEANGLEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPOSITIVEPLANEANGLEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPOSITIVERATIOMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcPositiveRatioMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCPOSITIVERATIOMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPOSITIVERATIOMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPOSITIVERATIOMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPOSITIVERATIOMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPOSTALADDRESSADDRESSLINES_DisplayName" xml:space="preserve">
     <value>DE:IfcPostalAddressAddressLines</value>
@@ -6175,16 +6175,16 @@
     <value>DE:IfcPowerMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCPOWERMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPOWERMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPOWERMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPOWERMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPREDEFINEDCOLOUR_DisplayName" xml:space="preserve">
     <value>DE:IfcPreDefinedColour</value>
@@ -6235,7 +6235,7 @@
     <value>Beschreibung</value>
   </data>
   <data name="CLASS_IFCPRESENTATIONLAYERASSIGNMENT_PROPERTY_IDENTIFIER_DisplayName" xml:space="preserve">
-    <value>DE:Identifier</value>
+    <value>IDentifier</value>
   </data>
   <data name="CLASS_IFCPRESENTATIONLAYERASSIGNMENT_PROPERTY_NAME_DisplayName" xml:space="preserve">
     <value>Name</value>
@@ -6301,16 +6301,16 @@
     <value>DE:IfcPressureMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCPRESSUREMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPRESSUREMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCPRESSUREMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPRESSUREMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPROCEDURETYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcProcedureType</value>
@@ -6328,7 +6328,7 @@
     <value>DE:IfcProcess</value>
   </data>
   <data name="CLASS_IFCPROCESS_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCPROCESS_PROPERTY_LONGDESCRIPTION_DisplayName" xml:space="preserve">
     <value>DE:LongDescription</value>
@@ -6619,13 +6619,13 @@
     <value>DE:IfcPropertySetDefinitionSetwrapper</value>
   </data>
   <data name="CLASS_IFCPROPERTYSETDEFINITIONSETWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCPROPERTYSETDEFINITIONSETWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCPROPERTYSETDEFINITIONSETWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCPROPERTYSETDEFINITIONSET_DisplayName" xml:space="preserve">
     <value>DE:IfcPropertySetDefinitionSet</value>
@@ -6898,16 +6898,16 @@
     <value>DE:IfcRadioActivityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCRADIOACTIVITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCRADIOACTIVITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCRADIOACTIVITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCRADIOACTIVITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCRAILINGTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcRailingType</value>
@@ -6949,16 +6949,16 @@
     <value>DE:IfcRatioMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCRATIOMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCRATIOMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCRATIOMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCRATIOMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCRATIONALBSPLINECURVEWITHKNOTS_DisplayName" xml:space="preserve">
     <value>DE:IfcRationalBSplineCurveWithKnots</value>
@@ -6991,16 +6991,16 @@
     <value>DE:IfcRealwrapper</value>
   </data>
   <data name="CLASS_IFCREALWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCREALWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCREALWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCREALWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCRECTANGLEHOLLOWPROFILEDEF_DisplayName" xml:space="preserve">
     <value>DE:IfcRectangleHollowProfileDef</value>
@@ -7090,7 +7090,7 @@
     <value>DE:Occurrences</value>
   </data>
   <data name="CLASS_IFCRECURRENCEPATTERN_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCRECURRENCEPATTERN_PROPERTY_RECURRENCETYPE_DisplayName" xml:space="preserve">
     <value>DE:RecurrenceType</value>
@@ -8212,7 +8212,7 @@
     <value>DE:IfcResource</value>
   </data>
   <data name="CLASS_IFCRESOURCE_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCRESOURCE_PROPERTY_LONGDESCRIPTION_DisplayName" xml:space="preserve">
     <value>DE:LongDescription</value>
@@ -8269,58 +8269,58 @@
     <value>Beschreibung</value>
   </data>
   <data name="CLASS_IFCROOT_PROPERTY_GLOBALID_DisplayName" xml:space="preserve">
-    <value>DE:GlobalId</value>
+    <value>Ifc GlobalId</value>
   </data>
   <data name="CLASS_IFCROOT_PROPERTY_NAME_DisplayName" xml:space="preserve">
     <value>Name</value>
   </data>
   <data name="CLASS_IFCROOT_PROPERTY_OWNERHISTORY_DisplayName" xml:space="preserve">
-    <value>DE:OwnerHistory</value>
+    <value>Bearbeitungshistorie</value>
   </data>
   <data name="CLASS_IFCROTATIONALFREQUENCYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcRotationalFrequencyMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCROTATIONALFREQUENCYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCROTATIONALFREQUENCYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCROTATIONALFREQUENCYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCROTATIONALFREQUENCYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCROTATIONALMASSMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcRotationalMassMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCROTATIONALMASSMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCROTATIONALMASSMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCROTATIONALMASSMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCROTATIONALMASSMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCROTATIONALSTIFFNESSMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcRotationalStiffnessMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCROTATIONALSTIFFNESSMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCROTATIONALSTIFFNESSMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCROTATIONALSTIFFNESSMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCROTATIONALSTIFFNESSMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCROUNDEDRECTANGLEPROFILEDEF_DisplayName" xml:space="preserve">
     <value>DE:IfcRoundedRectangleProfileDef</value>
@@ -8356,16 +8356,16 @@
     <value>DE:IfcSectionalAreaIntegralMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSECTIONALAREAINTEGRALMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSECTIONALAREAINTEGRALMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSECTIONALAREAINTEGRALMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSECTIONALAREAINTEGRALMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSECTIONEDSPINECROSSSECTIONPOSITIONS_DisplayName" xml:space="preserve">
     <value>DE:IfcSectionedSpineCrossSectionPositions</value>
@@ -8413,16 +8413,16 @@
     <value>DE:IfcSectionModulusMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSECTIONMODULUSMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSECTIONMODULUSMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSECTIONMODULUSMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSECTIONMODULUSMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSECTIONPROPERTIES_DisplayName" xml:space="preserve">
     <value>DE:IfcSectionProperties</value>
@@ -8536,16 +8536,16 @@
     <value>DE:IfcShearModulusMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSHEARMODULUSMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSHEARMODULUSMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSHEARMODULUSMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSHEARMODULUSMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSHELLBASEDSURFACEMODELSBSMBOUNDARY_DisplayName" xml:space="preserve">
     <value>DE:IfcShellBasedSurfaceModelSbsmBoundary</value>
@@ -8569,7 +8569,7 @@
     <value>DE:SbsmBoundary</value>
   </data>
   <data name="CLASS_IFCSIMPLEPROPERTYTEMPLATEPRIMARYUNIT_DisplayName" xml:space="preserve">
-    <value>DE:IfcSimplePropertyTemplatePrimaryUnit</value>
+    <value>Basiseinheit</value>
   </data>
   <data name="CLASS_IFCSIMPLEPROPERTYTEMPLATEPRIMARYUNIT_PROPERTY_ITEM_DisplayName" xml:space="preserve">
     <value>DE:Item</value>
@@ -8593,19 +8593,19 @@
     <value>DE:Expression</value>
   </data>
   <data name="CLASS_IFCSIMPLEPROPERTYTEMPLATE_PROPERTY_PRIMARYMEASURETYPE_DisplayName" xml:space="preserve">
-    <value>DE:PrimaryMeasureType</value>
+    <value>Wertetyp</value>
   </data>
   <data name="CLASS_IFCSIMPLEPROPERTYTEMPLATE_PROPERTY_PRIMARYUNIT_DisplayName" xml:space="preserve">
-    <value>DE:PrimaryUnit</value>
+    <value>Basiseinheit</value>
   </data>
   <data name="CLASS_IFCSIMPLEPROPERTYTEMPLATE_PROPERTY_SECONDARYMEASURETYPE_DisplayName" xml:space="preserve">
     <value>DE:SecondaryMeasureType</value>
   </data>
   <data name="CLASS_IFCSIMPLEPROPERTYTEMPLATE_PROPERTY_SECONDARYUNIT_DisplayName" xml:space="preserve">
-    <value>DE:SecondaryUnit</value>
+    <value>Abgeleitete Einheit</value>
   </data>
   <data name="CLASS_IFCSIMPLEPROPERTYTEMPLATE_PROPERTY_TEMPLATETYPE_DisplayName" xml:space="preserve">
-    <value>DE:TemplateType</value>
+    <value>Datentyp</value>
   </data>
   <data name="CLASS_IFCSIMPLEPROPERTY_DisplayName" xml:space="preserve">
     <value>DE:IfcSimpleProperty</value>
@@ -8689,16 +8689,16 @@
     <value>DE:IfcSolidAngleMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSOLIDANGLEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSOLIDANGLEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSOLIDANGLEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSOLIDANGLEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSOLIDMODEL_DisplayName" xml:space="preserve">
     <value>DE:IfcSolidModel</value>
@@ -8707,61 +8707,61 @@
     <value>DE:IfcSoundPowerLevelMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERLEVELMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERLEVELMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERLEVELMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERLEVELMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcSoundPowerMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSOUNDPOWERMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSURELEVELMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcSoundPressureLevelMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSURELEVELMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSURELEVELMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSURELEVELMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSURELEVELMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSUREMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcSoundPressureMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSUREMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSUREMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSUREMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSOUNDPRESSUREMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSPACEHEATERTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcSpaceHeaterType</value>
@@ -8845,46 +8845,46 @@
     <value>DE:IfcSpecificHeatCapacityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCSPECIFICHEATCAPACITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSPECIFICHEATCAPACITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSPECIFICHEATCAPACITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSPECIFICHEATCAPACITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSPECULAREXPONENTWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcSpecularExponentwrapper</value>
   </data>
   <data name="CLASS_IFCSPECULAREXPONENTWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSPECULAREXPONENTWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSPECULAREXPONENTWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSPECULAREXPONENTWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSPECULARROUGHNESSWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcSpecularRoughnesswrapper</value>
   </data>
   <data name="CLASS_IFCSPECULARROUGHNESSWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCSPECULARROUGHNESSWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCSPECULARROUGHNESSWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCSPECULARROUGHNESSWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCSPHERE_DisplayName" xml:space="preserve">
     <value>DE:IfcSphere</value>
@@ -9565,7 +9565,7 @@
     <value>DE:IfcSweptAreaSolid</value>
   </data>
   <data name="CLASS_IFCSWEPTAREASOLID_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCSWEPTAREASOLID_PROPERTY_SWEPTAREA_DisplayName" xml:space="preserve">
     <value>DE:SweptArea</value>
@@ -9598,7 +9598,7 @@
     <value>DE:IfcSweptSurface</value>
   </data>
   <data name="CLASS_IFCSWEPTSURFACE_PROPERTY_POSITION_DisplayName" xml:space="preserve">
-    <value>DE:Position</value>
+    <value>Positionition</value>
   </data>
   <data name="CLASS_IFCSWEPTSURFACE_PROPERTY_SWEPTCURVE_DisplayName" xml:space="preserve">
     <value>DE:SweptCurve</value>
@@ -9658,7 +9658,7 @@
     <value>Beschreibung</value>
   </data>
   <data name="CLASS_IFCTABLECOLUMN_PROPERTY_IDENTIFIER_DisplayName" xml:space="preserve">
-    <value>DE:Identifier</value>
+    <value>IDentifier</value>
   </data>
   <data name="CLASS_IFCTABLECOLUMN_PROPERTY_NAME_DisplayName" xml:space="preserve">
     <value>Name</value>
@@ -9847,31 +9847,31 @@
     <value>DE:IfcTemperatureGradientMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTEMPERATUREGRADIENTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTEMPERATUREGRADIENTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTEMPERATUREGRADIENTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTEMPERATUREGRADIENTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTEMPERATURERATEOFCHANGEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcTemperatureRateOfChangeMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTEMPERATURERATEOFCHANGEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTEMPERATURERATEOFCHANGEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTEMPERATURERATEOFCHANGEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTEMPERATURERATEOFCHANGEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTENDONANCHORTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcTendonAnchorType</value>
@@ -9967,13 +9967,13 @@
     <value>DE:IfcTextFontNamewrapper</value>
   </data>
   <data name="CLASS_IFCTEXTFONTNAMEWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTEXTFONTNAMEWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTEXTFONTNAMEWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTEXTFONTNAMEWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -10204,13 +10204,13 @@
     <value>DE:IfcTextwrapper</value>
   </data>
   <data name="CLASS_IFCTEXTWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTEXTWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTEXTWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTEXTWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -10219,106 +10219,106 @@
     <value>DE:IfcThermalAdmittanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTHERMALADMITTANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTHERMALADMITTANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTHERMALADMITTANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTHERMALADMITTANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTHERMALCONDUCTIVITYMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcThermalConductivityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTHERMALCONDUCTIVITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTHERMALCONDUCTIVITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTHERMALCONDUCTIVITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTHERMALCONDUCTIVITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTHERMALEXPANSIONCOEFFICIENTMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcThermalExpansionCoefficientMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTHERMALEXPANSIONCOEFFICIENTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTHERMALEXPANSIONCOEFFICIENTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTHERMALEXPANSIONCOEFFICIENTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTHERMALEXPANSIONCOEFFICIENTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTHERMALRESISTANCEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcThermalResistanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTHERMALRESISTANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTHERMALRESISTANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTHERMALRESISTANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTHERMALRESISTANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTHERMALTRANSMITTANCEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcThermalTransmittanceMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTHERMALTRANSMITTANCEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTHERMALTRANSMITTANCEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTHERMALTRANSMITTANCEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTHERMALTRANSMITTANCEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTHERMODYNAMICTEMPERATUREMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcThermodynamicTemperatureMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTHERMODYNAMICTEMPERATUREMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTHERMODYNAMICTEMPERATUREMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTHERMODYNAMICTEMPERATUREMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTHERMODYNAMICTEMPERATUREMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTIMEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcTimeMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTIMEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTIMEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTIMEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTIMEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTIMEPERIOD_DisplayName" xml:space="preserve">
     <value>DE:IfcTimePeriod</value>
@@ -10387,28 +10387,28 @@
     <value>DE:IfcTimeStampwrapper</value>
   </data>
   <data name="CLASS_IFCTIMESTAMPWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTIMESTAMPWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTIMESTAMPWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTIMESTAMPWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTIMEWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcTimewrapper</value>
   </data>
   <data name="CLASS_IFCTIMEWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTIMEWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTIMEWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTIMEWRAPPER_PROPERTY_VALUE_DisplayName" xml:space="preserve">
     <value>DE:Value</value>
@@ -10423,16 +10423,16 @@
     <value>DE:IfcTorqueMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCTORQUEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCTORQUEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCTORQUEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCTORQUEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCTRANSFORMERTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcTransformerType</value>
@@ -10600,7 +10600,7 @@
     <value>DE:IfcTypeProcess</value>
   </data>
   <data name="CLASS_IFCTYPEPROCESS_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCTYPEPROCESS_PROPERTY_LONGDESCRIPTION_DisplayName" xml:space="preserve">
     <value>DE:LongDescription</value>
@@ -10636,7 +10636,7 @@
     <value>DE:IfcTypeResource</value>
   </data>
   <data name="CLASS_IFCTYPERESOURCE_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
-    <value>DE:Identification</value>
+    <value>IDentification</value>
   </data>
   <data name="CLASS_IFCTYPERESOURCE_PROPERTY_LONGDESCRIPTION_DisplayName" xml:space="preserve">
     <value>DE:LongDescription</value>
@@ -10729,16 +10729,16 @@
     <value>DE:IfcVaporPermeabilityMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCVAPORPERMEABILITYMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCVAPORPERMEABILITYMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCVAPORPERMEABILITYMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCVAPORPERMEABILITYMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCVECTOR_DisplayName" xml:space="preserve">
     <value>DE:IfcVector</value>
@@ -10813,31 +10813,31 @@
     <value>DE:IfcVolumeMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCVOLUMEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCVOLUMEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCVOLUMEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCVOLUMEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCVOLUMETRICFLOWRATEMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcVolumetricFlowRateMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCVOLUMETRICFLOWRATEMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCVOLUMETRICFLOWRATEMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCVOLUMETRICFLOWRATEMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCVOLUMETRICFLOWRATEMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCWALLELEMENTEDCASE_DisplayName" xml:space="preserve">
     <value>DE:IfcWallElementedCase</value>
@@ -10861,31 +10861,31 @@
     <value>DE:IfcWarpingConstantMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCWARPINGCONSTANTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCWARPINGCONSTANTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCWARPINGCONSTANTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCWARPINGCONSTANTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCWARPINGMOMENTMEASUREWRAPPER_DisplayName" xml:space="preserve">
     <value>DE:IfcWarpingMomentMeasurewrapper</value>
   </data>
   <data name="CLASS_IFCWARPINGMOMENTMEASUREWRAPPER_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="CLASS_IFCWARPINGMOMENTMEASUREWRAPPER_PROPERTY_INVARIANTSTRINGVALUE_DisplayName" xml:space="preserve">
     <value>DE:InvariantStringValue</value>
   </data>
   <data name="CLASS_IFCWARPINGMOMENTMEASUREWRAPPER_PROPERTY_PATH_DisplayName" xml:space="preserve">
-    <value>DE:Path</value>
+    <value>Pfad</value>
   </data>
   <data name="CLASS_IFCWARPINGMOMENTMEASUREWRAPPER_PROPERTY_POS_DisplayName" xml:space="preserve">
-    <value>DE:Pos</value>
+    <value>Position</value>
   </data>
   <data name="CLASS_IFCWASTETERMINALTYPE_DisplayName" xml:space="preserve">
     <value>DE:IfcWasteTerminalType</value>
@@ -11185,7 +11185,7 @@
     <value>DE:Header</value>
   </data>
   <data name="CLASS_UOS_PROPERTY_ID_DisplayName" xml:space="preserve">
-    <value>DE:Id</value>
+    <value>ID</value>
   </data>
   <data name="ENUM_AGGREGATETYPE_ITEM_ARRAYOPTIONALUNIQUE_DisplayName" xml:space="preserve">
     <value>DE:arrayoptionalunique</value>
@@ -11224,7 +11224,7 @@
     <value>DE:Phone</value>
   </data>
   <data name="ENUM_IFCACTIONREQUESTTYPEENUM_ITEM_POST_DisplayName" xml:space="preserve">
-    <value>DE:Post</value>
+    <value>Positiont</value>
   </data>
   <data name="ENUM_IFCACTIONREQUESTTYPEENUM_ITEM_USERDEFINED_DisplayName" xml:space="preserve">
     <value>DE:Userdefined</value>
@@ -12475,7 +12475,7 @@
     <value>DE:Negative</value>
   </data>
   <data name="ENUM_IFCDIRECTIONSENSEENUM_ITEM_POSITIVE_DisplayName" xml:space="preserve">
-    <value>DE:Positive</value>
+    <value>Positionitive</value>
   </data>
   <data name="ENUM_IFCDISCRETEACCESSORYTYPEENUM_ITEM_ANCHORPLATE_DisplayName" xml:space="preserve">
     <value>DE:Anchorplate</value>
@@ -13930,7 +13930,7 @@
     <value>DE:Plate</value>
   </data>
   <data name="ENUM_IFCMEMBERTYPEENUM_ITEM_POST_DisplayName" xml:space="preserve">
-    <value>DE:Post</value>
+    <value>Positiont</value>
   </data>
   <data name="ENUM_IFCMEMBERTYPEENUM_ITEM_PURLIN_DisplayName" xml:space="preserve">
     <value>DE:Purlin</value>
@@ -15313,7 +15313,7 @@
     <value>DE:Negative</value>
   </data>
   <data name="ENUM_IFCSURFACESIDE_ITEM_POSITIVE_DisplayName" xml:space="preserve">
-    <value>DE:Positive</value>
+    <value>Positionitive</value>
   </data>
   <data name="ENUM_IFCSWITCHINGDEVICETYPEENUM_ITEM_CONTACTOR_DisplayName" xml:space="preserve">
     <value>DE:Contactor</value>

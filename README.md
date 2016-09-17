@@ -24,3 +24,45 @@ Run your application in Debug and look at the object `ifcDocument`.
 ***
 
 For further information about the file spectification please visit  http://www.buildingsmart-tech.org/ifc/IFC4/final/html/index.htm
+
+
+***
+
+## Some more Samples   
+
+### Sample for a spatial structure site/building/buildingstorey/room   
+
+`string ifcFullName = @"C:\tmp\a.ifcxml";`  
+`etask.Ifc4.Document document = etask.Ifc4.Workspace.CurrentWorkspace.CreateDocument(ifcFullName, true);`  
+
+### Change some properties in header   
+
+`var header = document.IfcXmlDocument.Header;`  
+`header.Organization = "My Organisation";`  
+ 
+### Add new Site   
+
+`var ifcSite = document.Project.Sites.AddNewSite();`
+`ifcSite.LongName = "A";`
+
+### Add new building   
+
+`var ifcBuilding = ifcSite.Buildings.AddNewBuilding();`
+`ifcBuilding.LongName = "B";`
+ 
+### Add new building storey
+
+`var ifcBuildingStorey = ifcBuilding.BuildingStoreys.AddNewBuildingStorey();`   
+`ifcBuildingStorey.LongName = "C";`   
+ 
+### Add new room
+
+`var ifcSpace = ifcBuildingStorey.Spaces.AddNewSpace();`  
+`ifcSpace.LongName = "D";`  
+
+ 
+### Save the IFC file   
+
+`document.Workspace.SaveDocument(ifcFullName);`
+
+***
