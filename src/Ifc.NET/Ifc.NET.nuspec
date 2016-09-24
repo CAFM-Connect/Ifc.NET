@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Ifc4</id>
+    <id>Ifc.NET</id>
     <version>$version$</version>
-    <title>Ifc4</title>
+    <title>Ifc.NET</title>
     <authors>CAFM Ring e.V.</authors>
     <owners>CAFM Ring e.V.</owners>
     <licenseUrl>https://github.com/CAFM-Connect/Ifc4</licenseUrl>
     <projectUrl>https://github.com/CAFM-Connect/Ifc4</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/CAFM-Connect/Ifc4/master/src/Ifc4/IfcIcon.PNG</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>IFC4.NET is a simple class library to read and write IFCXML files.</description>
+    <description>IFC.NET is a simple class library to read and write IFCXML files.</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>IFC,IFC4,IFC4XML,CAFM-Connect,CAFM-Ring,buildingSMART</tags>
   </metadata>
   <files>
-    <file src="Ifc4*.*" target="lib\net40"/> 
-	  <file src="de\Ifc4*.*" target="lib\net40\de"/> 
-	  <file src="en\Ifc4*.*" target="lib\net40\en"/> 
+    <file src="Ifc.NET*.*" target="lib\net40"/> 
+	  <file src="de\Ifc.NET*.*" target="lib\net40\de"/> 
+	  <file src="en\Ifc.NET*.*" target="lib\net40\en"/> 
 </files>
 </package>
