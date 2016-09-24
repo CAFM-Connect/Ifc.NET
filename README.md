@@ -33,7 +33,7 @@ For further information about the file spectification please visit  http://www.b
 ### Sample for a spatial structure site/building/buildingstorey/room   
 
 `string ifcFullName = @"C:\tmp\a.ifcxml";`  
-`etask.Ifc4.Document document = etask.Ifc4.Workspace.CurrentWorkspace.CreateDocument(ifcFullName, true);`  
+`Ifc4.Document document = Ifc4.Workspace.CurrentWorkspace.CreateDocument(ifcFullName, true);`  
 
 ### Change some properties in header   
 
