@@ -42,12 +42,12 @@ For further information about the file spectification please visit  http://www.b
  
 ### Add new Site   
 
-`var ifcSite = document.Project.Sites.AddNewSite();`
+`var ifcSite = document.Project.Sites.AddNewSite();`  
 `ifcSite.LongName = "A";`
 
 ### Add new building   
 
-`var ifcBuilding = ifcSite.Buildings.AddNewBuilding();`
+`var ifcBuilding = ifcSite.Buildings.AddNewBuilding();`  
 `ifcBuilding.LongName = "B";`
  
 ### Add new building storey
