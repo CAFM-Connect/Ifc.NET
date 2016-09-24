@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public partial class IfcBuilding
     {
@@ -51,7 +51,7 @@ namespace Ifc.NET
             this.NumberOfStoreys = 0;
             this.OccupancyType = "";
 
-            Ifc.NET.IfcPropertySet ifcPropertySet = this.GetIfcPropertySetFromRelatingPropertyDefinition();
+            Ifc4.IfcPropertySet ifcPropertySet = this.GetIfcPropertySetFromRelatingPropertyDefinition();
 
             IEnumerable<IfcProperty> ifcPropertyCollection = this.Document.IfcXmlDocument.Items.OfType<IfcProperty>().ToList();
 
@@ -82,26 +82,26 @@ namespace Ifc.NET
             ifcPropertySingleValue = m_IfcPropertySingleValueCollection.FirstOrDefault(item => item.Name.Equals("IsLandmarked", StringComparison.OrdinalIgnoreCase));
             if (ifcPropertySingleValue == null)
             {
-                ifcPropertySingleValue = new Ifc.NET.IfcPropertySingleValue()
+                ifcPropertySingleValue = new Ifc4.IfcPropertySingleValue()
                 {
                     Id = this.Document.GetNextSid(),
                     Name = "IsLandmarked",
-                    NominalValue = new Ifc.NET.IfcPropertySingleValueNominalValue(),
+                    NominalValue = new Ifc4.IfcPropertySingleValueNominalValue(),
                 };
 
-                ifcPropertySingleValue.NominalValue.Item = new Ifc.NET.IfcLogicalwrapper()
+                ifcPropertySingleValue.NominalValue.Item = new Ifc4.IfcLogicalwrapper()
                 {
-                    Value = IsLandmarked ? Ifc.NET.IfcLogical.True : Ifc.NET.IfcLogical.False
+                    Value = IsLandmarked ? Ifc4.IfcLogical.True : Ifc4.IfcLogical.False
                 };
 
                 m_IfcPropertySingleValueCollection.Add(ifcPropertySingleValue);
                 this.Document.IfcXmlDocument.Items.Add(ifcPropertySingleValue);
-                ifcPropertySet.HasProperties.Items.Add(new Ifc.NET.IfcPropertySingleValue() { Ref = ifcPropertySingleValue.Id });
+                ifcPropertySet.HasProperties.Items.Add(new Ifc4.IfcPropertySingleValue() { Ref = ifcPropertySingleValue.Id });
             }
             else
             {
                 // read
-                Ifc.NET.IfcLogicalwrapper ifcLogicalwrapper = ifcPropertySingleValue.NominalValue.Item as Ifc.NET.IfcLogicalwrapper;
+                Ifc4.IfcLogicalwrapper ifcLogicalwrapper = ifcPropertySingleValue.NominalValue.Item as Ifc4.IfcLogicalwrapper;
                 if (ifcLogicalwrapper != null)
                     this.IsLandmarked = ifcLogicalwrapper.Value == IfcLogical.True ? true : false;
             }
@@ -109,26 +109,26 @@ namespace Ifc.NET
             ifcPropertySingleValue = m_IfcPropertySingleValueCollection.FirstOrDefault(item => item.Name.Equals("YearOfConstruction", StringComparison.OrdinalIgnoreCase));
             if (ifcPropertySingleValue == null)
             {
-                ifcPropertySingleValue = new Ifc.NET.IfcPropertySingleValue()
+                ifcPropertySingleValue = new Ifc4.IfcPropertySingleValue()
                 {
                     Id = this.Document.GetNextSid(),
                     Name = "YearOfConstruction",
-                    NominalValue = new Ifc.NET.IfcPropertySingleValueNominalValue(),
+                    NominalValue = new Ifc4.IfcPropertySingleValueNominalValue(),
                 };
 
-                ifcPropertySingleValue.NominalValue.Item = new Ifc.NET.IfcLabelwrapper()
+                ifcPropertySingleValue.NominalValue.Item = new Ifc4.IfcLabelwrapper()
                 {
                     Value = this.YearOfConstruction
                 };
 
                 m_IfcPropertySingleValueCollection.Add(ifcPropertySingleValue);
                 this.Document.IfcXmlDocument.Items.Add(ifcPropertySingleValue);
-                ifcPropertySet.HasProperties.Items.Add(new Ifc.NET.IfcPropertySingleValue() { Ref = ifcPropertySingleValue.Id });
+                ifcPropertySet.HasProperties.Items.Add(new Ifc4.IfcPropertySingleValue() { Ref = ifcPropertySingleValue.Id });
             }
             else
             {
                 // read
-                Ifc.NET.IfcLabelwrapper ifcLabelwrapper = ifcPropertySingleValue.NominalValue.Item as Ifc.NET.IfcLabelwrapper;
+                Ifc4.IfcLabelwrapper ifcLabelwrapper = ifcPropertySingleValue.NominalValue.Item as Ifc4.IfcLabelwrapper;
                 if (ifcLabelwrapper != null)
                     this.YearOfConstruction = ifcLabelwrapper.Value;
             }
@@ -136,14 +136,14 @@ namespace Ifc.NET
             ifcPropertySingleValue = m_IfcPropertySingleValueCollection.FirstOrDefault(item => item.Name.Equals("NumberOfStoreys", StringComparison.OrdinalIgnoreCase));
             if (ifcPropertySingleValue == null)
             {
-                ifcPropertySingleValue = new Ifc.NET.IfcPropertySingleValue()
+                ifcPropertySingleValue = new Ifc4.IfcPropertySingleValue()
                 {
                     Id = this.Document.GetNextSid(),
                     Name = "NumberOfStoreys",
-                    NominalValue = new Ifc.NET.IfcPropertySingleValueNominalValue(),
+                    NominalValue = new Ifc4.IfcPropertySingleValueNominalValue(),
                 };
 
-                ifcPropertySingleValue.NominalValue.Item = new Ifc.NET.IfcIntegerwrapper()
+                ifcPropertySingleValue.NominalValue.Item = new Ifc4.IfcIntegerwrapper()
                 {
                     Value = this.NumberOfStoreys
                 };
@@ -151,12 +151,12 @@ namespace Ifc.NET
 
                 m_IfcPropertySingleValueCollection.Add(ifcPropertySingleValue);
                 this.Document.IfcXmlDocument.Items.Add(ifcPropertySingleValue);
-                ifcPropertySet.HasProperties.Items.Add(new Ifc.NET.IfcPropertySingleValue() { Ref = ifcPropertySingleValue.Id });
+                ifcPropertySet.HasProperties.Items.Add(new Ifc4.IfcPropertySingleValue() { Ref = ifcPropertySingleValue.Id });
             }
             else
             {
                 // read
-                Ifc.NET.IfcIntegerwrapper ifcIntegerwrapper = ifcPropertySingleValue.NominalValue.Item as Ifc.NET.IfcIntegerwrapper;
+                Ifc4.IfcIntegerwrapper ifcIntegerwrapper = ifcPropertySingleValue.NominalValue.Item as Ifc4.IfcIntegerwrapper;
                 if (ifcIntegerwrapper != null)
                     this.NumberOfStoreys = ifcIntegerwrapper.Value;
             }
@@ -164,26 +164,26 @@ namespace Ifc.NET
             ifcPropertySingleValue = m_IfcPropertySingleValueCollection.FirstOrDefault(item => item.Name.Equals("OccupancyType", StringComparison.OrdinalIgnoreCase));
             if (ifcPropertySingleValue == null)
             {
-                ifcPropertySingleValue = new Ifc.NET.IfcPropertySingleValue()
+                ifcPropertySingleValue = new Ifc4.IfcPropertySingleValue()
                 {
                     Id = this.Document.GetNextSid(),
                     Name = "OccupancyType",
-                    NominalValue = new Ifc.NET.IfcPropertySingleValueNominalValue(),
+                    NominalValue = new Ifc4.IfcPropertySingleValueNominalValue(),
                 };
 
-                ifcPropertySingleValue.NominalValue.Item = new Ifc.NET.IfcLabelwrapper()
+                ifcPropertySingleValue.NominalValue.Item = new Ifc4.IfcLabelwrapper()
                 {
                     Value = this.OccupancyType
                 };
 
                 m_IfcPropertySingleValueCollection.Add(ifcPropertySingleValue);
                 this.Document.IfcXmlDocument.Items.Add(ifcPropertySingleValue);
-                ifcPropertySet.HasProperties.Items.Add(new Ifc.NET.IfcPropertySingleValue() { Ref = ifcPropertySingleValue.Id });
+                ifcPropertySet.HasProperties.Items.Add(new Ifc4.IfcPropertySingleValue() { Ref = ifcPropertySingleValue.Id });
             }
             else
             {
                 // read
-                Ifc.NET.IfcLabelwrapper ifcLabelwrapper = ifcPropertySingleValue.NominalValue.Item as Ifc.NET.IfcLabelwrapper;
+                Ifc4.IfcLabelwrapper ifcLabelwrapper = ifcPropertySingleValue.NominalValue.Item as Ifc4.IfcLabelwrapper;
                 if (ifcLabelwrapper != null)
                     this.OccupancyType = ifcLabelwrapper.Value;
             }
@@ -195,17 +195,17 @@ namespace Ifc.NET
                 ifcPropertySet.Name = "Pset_BuildingCommon";
                 this.Document.IfcXmlDocument.Items.Add(ifcPropertySet);
 
-                Ifc.NET.IfcRelDefinesByProperties ifcRelDefinesByProperties = new Ifc.NET.IfcRelDefinesByProperties();
+                Ifc4.IfcRelDefinesByProperties ifcRelDefinesByProperties = new Ifc4.IfcRelDefinesByProperties();
                 ifcRelDefinesByProperties.Id = this.Document.GetNextSid();
-                //ifcRelDefinesByProperties.RelatedObjects = new Ifc.NET.IfcBuilding() { Ref = this.Id };
+                //ifcRelDefinesByProperties.RelatedObjects = new Ifc4.IfcBuilding() { Ref = this.Id };
                 ifcRelDefinesByProperties.RelatedObjects = this.RefInstance();
-                ifcRelDefinesByProperties.RelatingPropertyDefinition = new Ifc.NET.IfcRelDefinesByPropertiesRelatingPropertyDefinition();
-                ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = new Ifc.NET.IfcPropertySet() { Ref = ifcPropertySet.Id };
+                ifcRelDefinesByProperties.RelatingPropertyDefinition = new Ifc4.IfcRelDefinesByPropertiesRelatingPropertyDefinition();
+                ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = new Ifc4.IfcPropertySet() { Ref = ifcPropertySet.Id };
                 this.Document.IfcXmlDocument.Items.Add(ifcRelDefinesByProperties);
             }
 
             // -----------------------------------------
-            Ifc.NET.IfcElementQuantity ifcElementQuantity = this.GetIfcElementQuantityFromRelatingPropertyDefinition();
+            Ifc4.IfcElementQuantity ifcElementQuantity = this.GetIfcElementQuantityFromRelatingPropertyDefinition();
             if (ifcElementQuantity != null && ifcElementQuantity.IsRef)
             {
                 ifcElementQuantity = this.Document.IfcXmlDocument.Items.OfType<IfcElementQuantity>().FirstOrDefault(item => item.Id == ifcElementQuantity.Ref);
@@ -250,7 +250,7 @@ namespace Ifc.NET
 
                 m_IfcQuantityAreaCollection.Add(ifcQuantityArea);
                 this.Document.IfcXmlDocument.Items.Add(ifcQuantityArea);
-                ifcElementQuantity.Quantities.Items.Add(new Ifc.NET.IfcQuantityArea() { Ref = ifcQuantityArea.Id });
+                ifcElementQuantity.Quantities.Items.Add(new Ifc4.IfcQuantityArea() { Ref = ifcQuantityArea.Id });
             }
             else
             {
@@ -270,7 +270,7 @@ namespace Ifc.NET
 
                 m_IfcQuantityAreaCollection.Add(ifcQuantityArea);
                 this.Document.IfcXmlDocument.Items.Add(ifcQuantityArea);
-                ifcElementQuantity.Quantities.Items.Add(new Ifc.NET.IfcQuantityArea() { Ref = ifcQuantityArea.Id });
+                ifcElementQuantity.Quantities.Items.Add(new Ifc4.IfcQuantityArea() { Ref = ifcQuantityArea.Id });
             }
             else
             {
@@ -284,17 +284,17 @@ namespace Ifc.NET
                 ifcElementQuantity.Name = "Qto_BuildingBaseQuantities";
                 this.Document.IfcXmlDocument.Items.Add(ifcElementQuantity);
 
-                Ifc.NET.IfcRelDefinesByProperties ifcRelDefinesByProperties = new Ifc.NET.IfcRelDefinesByProperties();
+                Ifc4.IfcRelDefinesByProperties ifcRelDefinesByProperties = new Ifc4.IfcRelDefinesByProperties();
                 ifcRelDefinesByProperties.Id = this.Document.GetNextSid();
                 ifcRelDefinesByProperties.RelatedObjects = this.RefInstance();
-                ifcRelDefinesByProperties.RelatingPropertyDefinition = new Ifc.NET.IfcRelDefinesByPropertiesRelatingPropertyDefinition();
+                ifcRelDefinesByProperties.RelatingPropertyDefinition = new Ifc4.IfcRelDefinesByPropertiesRelatingPropertyDefinition();
 
 
                 // old
-                // ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = new Ifc.NET.IfcElementQuantity() { Ref = ifcElementQuantity.Id };
+                // ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = new Ifc4.IfcElementQuantity() { Ref = ifcElementQuantity.Id };
 
                 // new
-                ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = ((IfcPropertySetDefinition)(new Ifc.NET.IfcElementQuantity() { Ref = ifcElementQuantity.Id }));
+                ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = ((IfcPropertySetDefinition)(new Ifc4.IfcElementQuantity() { Ref = ifcElementQuantity.Id }));
 
                 this.Document.IfcXmlDocument.Items.Add(ifcRelDefinesByProperties);
             }
@@ -331,7 +331,7 @@ namespace Ifc.NET
 
         public override Type GetAddObjectType()
         {
-            return typeof(Ifc.NET.IfcBuildingStorey);
+            return typeof(Ifc4.IfcBuildingStorey);
         }
 
         //private void WriteElementQuantity()
@@ -347,7 +347,7 @@ namespace Ifc.NET
         {
             if (m_IfcQuantityAreaCollection != null)
             {
-                Ifc.NET.IfcQuantityArea ifcQuantityArea = m_IfcQuantityAreaCollection.FirstOrDefault(item => item.Name == propertyName);
+                Ifc4.IfcQuantityArea ifcQuantityArea = m_IfcQuantityAreaCollection.FirstOrDefault(item => item.Name == propertyName);
                 ifcQuantityArea.AreaValue = value;
             }
         }
@@ -356,7 +356,7 @@ namespace Ifc.NET
         {
             if (m_IfcPropertySingleValueCollection != null)
             {
-                Ifc.NET.IfcPropertySingleValue ifcPropertySingleValue = m_IfcPropertySingleValueCollection.FirstOrDefault(item => item.Name == propertyName);
+                Ifc4.IfcPropertySingleValue ifcPropertySingleValue = m_IfcPropertySingleValueCollection.FirstOrDefault(item => item.Name == propertyName);
                 UpdateIfcPropertySingleValue(ifcPropertySingleValue, value);
             }
         }
@@ -366,7 +366,7 @@ namespace Ifc.NET
             return (T)Convert.ChangeType(instance, typeof(T));
         }
 
-        private void UpdateIfcPropertySingleValue(Ifc.NET.IfcPropertySingleValue ifcPropertySingleValue, object value)
+        private void UpdateIfcPropertySingleValue(Ifc4.IfcPropertySingleValue ifcPropertySingleValue, object value)
         {
             if (ifcPropertySingleValue == null || ifcPropertySingleValue.NominalValue == null)
                 return;
@@ -411,8 +411,8 @@ namespace Ifc.NET
 
         private bool _IsLandmarked;
         [System.Xml.Serialization.XmlIgnore()]
-        //[Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_ISLANDMARKED_DISPLAYNAME", "IsLandmarked")]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_ISLANDMARKED_DISPLAYNAME", "Denkmalschutz")]
+        //[Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_ISLANDMARKED_DISPLAYNAME", "IsLandmarked")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_ISLANDMARKED_DISPLAYNAME", "Denkmalschutz")]
         public bool IsLandmarked // [Pset_BuildingCommon]
         {
             get { return _IsLandmarked; }
@@ -430,8 +430,8 @@ namespace Ifc.NET
 
         private string _YearOfConstruction;
         [System.Xml.Serialization.XmlIgnore()]
-        //[Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_YEAROFCONSTRUCTION_DISPLAYNAME", "YearOfConstruction")]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_YEAROFCONSTRUCTION_DISPLAYNAME", "Baujahr")]
+        //[Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_YEAROFCONSTRUCTION_DISPLAYNAME", "YearOfConstruction")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_YEAROFCONSTRUCTION_DISPLAYNAME", "Baujahr")]
         public string YearOfConstruction // [Pset_BuildingCommon]
         {
             get { return _YearOfConstruction; }
@@ -448,9 +448,9 @@ namespace Ifc.NET
         }
         private long _NumberOfStoreys;
         [System.Xml.Serialization.XmlIgnore()]
-        //[Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_NUMBEROFSTOREYS_DISPLAYNAME", "NumberOfStoreys")]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_NUMBEROFSTOREYS_DISPLAYNAME", "Anzahl der Etagen")]
-        //[System.ComponentModel.TypeConverter(typeof(Ifc.NET.CustomModel.CustomLongNullableTypeConverter))]
+        //[Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_NUMBEROFSTOREYS_DISPLAYNAME", "NumberOfStoreys")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_NUMBEROFSTOREYS_DISPLAYNAME", "Anzahl der Etagen")]
+        //[System.ComponentModel.TypeConverter(typeof(Ifc4.CustomModel.CustomLongNullableTypeConverter))]
         public long NumberOfStoreys // [Pset_BuildingCommon]
         {
             get { return _NumberOfStoreys; }
@@ -468,8 +468,8 @@ namespace Ifc.NET
 
         private string _OccupancyType;
         [System.Xml.Serialization.XmlIgnore()]
-        //[Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_OCCUPANCYTYPE_DISPLAYNAME", "OccupancyType")]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_OCCUPANCYTYPE_DISPLAYNAME", "Nutzungsart")]
+        //[Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_OCCUPANCYTYPE_DISPLAYNAME", "OccupancyType")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_OCCUPANCYTYPE_DISPLAYNAME", "Nutzungsart")]
         public string OccupancyType // [Pset_BuildingCommon]
         {
             get { return _OccupancyType; }
@@ -487,8 +487,8 @@ namespace Ifc.NET
 
         private double _GrossFloorArea;
         [System.Xml.Serialization.XmlIgnore()]
-        //[Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_GROSSFLOORAREA_DISPLAYNAME", "GrossFloorArea")]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_GROSSFLOORAREA_DISPLAYNAME", "Bruttogrundfläche [m²]")]
+        //[Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_GROSSFLOORAREA_DISPLAYNAME", "GrossFloorArea")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_GROSSFLOORAREA_DISPLAYNAME", "Bruttogrundfläche [m²]")]
         public double GrossFloorArea // [Qto_BuildingBaseQuantities]")]
         {
             get { return _GrossFloorArea; }
@@ -506,8 +506,8 @@ namespace Ifc.NET
 
         private double _NetFloorArea;
         [System.Xml.Serialization.XmlIgnore()]
-        //[Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_NETFLOORAREA_DISPLAYNAME", "NetFloorArea")]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_NETFLOORAREA_DISPLAYNAME", "Nettogrundfläche [m²]")]
+        //[Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_NETFLOORAREA_DISPLAYNAME", "NetFloorArea")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDING_PROPERTY_NETFLOORAREA_DISPLAYNAME", "Nettogrundfläche [m²]")]
         public double NetFloorArea // [Qto_BuildingBaseQuantities]")]
         {
             get { return _NetFloorArea; }

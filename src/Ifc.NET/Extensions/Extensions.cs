@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET.Extensions
+namespace Ifc4.Extensions
 {
     public static class ExtensionMethods
     {

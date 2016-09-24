@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
 
   public static class GlobalId

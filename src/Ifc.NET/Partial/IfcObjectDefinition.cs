@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public abstract partial class IfcObjectDefinition
     {
-        public Ifc.NET.IfcPropertySet GetIfcPropertySetFromRelatingPropertyDefinition()
+        public Ifc4.IfcPropertySet GetIfcPropertySetFromRelatingPropertyDefinition()
         {
-            Ifc.NET.Document document = this.Document;
+            Ifc4.Document document = this.Document;
 
             //<IfcRelDefinesByProperties id="i98" GlobalId="0DZQ9OC1z3EwnCxq2V5i7q" Name="PropertyContainer" Description="BuildingContainerForPropertySet">
             //    <RelatedObjects xsi:type="IfcBuilding" ref="i85"/>
@@ -18,7 +18,7 @@ namespace Ifc.NET
             //    </RelatingPropertyDefinition>
             //</IfcRelDefinesByProperties>
 
-            IfcPropertySet ifcPropertySet = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByProperties>()
+            IfcPropertySet ifcPropertySet = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByProperties>()
                                              where ifcRelDefinesByProperties.RelatedObjects != null &&
                                                      ifcRelDefinesByProperties.RelatedObjects.Ref == this.Id &&
                                                      ifcRelDefinesByProperties.RelatingPropertyDefinition != null &&
@@ -33,14 +33,14 @@ namespace Ifc.NET
             return ifcPropertySet;
         }
 
-        private static Dictionary<string, Ifc.NET.IfcElementQuantity> m_IfcElementQuantities;
+        private static Dictionary<string, Ifc4.IfcElementQuantity> m_IfcElementQuantities;
 
-        public Ifc.NET.IfcElementQuantity GetIfcElementQuantityFromRelatingPropertyDefinition()
+        public Ifc4.IfcElementQuantity GetIfcElementQuantityFromRelatingPropertyDefinition()
         {
-            Ifc.NET.Document document = this.Document;
+            Ifc4.Document document = this.Document;
             m_IfcElementQuantities = null;
 
-            IfcElementQuantity ifcElementQuantity = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByProperties>()
+            IfcElementQuantity ifcElementQuantity = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByProperties>()
                                                      where ifcRelDefinesByProperties.RelatedObjects != null &&
                                                              ifcRelDefinesByProperties.RelatedObjects.Ref == this.Id &&
                                                              ifcRelDefinesByProperties.RelatingPropertyDefinition != null &&

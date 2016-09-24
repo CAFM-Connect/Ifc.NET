@@ -1,5 +1,5 @@
 ﻿// *********************************************
-// TODO in Ifc.NET.dll
+// TODO in Ifc4.dll
 // *********************************************
 // Changes in public class Entity
 
@@ -9,11 +9,11 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     [Serializable]
-    [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCFACILITY_DISPLAYNAME", "Anlage")]
-    public partial class CcFacility : Ifc.NET.BaseObject
+    [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCFACILITY_DISPLAYNAME", "Anlage")]
+    public partial class CcFacility : Ifc4.BaseObject
     {
         private Dictionary<string, object> m_DynamicProperties = new Dictionary<string, object>();
 
@@ -24,14 +24,14 @@ namespace Ifc.NET
         //          ein Gebäude oder eine Liegenschaft), Mindestangabe: Liegenschaft
         //- Objekttyp: Auswahl aus Objekttypenkatalog	
 
-        public static Ifc.NET.CustomModel.CustomTypeDescriptionProvider CustomTypeDescriptionProvider { get; private set; }
+        public static Ifc4.CustomModel.CustomTypeDescriptionProvider CustomTypeDescriptionProvider { get; private set; }
 
         public CcFacility() : base()
         {
             if (CustomTypeDescriptionProvider == null)
             {
-                CustomTypeDescriptionProvider = new Ifc.NET.CustomModel.CustomTypeDescriptionProvider(typeof(Ifc.NET.CcFacility));
-                System.ComponentModel.TypeDescriptor.AddProvider(CustomTypeDescriptionProvider, typeof(Ifc.NET.CcFacility));
+                CustomTypeDescriptionProvider = new Ifc4.CustomModel.CustomTypeDescriptionProvider(typeof(Ifc4.CcFacility));
+                System.ComponentModel.TypeDescriptor.AddProvider(CustomTypeDescriptionProvider, typeof(Ifc4.CcFacility));
             }
         }
 
@@ -55,19 +55,19 @@ namespace Ifc.NET
             }
         }
 
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_IFCSYSTEM_DisplayName", "IfcSystem")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_IFCSYSTEM_DisplayName", "IfcSystem")]
         [Browsable(false)]
-        public Ifc.NET.IfcSystem IfcSystem
+        public Ifc4.IfcSystem IfcSystem
         {
             get;
             internal set;
         }
 
 
-        private Ifc.NET.IfcObjectDefinition m_IfcObjectDefinition;
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_IFCSOBJECTDEFINITION_DisplayName", "IfcObjectDefinition")]
+        private Ifc4.IfcObjectDefinition m_IfcObjectDefinition;
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_IFCSOBJECTDEFINITION_DisplayName", "IfcObjectDefinition")]
         [Browsable(false)]
-        public Ifc.NET.IfcObjectDefinition IfcObjectDefinition
+        public Ifc4.IfcObjectDefinition IfcObjectDefinition
         {
             get { return m_IfcObjectDefinition; }
             internal set
@@ -81,23 +81,23 @@ namespace Ifc.NET
         }
 
 
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_NUMBER_DisplayName", "Nummer")]
-        //[Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_NUMBER_DisplayName", "Barcode")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_NUMBER_DisplayName", "Nummer")]
+        //[Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_NUMBER_DisplayName", "Barcode")]
         public string Number
         {
             get
             {
-                if (this.IfcObjectDefinition is Ifc.NET.IfcElement)
+                if (this.IfcObjectDefinition is Ifc4.IfcElement)
                 {
-                    return ((Ifc.NET.IfcElement)this.IfcObjectDefinition).Tag;
+                    return ((Ifc4.IfcElement)this.IfcObjectDefinition).Tag;
                 }
-                else if (this.IfcObjectDefinition is Ifc.NET.IfcProxy)
+                else if (this.IfcObjectDefinition is Ifc4.IfcProxy)
                 {
-                    return ((Ifc.NET.IfcProxy)this.IfcObjectDefinition).Tag;
+                    return ((Ifc4.IfcProxy)this.IfcObjectDefinition).Tag;
                 }
-                else if (this.IfcObjectDefinition is Ifc.NET.IfcTypeProduct)
+                else if (this.IfcObjectDefinition is Ifc4.IfcTypeProduct)
                 {
-                    return ((Ifc.NET.IfcTypeProduct)this.IfcObjectDefinition).Tag;
+                    return ((Ifc4.IfcTypeProduct)this.IfcObjectDefinition).Tag;
                 }
                 else
                 {
@@ -106,23 +106,23 @@ namespace Ifc.NET
             }
             set
             {
-                if (this.IfcObjectDefinition is Ifc.NET.IfcElement)
+                if (this.IfcObjectDefinition is Ifc4.IfcElement)
                 {
-                    ((Ifc.NET.IfcElement)this.IfcObjectDefinition).Tag = value;
+                    ((Ifc4.IfcElement)this.IfcObjectDefinition).Tag = value;
                 }
-                else if (this.IfcObjectDefinition is Ifc.NET.IfcProxy)
+                else if (this.IfcObjectDefinition is Ifc4.IfcProxy)
                 {
-                    ((Ifc.NET.IfcProxy)this.IfcObjectDefinition).Tag = value;
+                    ((Ifc4.IfcProxy)this.IfcObjectDefinition).Tag = value;
                 }
-                else if (this.IfcObjectDefinition is Ifc.NET.IfcTypeProduct)
+                else if (this.IfcObjectDefinition is Ifc4.IfcTypeProduct)
                 {
-                    ((Ifc.NET.IfcTypeProduct)this.IfcObjectDefinition).Tag = value;
+                    ((Ifc4.IfcTypeProduct)this.IfcObjectDefinition).Tag = value;
                 }
             }
         }
 
         // Nummer: Textfeld
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_KEY_DisplayName", "Kennzeichen")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_KEY_DisplayName", "Kennzeichen")]
         public string Key
         {
             get
@@ -147,7 +147,7 @@ namespace Ifc.NET
         }
 
         // Kennzeichen: Textfeld
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_DESCRIPTION_DisplayName", "Bezeichnung")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_DESCRIPTION_DisplayName", "Bezeichnung")]
         public string Description
         {
             get
@@ -173,7 +173,7 @@ namespace Ifc.NET
 
         // Ort: Auswahl aus Liegenschaftsexplorer (Ein Raum, eine Etage, ein Gebäude oder eine Liegenschaft), Mindestangabe: Liegenschaft
         private IfcSpatialStructureElement m_Location;
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_LOCATION_DisplayName", "Ort")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_LOCATION_DisplayName", "Ort")]
         public IfcSpatialStructureElement Location
         {
             get
@@ -210,14 +210,14 @@ namespace Ifc.NET
                     return null;
 
                 if (m_IfcClassificationReference == null)
-                    m_IfcClassificationReference = this.Document.IfcXmlDocument.Items.FirstOrDefault(item => item.Id == m_ObjectTypeId) as Ifc.NET.IfcClassificationReference;
+                    m_IfcClassificationReference = this.Document.IfcXmlDocument.Items.FirstOrDefault(item => item.Id == m_ObjectTypeId) as Ifc4.IfcClassificationReference;
 
                 return m_IfcClassificationReference;
             }
         }
 
         private string m_ObjectTypeId;
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_OBJECTTYPE_DisplayName", "Objekttyp")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCDFACILITY_PROPERTY_OBJECTTYPE_DisplayName", "Objekttyp")]
         public string ObjectTypeId
         {
             get
@@ -261,7 +261,7 @@ namespace Ifc.NET
         }
 
         [System.ComponentModel.ReadOnly(true)]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCROOT_PROPERTY_UNIQUEIDS_DisplayName", "IFC GUID / GUID")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCROOT_PROPERTY_UNIQUEIDS_DisplayName", "IFC GUID / GUID")]
         public string UniqueIds
         {
             get
@@ -403,7 +403,7 @@ namespace Ifc.NET
             if (parentCollection == null)
                 return false;
 
-            Ifc.NET.CcFacility siblingeFacility = GetSibling(objectPosition) as CcFacility;
+            Ifc4.CcFacility siblingeFacility = GetSibling(objectPosition) as CcFacility;
 
             if (siblingeFacility != null)
             {
@@ -451,7 +451,7 @@ namespace Ifc.NET
 
         public override Type GetAddObjectType()
         {
-            return typeof(Ifc.NET.CcFacility);
+            return typeof(Ifc4.CcFacility);
         }
 
         public override bool CanAdd
@@ -487,10 +487,10 @@ namespace Ifc.NET
 
             this.InitializeAdditionalProperties();
 
-            var propertyDescriptors = from propertyDescriptor in System.ComponentModel.TypeDescriptor.GetProperties(this).Cast<PropertyDescriptor>().OfType<Ifc.NET.CustomModel.CustomPropertyDescriptor>()
+            var propertyDescriptors = from propertyDescriptor in System.ComponentModel.TypeDescriptor.GetProperties(this).Cast<PropertyDescriptor>().OfType<Ifc4.CustomModel.CustomPropertyDescriptor>()
                                       select propertyDescriptor;
 
-            var clonePropertyDescriptors = from clonePropertyDescriptor in System.ComponentModel.TypeDescriptor.GetProperties(facility).Cast<PropertyDescriptor>().OfType<Ifc.NET.CustomModel.CustomPropertyDescriptor>()
+            var clonePropertyDescriptors = from clonePropertyDescriptor in System.ComponentModel.TypeDescriptor.GetProperties(facility).Cast<PropertyDescriptor>().OfType<Ifc4.CustomModel.CustomPropertyDescriptor>()
                                            select clonePropertyDescriptor;
 
             foreach (var propertyDescriptor in propertyDescriptors)
@@ -501,7 +501,7 @@ namespace Ifc.NET
 
         }
 
-        private Ifc.NET.IfcSpatialStructureElement GetIfcSpatialStructureElement()
+        private Ifc4.IfcSpatialStructureElement GetIfcSpatialStructureElement()
         {
             //<IfcRelContainedInSpatialStructure>
             //  <RelatedElements>
@@ -515,11 +515,11 @@ namespace Ifc.NET
 
             // TODOJV - Nimmt nur den ersten!!!
 
-            Ifc.NET.Document document = this.Document;
-            Ifc.NET.IfcSpatialStructureElement ifcSpatialStructureElement = (from ifcRelContainedInSpatialStructure in document.IfcXmlDocument.Items.OfType<IfcRelContainedInSpatialStructure>()
+            Ifc4.Document document = this.Document;
+            Ifc4.IfcSpatialStructureElement ifcSpatialStructureElement = (from ifcRelContainedInSpatialStructure in document.IfcXmlDocument.Items.OfType<IfcRelContainedInSpatialStructure>()
                                                                                 from relatedElements in ifcRelContainedInSpatialStructure.RelatedElements.Items
                                                                                 where relatedElements.Ref == this.IfcObjectDefinition.Id
-                                                                                select ifcRelContainedInSpatialStructure.RelatingStructure).FirstOrDefault() as Ifc.NET.IfcSpatialStructureElement;
+                                                                                select ifcRelContainedInSpatialStructure.RelatingStructure).FirstOrDefault() as Ifc4.IfcSpatialStructureElement;
 
             if (ifcSpatialStructureElement != null && ifcSpatialStructureElement.IsRef)
                 ifcSpatialStructureElement = this.Document.IfcXmlDocument.Items.OfType<IfcSpatialStructureElement>().FirstOrDefault(item => item.Id == ifcSpatialStructureElement.Ref);
@@ -530,7 +530,7 @@ namespace Ifc.NET
 
         private static Dictionary<string, object> m_IfcRelDefinesByPropertiesRelatingPropertyDefinitionItems;
 
-        private Ifc.NET.IfcPropertySet GetIfcPropertySetFromRelatingPropertyDefinition()
+        private Ifc4.IfcPropertySet GetIfcPropertySetFromRelatingPropertyDefinition()
         {
 
             this.IfcPropertySet = null;
@@ -545,7 +545,7 @@ namespace Ifc.NET
             if (this.IfcObjectDefinition == null)
                 return null;
 
-            Ifc.NET.Document document = this.Document;
+            Ifc4.Document document = this.Document;
 
             object ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem = null;
             if (document.IsInOpenProcess)
@@ -553,7 +553,7 @@ namespace Ifc.NET
 
                 if (m_IfcRelDefinesByPropertiesRelatingPropertyDefinitionItems == null)
                 {
-                    var qc = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByProperties>()
+                    var qc = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByProperties>()
                                                                                   where ifcRelDefinesByProperties.RelatedObjects != null &&
                                                                                         ifcRelDefinesByProperties.RelatedObjects.Ref != null &&
                                                                                         ifcRelDefinesByProperties.RelatingPropertyDefinition != null &&
@@ -572,7 +572,7 @@ namespace Ifc.NET
             }
             else
             {
-                ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByProperties>()
+                ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByProperties>()
                                                                            where ifcRelDefinesByProperties.RelatedObjects != null &&
                                                                                  ifcRelDefinesByProperties.RelatedObjects.Ref == this.IfcObjectDefinition.Id &&
                                                                                  ifcRelDefinesByProperties.RelatingPropertyDefinition != null &&
@@ -584,11 +584,11 @@ namespace Ifc.NET
                 return null;
 
             IfcPropertySet ifcPropertySet = null;
-            if (ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem is Ifc.NET.IfcPropertySet)
+            if (ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem is Ifc4.IfcPropertySet)
             {
                 ifcPropertySet = ((IfcPropertySet)ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem);
             }
-            else if (ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem is Ifc.NET.IfcPropertySetDefinitionSetwrapper)
+            else if (ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem is Ifc4.IfcPropertySetDefinitionSetwrapper)
             {
                 IfcPropertySetDefinitionSetwrapper ifcPropertySetDefinitionSetwrapper = (IfcPropertySetDefinitionSetwrapper)ifcRelDefinesByPropertiesRelatingPropertyDefinitionItem;
                 // ich kann nur ein IfcPropertySet bearbeiten
@@ -620,7 +620,7 @@ namespace Ifc.NET
             return ifcPropertySet;
         }
 
-        private Ifc.NET.IfcPropertySetTemplate GetRelatingTemplateFromIfcPropertySetDefinition(IfcPropertySet ifcPropertySet)
+        private Ifc4.IfcPropertySetTemplate GetRelatingTemplateFromIfcPropertySetDefinition(IfcPropertySet ifcPropertySet)
         {
             //<IfcRelDefinesByTemplate>
             //  <RelatedPropertySets>
@@ -632,8 +632,8 @@ namespace Ifc.NET
             if (ifcPropertySet == null)
                 return null;
 
-            Ifc.NET.Document document = ifcPropertySet.Document;
-            Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate = (from ifcRelDefinesByTemplate in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByTemplate>()
+            Ifc4.Document document = ifcPropertySet.Document;
+            Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate = (from ifcRelDefinesByTemplate in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByTemplate>()
                                                                         from relatedPropertySet in ifcRelDefinesByTemplate.RelatedPropertySets.Items
                                                                         where relatedPropertySet.Ref == ifcPropertySet.Id
                                                                         select ifcRelDefinesByTemplate.RelatingTemplate).FirstOrDefault();
@@ -645,7 +645,7 @@ namespace Ifc.NET
 
         }
 
-        private Ifc.NET.IfcClassificationReference GetIfcClassificationReferenceFromIfcPropertySetTemplate(IfcPropertySetTemplate ifcPropertySetTemplate)
+        private Ifc4.IfcClassificationReference GetIfcClassificationReferenceFromIfcPropertySetTemplate(IfcPropertySetTemplate ifcPropertySetTemplate)
         {
             //<IfcRelAssociatesClassification id="i999" GlobalId="09Yj_c95H5iPvgszfwsNL6" Name="423.17 - Heizkörper zu IfcClassificationReference">
             //  <RelatedObjects>
@@ -660,7 +660,7 @@ namespace Ifc.NET
                 return null;
 
             Document document = ifcPropertySetTemplate.Document;
-            IfcClassificationReference ifcClassificationReference = (from ifcRelAssociatesClassification in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelAssociatesClassification>()
+            IfcClassificationReference ifcClassificationReference = (from ifcRelAssociatesClassification in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelAssociatesClassification>()
                                                                      from relatedObjects in ifcRelAssociatesClassification.RelatedObjects.Items
                                                                      where relatedObjects.Ref == ifcPropertySetTemplate.Id
                                                                      select ifcRelAssociatesClassification.RelatingClassification.Item).FirstOrDefault() as IfcClassificationReference;
@@ -687,7 +687,7 @@ namespace Ifc.NET
             m_IfcPropertyEnumeratedValueCollection = new List<IfcPropertyEnumeratedValue>();
             m_DynamicProperties = new Dictionary<string, object>();
 
-            Ifc.NET.IfcPropertySet ifcPropertySet = this.GetIfcPropertySetFromRelatingPropertyDefinition();
+            Ifc4.IfcPropertySet ifcPropertySet = this.GetIfcPropertySetFromRelatingPropertyDefinition();
             if (
                     ifcPropertySet == null ||
                     ifcPropertySet.HasProperties == null
@@ -750,7 +750,7 @@ namespace Ifc.NET
         //    return x == y;
         //}
 
-        public T GetValue<T>(Ifc.NET.CustomModel.CustomPropertyDescriptor customPropertyDescriptor)
+        public T GetValue<T>(Ifc4.CustomModel.CustomPropertyDescriptor customPropertyDescriptor)
         {
 
             string key;
@@ -836,7 +836,7 @@ namespace Ifc.NET
             }
         }
 
-        public void SetValue<T>(Ifc.NET.CustomModel.CustomPropertyDescriptor customPropertyDescriptor, T t)
+        public void SetValue<T>(Ifc4.CustomModel.CustomPropertyDescriptor customPropertyDescriptor, T t)
         {
             string key;
 
@@ -900,10 +900,10 @@ namespace Ifc.NET
                     IfcPropertyEnumeratedValue ifcPropertyEnumeratedValue = m_IfcPropertyEnumeratedValueCollection.FirstOrDefault(item => item.Name == ifcName);
                     if (ifcPropertyEnumeratedValue == null)
                     {
-                        Ifc.NET.IfcPropertySet ifcPropertySet = this.GetIfcPropertySetFromRelatingPropertyDefinition();
+                        Ifc4.IfcPropertySet ifcPropertySet = this.GetIfcPropertySetFromRelatingPropertyDefinition();
                         if (ifcPropertySet != null)
                         {
-                            ifcPropertyEnumeratedValue = new Ifc.NET.IfcPropertyEnumeratedValue()
+                            ifcPropertyEnumeratedValue = new Ifc4.IfcPropertyEnumeratedValue()
                             {
                                 Id = this.Document.GetNextSid(),
                                 Name = ifcName, // propertyDescriptor.PropertyItem.IfcPropertyName,
@@ -911,12 +911,12 @@ namespace Ifc.NET
                                 EnumerationValues = new IfcPropertyEnumeratedValueEnumerationValues()
                             };
 
-                            ifcPropertyEnumeratedValue.EnumerationValues.Items.Add(new Ifc.NET.IfcLabelwrapper());
+                            ifcPropertyEnumeratedValue.EnumerationValues.Items.Add(new Ifc4.IfcLabelwrapper());
 
                             m_IfcPropertyEnumeratedValueCollection.Add(ifcPropertyEnumeratedValue);
 
                             if (ifcPropertySet.HasProperties == null)
-                                ifcPropertySet.HasProperties = new Ifc.NET.IfcPropertySetHasProperties();
+                                ifcPropertySet.HasProperties = new Ifc4.IfcPropertySetHasProperties();
 
                             ifcPropertySet.HasProperties.Items.Add(ifcPropertyEnumeratedValue);
                         }
@@ -940,23 +940,23 @@ namespace Ifc.NET
 
                     if (ifcPropertySingleValue == null)
                     {
-                        Ifc.NET.IfcPropertySet ifcPropertySet = this.GetIfcPropertySetFromRelatingPropertyDefinition();
+                        Ifc4.IfcPropertySet ifcPropertySet = this.GetIfcPropertySetFromRelatingPropertyDefinition();
                         if (ifcPropertySet != null)
                         {
-                            ifcPropertySingleValue = new Ifc.NET.IfcPropertySingleValue()
+                            ifcPropertySingleValue = new Ifc4.IfcPropertySingleValue()
                             {
                                 Id = this.Document.GetNextSid(),
                                 Name = ifcName, // propertyDescriptor.PropertyItem.IfcPropertyName,
-                                NominalValue = new Ifc.NET.IfcPropertySingleValueNominalValue(),
+                                NominalValue = new Ifc4.IfcPropertySingleValueNominalValue(),
                                 // Unit = "";
                             };
 
-                            ifcPropertySingleValue.NominalValue.Item = new Ifc.NET.IfcLabelwrapper();
+                            ifcPropertySingleValue.NominalValue.Item = new Ifc4.IfcLabelwrapper();
 
                             m_IfcPropertySingleValueCollection.Add(ifcPropertySingleValue);
 
                             if (ifcPropertySet.HasProperties == null)
-                                ifcPropertySet.HasProperties = new Ifc.NET.IfcPropertySetHasProperties();
+                                ifcPropertySet.HasProperties = new Ifc4.IfcPropertySetHasProperties();
 
                             ifcPropertySet.HasProperties.Items.Add(ifcPropertySingleValue);
                         }
@@ -994,7 +994,7 @@ namespace Ifc.NET
 
         //}
 
-        public Ifc.NET.IfcRelAssignsToGroup GetIfcRelAssignsToGroup()
+        public Ifc4.IfcRelAssignsToGroup GetIfcRelAssignsToGroup()
         {
             if (this.IfcSystem == null)
                 return null;
@@ -1017,7 +1017,7 @@ namespace Ifc.NET
             return ifcRelAssignsToGroup;
         }
 
-        public Ifc.NET.IfcRelAggregates GetIfcRelAggregates()
+        public Ifc4.IfcRelAggregates GetIfcRelAggregates()
         {
             if (this.IfcObjectDefinition == null)
                 return null;
@@ -1096,7 +1096,7 @@ namespace Ifc.NET
             if (String.IsNullOrEmpty(oldObjectTypeId))
                 return;
 
-            Ifc.NET.Document document = this.Document;
+            Ifc4.Document document = this.Document;
 
 
             if (
@@ -1105,7 +1105,7 @@ namespace Ifc.NET
                 )
             {
 
-                //var ifcRelDefinesByPropertiesArray = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByProperties>()
+                //var ifcRelDefinesByPropertiesArray = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByProperties>()
                 //                                      where ifcRelDefinesByProperties.RelatedObjects != null &&
                 //                                              ifcRelDefinesByProperties.RelatedObjects.Ref == this.IfcObjectDefinition.Id &&
                 //                                              ifcRelDefinesByProperties.RelatingPropertyDefinition != null &&
@@ -1113,7 +1113,7 @@ namespace Ifc.NET
                 //                                              ((IfcPropertySet)ifcRelDefinesByProperties.RelatingPropertyDefinition.Item).Ref == this.IfcPropertySet.Id
                 //                                      select ifcRelDefinesByProperties).ToArray();
 
-                var ifcRelDefinesByPropertiesArray = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByProperties>()
+                var ifcRelDefinesByPropertiesArray = (from ifcRelDefinesByProperties in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByProperties>()
                                                       where ifcRelDefinesByProperties.RelatedObjects != null &&
                                                               ifcRelDefinesByProperties.RelatedObjects.Ref == this.IfcObjectDefinition.Id &&
                                                               ifcRelDefinesByProperties.RelatingPropertyDefinition != null &&
@@ -1135,7 +1135,7 @@ namespace Ifc.NET
                 IfcPropertySetTemplate ifcPropertySetTemplate = document.GetIfcPropertySetTemplateFromIfcClassificationReferenceId(oldObjectTypeId);
                 if (ifcPropertySetTemplate != null)
                 {
-                    var ifcRelDefinesByTemplateArray = (from ifcRelDefinesByTemplate in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByTemplate>()
+                    var ifcRelDefinesByTemplateArray = (from ifcRelDefinesByTemplate in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByTemplate>()
                                                         where ifcRelDefinesByTemplate.RelatedPropertySets.Items != null &&
                                                                 ifcRelDefinesByTemplate.RelatedPropertySets.Items.Exists(item => item.Ref == this.IfcPropertySet.Id) &&
                                                                 ifcRelDefinesByTemplate.RelatingTemplate != null &&
@@ -1165,11 +1165,11 @@ namespace Ifc.NET
 
         }
 
-        public Ifc.NET.IfcPropertySetTemplate GetIfcPropertySetTemplate()
+        public Ifc4.IfcPropertySetTemplate GetIfcPropertySetTemplate()
         {
             IfcPropertySetTemplate = null;
 
-            Ifc.NET.Document document = this.Document; //.GetParent<Ifc.NET.Document>();
+            Ifc4.Document document = this.Document; //.GetParent<Ifc4.Document>();
             if (this.IfcObjectDefinition == null)
                 return null;
 
@@ -1193,8 +1193,8 @@ namespace Ifc.NET
 
         private void SetRuntimePropertiesFromFacility()
         {
-            Ifc.NET.Document document = this.GetParent<Ifc.NET.Document>();
-            Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate = null;
+            Ifc4.Document document = this.GetParent<Ifc4.Document>();
+            Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate = null;
 
             if (this.IfcObjectDefinition == null)
                 return;
@@ -1322,14 +1322,14 @@ namespace Ifc.NET
             IfcPropertySet ifcPropertySet = (this.IfcObjectDefinition != null) ? this.IfcObjectDefinition.GetIfcPropertySetFromRelatingPropertyDefinition() : null;
             if (ifcPropertySet == null)
             {
-                ifcPropertySet = new Ifc.NET.IfcPropertySet();
+                ifcPropertySet = new Ifc4.IfcPropertySet();
                 if (propertyDescriptors != null)
                 {
-                    foreach (var propertyDescriptor in propertyDescriptors.OfType<Ifc.NET.CustomModel.CustomPropertyDescriptor>())
+                    foreach (var propertyDescriptor in propertyDescriptors.OfType<Ifc4.CustomModel.CustomPropertyDescriptor>())
                     {
                         if (propertyDescriptor.PropertyType.IsEnum)
                         {
-                            Ifc.NET.IfcPropertyEnumeratedValue ifcPropertyEnumeratedValue = new Ifc.NET.IfcPropertyEnumeratedValue()
+                            Ifc4.IfcPropertyEnumeratedValue ifcPropertyEnumeratedValue = new Ifc4.IfcPropertyEnumeratedValue()
                             {
                                 Id = document.GetNextSid(),
                                 Name = propertyDescriptor.PropertyItem.IfcPropertyName,
@@ -1338,56 +1338,56 @@ namespace Ifc.NET
                             };
 
                             object value = propertyDescriptor.GetValue(this);
-                            ifcPropertyEnumeratedValue.EnumerationValues.Items.Add(new Ifc.NET.IfcLabelwrapper()
+                            ifcPropertyEnumeratedValue.EnumerationValues.Items.Add(new Ifc4.IfcLabelwrapper()
                             {
                                 Value = value == null ? String.Empty : value.ToString().Trim()
                             });
 
                             if (ifcPropertySet.HasProperties == null)
-                                ifcPropertySet.HasProperties = new Ifc.NET.IfcPropertySetHasProperties();
+                                ifcPropertySet.HasProperties = new Ifc4.IfcPropertySetHasProperties();
 
                             ifcPropertySet.HasProperties.Items.Add(ifcPropertyEnumeratedValue);
 
                         }
                         //else if (propertyDescriptor.PropertyType == typeof(System.String))
                         //{
-                        //    Ifc.NET.IfcPropertySingleValue ifcPropertySingleValue = new Ifc.NET.IfcPropertySingleValue()
+                        //    Ifc4.IfcPropertySingleValue ifcPropertySingleValue = new Ifc4.IfcPropertySingleValue()
                         //    {
                         //        Id = document.GetNextSid(),
                         //        Name = propertyDescriptor.PropertyItem.IfcPropertyName,
-                        //        NominalValue = new Ifc.NET.IfcPropertySingleValueNominalValue()
+                        //        NominalValue = new Ifc4.IfcPropertySingleValueNominalValue()
                         //        // Unit = "";
                         //    };
 
                         //    object value = propertyDescriptor.GetValue(this);
-                        //    ifcPropertySingleValue.NominalValue.Item = new Ifc.NET.IfcLabelwrapper()
+                        //    ifcPropertySingleValue.NominalValue.Item = new Ifc4.IfcLabelwrapper()
                         //    {
                         //        Value = value == null ? String.Empty : value.ToString()
                         //    };
 
                         //    if (ifcPropertySet.HasProperties == null)
-                        //        ifcPropertySet.HasProperties = new Ifc.NET.IfcPropertySetHasProperties();
+                        //        ifcPropertySet.HasProperties = new Ifc4.IfcPropertySetHasProperties();
 
                         //    ifcPropertySet.HasProperties.Items.Add(ifcPropertySingleValue);
                         //}
                         else
                         {
-                            Ifc.NET.IfcPropertySingleValue ifcPropertySingleValue = new Ifc.NET.IfcPropertySingleValue()
+                            Ifc4.IfcPropertySingleValue ifcPropertySingleValue = new Ifc4.IfcPropertySingleValue()
                             {
                                 Id = document.GetNextSid(),
                                 Name = propertyDescriptor.PropertyItem.IfcPropertyName,
-                                NominalValue = new Ifc.NET.IfcPropertySingleValueNominalValue()
+                                NominalValue = new Ifc4.IfcPropertySingleValueNominalValue()
                                 // Unit = "";
                             };
 
                             object value = propertyDescriptor.GetValue(this);
-                            ifcPropertySingleValue.NominalValue.Item = new Ifc.NET.IfcLabelwrapper()
+                            ifcPropertySingleValue.NominalValue.Item = new Ifc4.IfcLabelwrapper()
                             {
                                 Value = value == null ? String.Empty : value.ToString()
                             };
 
                             if (ifcPropertySet.HasProperties == null)
-                                ifcPropertySet.HasProperties = new Ifc.NET.IfcPropertySetHasProperties();
+                                ifcPropertySet.HasProperties = new Ifc4.IfcPropertySetHasProperties();
 
                             ifcPropertySet.HasProperties.Items.Add(ifcPropertySingleValue);
                         }
@@ -1404,20 +1404,20 @@ namespace Ifc.NET
                 ifcPropertySet.Id = document.GetNextSid();
                 document.IfcXmlDocument.Items.Add(ifcPropertySet);
 
-                Ifc.NET.IfcRelDefinesByProperties ifcRelDefinesByProperties = new Ifc.NET.IfcRelDefinesByProperties();
+                Ifc4.IfcRelDefinesByProperties ifcRelDefinesByProperties = new Ifc4.IfcRelDefinesByProperties();
                 ifcRelDefinesByProperties.Id = document.GetNextSid();
 
                 ifcRelDefinesByProperties.RelatedObjects = this.IfcObjectDefinition.RefInstance();
-                ifcRelDefinesByProperties.RelatingPropertyDefinition = new Ifc.NET.IfcRelDefinesByPropertiesRelatingPropertyDefinition();
-                ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = new Ifc.NET.IfcPropertySet() { Ref = ifcPropertySet.Id };
+                ifcRelDefinesByProperties.RelatingPropertyDefinition = new Ifc4.IfcRelDefinesByPropertiesRelatingPropertyDefinition();
+                ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = new Ifc4.IfcPropertySet() { Ref = ifcPropertySet.Id };
 
                 document.IfcXmlDocument.Items.Add(ifcRelDefinesByProperties);
 
 
-                Ifc.NET.IfcRelDefinesByTemplate ifcRelDefinesByTemplate = new Ifc.NET.IfcRelDefinesByTemplate();
-                ifcRelDefinesByTemplate.RelatingTemplate = new Ifc.NET.IfcPropertySetTemplate() { Ref = ifcPropertySetTemplate.Id };
-                ifcRelDefinesByTemplate.RelatedPropertySets = new Ifc.NET.IfcRelDefinesByTemplateRelatedPropertySets();
-                ifcRelDefinesByTemplate.RelatedPropertySets.Items.Add(new Ifc.NET.IfcPropertySet() { Ref = ifcPropertySet.Id });
+                Ifc4.IfcRelDefinesByTemplate ifcRelDefinesByTemplate = new Ifc4.IfcRelDefinesByTemplate();
+                ifcRelDefinesByTemplate.RelatingTemplate = new Ifc4.IfcPropertySetTemplate() { Ref = ifcPropertySetTemplate.Id };
+                ifcRelDefinesByTemplate.RelatedPropertySets = new Ifc4.IfcRelDefinesByTemplateRelatedPropertySets();
+                ifcRelDefinesByTemplate.RelatedPropertySets.Items.Add(new Ifc4.IfcPropertySet() { Ref = ifcPropertySet.Id });
                 document.IfcXmlDocument.Items.Add(ifcRelDefinesByTemplate);
 
                 UpdateIfcRelContainedInSpatialStructure();
@@ -1487,7 +1487,7 @@ namespace Ifc.NET
                 //    <RelatingStructure xsi:type="IfcSite" ref="i130" xsi:nil="true" />
                 //  </IfcRelContainedInSpatialStructure>
 
-                IEnumerable<IfcRelContainedInSpatialStructure> ifcRelContainedInSpatialStructureCollection = from ifcRelContainedInSpatialStructure in document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelContainedInSpatialStructure>()
+                IEnumerable<IfcRelContainedInSpatialStructure> ifcRelContainedInSpatialStructureCollection = from ifcRelContainedInSpatialStructure in document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelContainedInSpatialStructure>()
                                                                                                              where ifcRelContainedInSpatialStructure.RelatingStructure != null && ifcRelContainedInSpatialStructure.RelatingStructure.Ref == relatingStructure.Ref
                                                                                                              select ifcRelContainedInSpatialStructure;
 
@@ -1506,9 +1506,9 @@ namespace Ifc.NET
                 else
                 {
                     // add
-                    Ifc.NET.IfcRelContainedInSpatialStructure ifcRelContainedInSpatialStructure = new Ifc.NET.IfcRelContainedInSpatialStructure();
+                    Ifc4.IfcRelContainedInSpatialStructure ifcRelContainedInSpatialStructure = new Ifc4.IfcRelContainedInSpatialStructure();
                     ifcRelContainedInSpatialStructure.RelatingStructure = relatingStructure;
-                    ifcRelContainedInSpatialStructure.RelatedElements = new Ifc.NET.IfcRelContainedInSpatialStructureRelatedElements();
+                    ifcRelContainedInSpatialStructure.RelatedElements = new Ifc4.IfcRelContainedInSpatialStructureRelatedElements();
                     ifcRelContainedInSpatialStructure.RelatedElements.Items.Add((IfcProduct)this.IfcObjectDefinition.RefInstance());
                     document.IfcXmlDocument.Items.Add(ifcRelContainedInSpatialStructure);
                 }
@@ -1519,8 +1519,8 @@ namespace Ifc.NET
     }
 
     [Serializable]
-    [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_CCFACILITIES_DISPLAYNAME", "Anlagen")]
-    public class CcFacilities<T> : BaseObjects<T> where T : Ifc.NET.CcFacility
+    [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_CCFACILITIES_DISPLAYNAME", "Anlagen")]
+    public class CcFacilities<T> : BaseObjects<T> where T : Ifc4.CcFacility
     {
         public CcFacilities(BaseObject parent)
             : base(parent)
@@ -1571,7 +1571,7 @@ namespace Ifc.NET
 
             string Ref = String.Empty;
 
-            if (this.Parent.GetType() == typeof(Ifc.NET.IfcProject))
+            if (this.Parent.GetType() == typeof(Ifc4.IfcProject))
             {
                 //<IfcRelAggregates GlobalId="3rWB5ezmH1TBP5fYFzYyD4">
                 //  <RelatingObject xsi:type="IfcProject" ref="i100" xsi:nil="true" />
@@ -1581,10 +1581,10 @@ namespace Ifc.NET
                 //  </RelatedObjects>
                 //</IfcRelAggregates>
 
-                Ref = ((Ifc.NET.IfcProject)this.Parent).Id;
+                Ref = ((Ifc4.IfcProject)this.Parent).Id;
 
                 IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == Ref);
-                var ifcSystemCollection = Document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcSystem>().ToList();
+                var ifcSystemCollection = Document.IfcXmlDocument.Items.OfType<Ifc4.IfcSystem>().ToList();
                 List<Entity> loadedProjectRelatedObjects = new List<Entity>();
                 foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection)
                 {
@@ -1607,11 +1607,11 @@ namespace Ifc.NET
                     }
                 }
             }
-            if (this.Parent.GetType() == typeof(Ifc.NET.CcFacility))
+            if (this.Parent.GetType() == typeof(Ifc4.CcFacility))
             {
-                if (((Ifc.NET.CcFacility)this.Parent).IfcObjectDefinition != null)
+                if (((Ifc4.CcFacility)this.Parent).IfcObjectDefinition != null)
                 {
-                    Ref = ((Ifc.NET.CcFacility)this.Parent).IfcObjectDefinition.Id;
+                    Ref = ((Ifc4.CcFacility)this.Parent).IfcObjectDefinition.Id;
 
                     IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == Ref);
                     IEnumerable<IfcObjectDefinition> ifcObjectDefinitionCollection = Document.IfcXmlDocument.Items.OfType<IfcObjectDefinition>();
@@ -1631,9 +1631,9 @@ namespace Ifc.NET
                         }
                     }
                 }
-                else if (((Ifc.NET.CcFacility)this.Parent).IfcSystem != null)
+                else if (((Ifc4.CcFacility)this.Parent).IfcSystem != null)
                 {
-                    Ref = ((Ifc.NET.CcFacility)this.Parent).IfcSystem.Id;
+                    Ref = ((Ifc4.CcFacility)this.Parent).IfcSystem.Id;
 
                     IEnumerable<IfcRelAssignsToGroup> ifcRelAssignsToGroupCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAssignsToGroup>().Where(item => item.RelatingGroup != null && item.RelatingGroup.Ref == Ref);
                     IEnumerable<IfcObjectDefinition> ifcObjectDefinitionCollection = Document.IfcXmlDocument.Items.OfType<IfcObjectDefinition>();
@@ -1658,7 +1658,7 @@ namespace Ifc.NET
             return true;
         }
 
-        public T AddNewSystem(Ifc.NET.IfcObjectDefinition relatingObject)
+        public T AddNewSystem(Ifc4.IfcObjectDefinition relatingObject)
         {
             EventType enabledEventTypes = BaseObject.EventsEnabled;
             BaseObject.EventsEnabled = EventType.None;
@@ -1672,7 +1672,7 @@ namespace Ifc.NET
                 ifcSystem.ParentIBaseObject = facility;
                 facility.IfcSystem = ifcSystem;
 
-                var document = this.GetParent<Ifc.NET.Document>();
+                var document = this.GetParent<Ifc4.Document>();
                 if (document != null)
                 {
                     Entity entity = ifcSystem as Entity;
@@ -1720,7 +1720,7 @@ namespace Ifc.NET
                         var relAggregatesProject = new IfcRelAggregates()
                         {
                             GlobalId = Document.GetNewGlobalId(),
-                            RelatingObject = new Ifc.NET.IfcProject() { Ref = Ref }
+                            RelatingObject = new Ifc4.IfcProject() { Ref = Ref }
                         };
                         relAggregatesProject.RelatedObjects = new IfcRelAggregatesRelatedObjects();
                         relAggregatesProject.RelatedObjects.Items.Add(ifcSystem.RefInstance());
@@ -1762,7 +1762,7 @@ namespace Ifc.NET
                 facility.IfcObjectDefinition = ifcBuildingElementProxy;
                 ifcBuildingElementProxy.Parent = this;
 
-                Ifc.NET.Document document = this.GetParent<Ifc.NET.Document>();
+                Ifc4.Document document = this.GetParent<Ifc4.Document>();
                 if (document != null)
                 {
                     Entity entity = ifcBuildingElementProxy as Entity;
@@ -1778,11 +1778,11 @@ namespace Ifc.NET
                     }
                 }
                 // ------------------------------------------------------------------------------
-                if (this.Parent.GetType() == typeof(Ifc.NET.IfcProject))
+                if (this.Parent.GetType() == typeof(Ifc4.IfcProject))
                 {
 
                     IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>()
-                                                                                .Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc.NET.IfcProject)this.Parent).Id).ToList();
+                                                                                .Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc4.IfcProject)this.Parent).Id).ToList();
                     if (ifcRelAggregatesCollection.Any())
                     {
                         foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection)
@@ -1800,7 +1800,7 @@ namespace Ifc.NET
                         {
                             GlobalId = Document.GetNewGlobalId(),
                             // kann aktuell nur IfcProject sein
-                            RelatingObject = new Ifc.NET.IfcProject() { Ref = ((Ifc.NET.IfcProject)this.Parent).Id }
+                            RelatingObject = new Ifc4.IfcProject() { Ref = ((Ifc4.IfcProject)this.Parent).Id }
                         };
                         relAggregatesProject.RelatedObjects = new IfcRelAggregatesRelatedObjects();
                         relAggregatesProject.RelatedObjects.Items.Add(ifcBuildingElementProxy.RefInstance());
@@ -1808,16 +1808,16 @@ namespace Ifc.NET
                     }
                 }
                 // ------------------------------------------------------------------------------
-                if (this.Parent.GetType() == typeof(Ifc.NET.CcFacility))
+                if (this.Parent.GetType() == typeof(Ifc4.CcFacility))
                 {
-                    if (((Ifc.NET.CcFacility)this.Parent).IfcObjectDefinition != null)
+                    if (((Ifc4.CcFacility)this.Parent).IfcObjectDefinition != null)
                     {
-                        Ifc.NET.IfcRelAggregates ifcRelAggregates = ((Ifc.NET.CcFacility)this.Parent).GetIfcRelAggregates();
+                        Ifc4.IfcRelAggregates ifcRelAggregates = ((Ifc4.CcFacility)this.Parent).GetIfcRelAggregates();
                         ifcRelAggregates.RelatedObjects.Items.Add(ifcBuildingElementProxy.RefInstance());
                     }
-                    else if (((Ifc.NET.CcFacility)this.Parent).IfcSystem != null)
+                    else if (((Ifc4.CcFacility)this.Parent).IfcSystem != null)
                     {
-                        Ifc.NET.IfcRelAssignsToGroup ifcRelAssignsToGroup = ((Ifc.NET.CcFacility)this.Parent).GetIfcRelAssignsToGroup();
+                        Ifc4.IfcRelAssignsToGroup ifcRelAssignsToGroup = ((Ifc4.CcFacility)this.Parent).GetIfcRelAssignsToGroup();
                         ifcRelAssignsToGroup.RelatedObjects.Items.Add(ifcBuildingElementProxy.RefInstance());
                     }
                 }
@@ -1848,8 +1848,8 @@ namespace Ifc.NET
     }
 
     [Serializable]
-    [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSITES_DisplayName", "Liegenschaften")]
-    public partial class CcIfcSites<T> : BaseObjects<T> where T : Ifc.NET.IfcSite
+    [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSITES_DisplayName", "Liegenschaften")]
+    public partial class CcIfcSites<T> : BaseObjects<T> where T : Ifc4.IfcSite
     {
         public CcIfcSites(BaseObject parent)
             : base(parent)
@@ -1865,7 +1865,7 @@ namespace Ifc.NET
         //{
         //    ((BaseObject)this).Parent = parent;
 
-        //    IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc.NET.Entity)parent).Id).ToList();
+        //    IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc4.Entity)parent).Id).ToList();
         //    var entities = Document.IfcXmlDocument.Items.OfType<T>();
         //    foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection)
         //    {
@@ -1890,7 +1890,7 @@ namespace Ifc.NET
         {
             ((BaseObject)this).Parent = parent;
 
-            foreach (T entity in Document.GetSpatialStructureChilds<T>(((Ifc.NET.Entity)parent).Id))
+            foreach (T entity in Document.GetSpatialStructureChilds<T>(((Ifc4.Entity)parent).Id))
             {
                 if (entity == null)
                     continue;
@@ -1922,7 +1922,7 @@ namespace Ifc.NET
             {
                 T ifcSite = (T)AddNew();
                 // ------------------------------------------------------------------------------
-                IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc.NET.Entity)this.Parent).Id).ToList();
+                IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc4.Entity)this.Parent).Id).ToList();
                 if (ifcRelAggregatesCollection.Any())
                 {
                     foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection)
@@ -1939,7 +1939,7 @@ namespace Ifc.NET
                     IfcRelAggregates relAggregatesProject = new IfcRelAggregates()
                     {
                         GlobalId = Document.GetNewGlobalId(),
-                        RelatingObject = new Ifc.NET.IfcProject() { Ref = ((Ifc.NET.Entity)this.Parent).Id }
+                        RelatingObject = new Ifc4.IfcProject() { Ref = ((Ifc4.Entity)this.Parent).Id }
                     };
                     relAggregatesProject.RelatedObjects = new IfcRelAggregatesRelatedObjects();
                     relAggregatesProject.RelatedObjects.Items.Add(ifcSite.RefInstance());
@@ -1960,8 +1960,8 @@ namespace Ifc.NET
     }
 
     [Serializable]
-    [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDINGS_DisplayName", "Gebäude")]
-    public partial class CcIfcBuildings<T> : BaseObjects<T> where T : Ifc.NET.IfcBuilding
+    [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDINGS_DisplayName", "Gebäude")]
+    public partial class CcIfcBuildings<T> : BaseObjects<T> where T : Ifc4.IfcBuilding
     {
         public CcIfcBuildings(BaseObject parent)
             : base(parent)
@@ -1977,7 +1977,7 @@ namespace Ifc.NET
         {
             ((BaseObject)this).Parent = parent;
 
-            foreach (T entity in Document.GetSpatialStructureChilds<T>(((Ifc.NET.Entity)parent).Id))
+            foreach (T entity in Document.GetSpatialStructureChilds<T>(((Ifc4.Entity)parent).Id))
             {
                 if (entity == null)
                     continue;
@@ -2008,7 +2008,7 @@ namespace Ifc.NET
             {
                 T ifcBuilding = (T)AddNew();
                 // ------------------------------------------------------------------------------
-                IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc.NET.Entity)this.Parent).Id).ToList();
+                IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc4.Entity)this.Parent).Id).ToList();
                 if (ifcRelAggregatesCollection.Any())
                 {
                     foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection)
@@ -2025,7 +2025,7 @@ namespace Ifc.NET
                     IfcRelAggregates relAggregatesSite = new IfcRelAggregates()
                     {
                         GlobalId = Document.GetNewGlobalId(),
-                        RelatingObject = new Ifc.NET.IfcSite() { Ref = ((Ifc.NET.Entity)this.Parent).Id }
+                        RelatingObject = new Ifc4.IfcSite() { Ref = ((Ifc4.Entity)this.Parent).Id }
                     };
                     relAggregatesSite.RelatedObjects = new IfcRelAggregatesRelatedObjects();
                     relAggregatesSite.RelatedObjects.Items.Add(ifcBuilding.RefInstance());
@@ -2055,8 +2055,8 @@ namespace Ifc.NET
     }
 
     [Serializable]
-    [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDINGSTOREYS_DisplayName", "Etagen")]
-    public partial class CcIfcBuildingStoreys<T> : BaseObjects<T> where T : Ifc.NET.IfcBuildingStorey
+    [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCBUILDINGSTOREYS_DisplayName", "Etagen")]
+    public partial class CcIfcBuildingStoreys<T> : BaseObjects<T> where T : Ifc4.IfcBuildingStorey
     {
         public CcIfcBuildingStoreys(BaseObject parent)
             : base(parent)
@@ -2081,7 +2081,7 @@ namespace Ifc.NET
         //{
         //    ((BaseObject)this).Parent = parent;
 
-        //    IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc.NET.Entity)parent).Id);
+        //    IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc4.Entity)parent).Id);
         //    var entities = Document.IfcXmlDocument.Items.OfType<T>();
         //    foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection.ToList())
         //    {
@@ -2105,7 +2105,7 @@ namespace Ifc.NET
         {
             ((BaseObject)this).Parent = parent;
 
-            foreach (T entity in Document.GetSpatialStructureChilds<T>(((Ifc.NET.Entity)parent).Id))
+            foreach (T entity in Document.GetSpatialStructureChilds<T>(((Ifc4.Entity)parent).Id))
             {
                 if (entity == null)
                     continue;
@@ -2129,7 +2129,7 @@ namespace Ifc.NET
                 T ifcBuildingStorey = (T)AddNew();
 
                 // ------------------------------------------------------------------------------
-                IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc.NET.Entity)this.Parent).Id).ToList();
+                IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc4.Entity)this.Parent).Id).ToList();
                 if (ifcRelAggregatesCollection.Any())
                 {
                     foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection)
@@ -2146,7 +2146,7 @@ namespace Ifc.NET
                     IfcRelAggregates relAggregatesBuilding = new IfcRelAggregates()
                     {
                         GlobalId = Document.GetNewGlobalId(),
-                        RelatingObject = new Ifc.NET.IfcBuilding() { Ref = ((Ifc.NET.Entity)this.Parent).Id }
+                        RelatingObject = new Ifc4.IfcBuilding() { Ref = ((Ifc4.Entity)this.Parent).Id }
                     };
                     relAggregatesBuilding.RelatedObjects = new IfcRelAggregatesRelatedObjects();
                     relAggregatesBuilding.RelatedObjects.Items.Add(ifcBuildingStorey.RefInstance());
@@ -2175,14 +2175,14 @@ namespace Ifc.NET
 
         public override Type GetAddObjectType()
         {
-            return typeof(Ifc.NET.IfcSpace);
+            return typeof(Ifc4.IfcSpace);
         }
 
     }
 
     [Serializable]
-    [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSPACES_DisplayName", "Räume")]
-    public partial class CcIfcSpaces<T> : BaseObjects<T> where T : Ifc.NET.IfcSpace
+    [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSPACES_DisplayName", "Räume")]
+    public partial class CcIfcSpaces<T> : BaseObjects<T> where T : Ifc4.IfcSpace
     {
         public CcIfcSpaces(BaseObject parent)
             : base(parent)
@@ -2198,7 +2198,7 @@ namespace Ifc.NET
         //{
         //    ((BaseObject)this).Parent = parent;
 
-        //    IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc.NET.Entity)parent).Id).ToList();
+        //    IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc4.Entity)parent).Id).ToList();
         //    var entities = Document.IfcXmlDocument.Items.OfType<T>();
         //    foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection.ToList())
         //    {
@@ -2220,7 +2220,7 @@ namespace Ifc.NET
         {
             ((BaseObject)this).Parent = parent;
 
-            foreach (T entity in Document.GetSpatialStructureChilds<T>(((Ifc.NET.Entity)parent).Id))
+            foreach (T entity in Document.GetSpatialStructureChilds<T>(((Ifc4.Entity)parent).Id))
             {
                 if (entity == null)
                     continue;
@@ -2250,7 +2250,7 @@ namespace Ifc.NET
                 T ifcSpace = (T)AddNew();
 
                 // ------------------------------------------------------------------------------
-                IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc.NET.Entity)this.Parent).Id).ToList();
+                IEnumerable<IfcRelAggregates> ifcRelAggregatesCollection = this.Document.IfcXmlDocument.Items.OfType<IfcRelAggregates>().Where(item => item.RelatingObject != null && item.RelatingObject.Ref == ((Ifc4.Entity)this.Parent).Id).ToList();
                 if (ifcRelAggregatesCollection.Any())
                 {
                     foreach (IfcRelAggregates ifcRelAggregates in ifcRelAggregatesCollection)
@@ -2267,7 +2267,7 @@ namespace Ifc.NET
                     IfcRelAggregates relAggregatesBuildingStorey = new IfcRelAggregates()
                     {
                         GlobalId = Document.GetNewGlobalId(),
-                        RelatingObject = new Ifc.NET.IfcBuildingStorey() { Ref = ((Ifc.NET.Entity)this.Parent).Id }
+                        RelatingObject = new Ifc4.IfcBuildingStorey() { Ref = ((Ifc4.Entity)this.Parent).Id }
                     };
                     relAggregatesBuildingStorey.RelatedObjects = new IfcRelAggregatesRelatedObjects();
                     relAggregatesBuildingStorey.RelatedObjects.Items.Add(ifcSpace.RefInstance());
@@ -2289,9 +2289,9 @@ namespace Ifc.NET
     }
 
     [Serializable]
-    public class CcIfcOrganizations<T> : BaseObjects<T> where T : Ifc.NET.IfcOrganization
+    public class CcIfcOrganizations<T> : BaseObjects<T> where T : Ifc4.IfcOrganization
     {
-        internal CcIfcOrganizations(Ifc.NET.Interfaces.IBaseObject parent)
+        internal CcIfcOrganizations(Ifc4.Interfaces.IBaseObject parent)
             : base(parent)
         {
             this.Read();
@@ -2301,12 +2301,12 @@ namespace Ifc.NET
         //{
         //    // generic
         //    T instance = Activator.CreateInstance<T>() as T;
-        //    ((Ifc.NET.Interfaces.IBaseObjects<T>)this).Add(instance);
+        //    ((Ifc4.Interfaces.IBaseObjects<T>)this).Add(instance);
         //    Document.IfcXmlDocument.Items.Add(instance);
         //    return instance;
 
         //    //IfcOrganization ifcOrganization = new IfcOrganization();
-        //    //((Ifc.NET.Interfaces.IBaseObjects<T>)this).Add(ifcOrganization);
+        //    //((Ifc4.Interfaces.IBaseObjects<T>)this).Add(ifcOrganization);
         //    //Document.IfcXmlDocument.Items.Add(ifcOrganization);
         //    //return instance;
 
@@ -2323,16 +2323,16 @@ namespace Ifc.NET
             ((System.Collections.IList)this).Clear();
             foreach (var item in Document.IfcXmlDocument.Items.OfType<T>())
             {
-                ((Ifc.NET.Interfaces.IBaseObjects<T>)this).Add(item);
+                ((Ifc4.Interfaces.IBaseObjects<T>)this).Add(item);
             }
         }
 
     }
 
     [Serializable]
-    public class CcIfcRelAssociatesClassifications<T> : BaseObjects<T> where T : Ifc.NET.IfcRelAssociatesClassification
+    public class CcIfcRelAssociatesClassifications<T> : BaseObjects<T> where T : Ifc4.IfcRelAssociatesClassification
     {
-        internal CcIfcRelAssociatesClassifications(Ifc.NET.Interfaces.IBaseObject parent)
+        internal CcIfcRelAssociatesClassifications(Ifc4.Interfaces.IBaseObject parent)
             : base(parent)
         {
             this.Read();
@@ -2343,7 +2343,7 @@ namespace Ifc.NET
             ((System.Collections.IList)this).Clear();
             foreach (var item in Document.IfcXmlDocument.Items.OfType<T>())
             {
-                ((Ifc.NET.Interfaces.IBaseObjects<T>)this).Add(item);
+                ((Ifc4.Interfaces.IBaseObjects<T>)this).Add(item);
             }
         }
     }

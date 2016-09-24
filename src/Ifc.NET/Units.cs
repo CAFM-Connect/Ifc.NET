@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public class Units : List<Unit>
     {
@@ -108,7 +108,7 @@ namespace Ifc.NET
         }
 
         private static IfcSIUnit AddIfcSIUnit(
-                                        Ifc.NET.Document document,
+                                        Ifc4.Document document,
                                         Unit unit,
                                         IfcUnitEnum? ifcUnitEnum,
                                         IfcSIPrefix? ifcSIPrefix,
@@ -152,7 +152,7 @@ namespace Ifc.NET
         }
 
         private static IfcDerivedUnit AddIfcDerivedUnit(
-                                        Ifc.NET.Document document,
+                                        Ifc4.Document document,
                                         Unit unit,
                                         IfcDerivedUnit ifcDerivedUnit
                                     )
@@ -171,10 +171,10 @@ namespace Ifc.NET
         }
 
 
-        internal Entity AddUnitToIfcDocument(Ifc.NET.Document document, Ifc.NET.Unit unit)
+        internal Entity AddUnitToIfcDocument(Ifc4.Document document, Ifc4.Unit unit)
         {
             if (document == null)
-                throw new ArgumentNullException("AddUnitToIfcDocument(Ifc.NET.Document document, ...)");
+                throw new ArgumentNullException("AddUnitToIfcDocument(Ifc4.Document document, ...)");
 
             if (unit == null)
                 throw new ArgumentNullException("AddUnitToIfcDocument(..., Unit unit)");

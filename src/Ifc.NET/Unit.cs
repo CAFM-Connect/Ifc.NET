@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public class Unit
     {
@@ -15,13 +15,13 @@ namespace Ifc.NET
             SupportedByIfc = supportedByIfc;
         }
 
-        private Ifc.NET.Entity m_IfcUnitEntity;
-        public Ifc.NET.Entity Entity
+        private Ifc4.Entity m_IfcUnitEntity;
+        public Ifc4.Entity Entity
         {
             get
             {
                 if (m_IfcUnitEntity == null)
-                    m_IfcUnitEntity = this.Units.AddUnitToIfcDocument(Ifc.NET.Workspace.CurrentWorkspace.ActiveDocument, this);
+                    m_IfcUnitEntity = this.Units.AddUnitToIfcDocument(Ifc4.Workspace.CurrentWorkspace.ActiveDocument, this);
 
                 return m_IfcUnitEntity;
             }

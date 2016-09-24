@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 
 
-using IFC4 = Ifc.NET;
+using IFC4 = Ifc4;
 
-namespace Ifc.NET
+namespace Ifc4
 {
 
     // http://msdn.microsoft.com/en-us/data/jj613116.aspx
@@ -21,14 +21,14 @@ namespace Ifc.NET
 
         private bool m_PopulateIfcPropertySetTemplate = false;
 
-        public bool TryGetIfcClassificationReferenceFromIfcPropertySetTemplate(string ifcGlobalId, out Ifc.NET.IfcClassificationReference ifcClassificationReference)
+        public bool TryGetIfcClassificationReferenceFromIfcPropertySetTemplate(string ifcGlobalId, out Ifc4.IfcClassificationReference ifcClassificationReference)
         {
-            Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate = GetIfcPropertySetTemplate(ifcGlobalId);
+            Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate = GetIfcPropertySetTemplate(ifcGlobalId);
             ifcClassificationReference = GetIfcClassificationReferenceFromIfcPropertySetTemplate(ifcPropertySetTemplate);
             return (ifcClassificationReference != null);
         }
 
-        private Ifc.NET.IfcClassificationReference GetIfcClassificationReferenceFromIfcPropertySetTemplate(Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate)
+        private Ifc4.IfcClassificationReference GetIfcClassificationReferenceFromIfcPropertySetTemplate(Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate)
         {
 
             //<IfcRelAssociatesClassification id="i999" GlobalId="09Yj_c95H5iPvgszfwsNL6" Name="423.17 - Heizkörper zu IfcClassificationReference">
@@ -40,7 +40,7 @@ namespace Ifc.NET
             //    <IfcClassificationReference ref="i991" xsi:nil="true" />
             //  </RelatingClassification>
             //</IfcRelAssociatesClassification>
-            Ifc.NET.IfcClassificationReference ifcClassificationReference;
+            Ifc4.IfcClassificationReference ifcClassificationReference;
 
             if (ifcPropertySetTemplate == null)
                 return null;
@@ -48,16 +48,16 @@ namespace Ifc.NET
             if (m_IfcClassificationReferenceFromIfcPropertySetTemplateId.TryGetValue(ifcPropertySetTemplate.Id, out ifcClassificationReference))
                 return ifcClassificationReference;
 
-            IEnumerable<Ifc.NET.IfcRelAssociatesClassification> ifcRelAssociatesClassificationCollection = Get<Ifc.NET.IfcRelAssociatesClassification>();
+            IEnumerable<Ifc4.IfcRelAssociatesClassification> ifcRelAssociatesClassificationCollection = Get<Ifc4.IfcRelAssociatesClassification>();
             var relatingClassification = (from ifcRelAssociatesClassification in ifcRelAssociatesClassificationCollection
-                                          from relatedObjects in ifcRelAssociatesClassification.RelatedObjects.Items.OfType<Ifc.NET.IfcPropertySetTemplate>()
+                                          from relatedObjects in ifcRelAssociatesClassification.RelatedObjects.Items.OfType<Ifc4.IfcPropertySetTemplate>()
                                           where relatedObjects.Ref == ifcPropertySetTemplate.Id
                                           select ifcRelAssociatesClassification.RelatingClassification.Item).FirstOrDefault();
 
-            ifcClassificationReference = relatingClassification as Ifc.NET.IfcClassificationReference;
+            ifcClassificationReference = relatingClassification as Ifc4.IfcClassificationReference;
             if (ifcClassificationReference != null)
             {
-                ifcClassificationReference = Get<Ifc.NET.IfcClassificationReference>().FirstOrDefault(item => item.Id == ifcClassificationReference.Ref);
+                ifcClassificationReference = Get<Ifc4.IfcClassificationReference>().FirstOrDefault(item => item.Id == ifcClassificationReference.Ref);
             }
             m_IfcClassificationReferenceFromIfcPropertySetTemplateId.Add(ifcPropertySetTemplate.Id, ifcClassificationReference);
             return ifcClassificationReference;
@@ -99,7 +99,7 @@ namespace Ifc.NET
 
             PopulateIfcPropertySetTemplateCollection();
 
-            Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate;
+            Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate;
             if (m_IfcPropertySetTemplateDictionary.TryGetValue(ifcGlobalId, out ifcPropertySetTemplate))
                 return ifcPropertySetTemplate;
 
@@ -108,7 +108,7 @@ namespace Ifc.NET
 
     }
 
-    public abstract partial class Entity : Ifc.NET.BaseObject 
+    public abstract partial class Entity : Ifc4.BaseObject 
     {
 
         private bool? m_Nil;

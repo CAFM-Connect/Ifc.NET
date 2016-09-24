@@ -7,13 +7,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Ifc.NET.Interfaces;
+using Ifc4.Interfaces;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public partial class Document : BaseObject
     {
-        public delegate void MessageLoggedEventHandler(object sender, Ifc.NET.EventArgs.MessageLoggedEventArgs e);
+        public delegate void MessageLoggedEventHandler(object sender, Ifc4.EventArgs.MessageLoggedEventArgs e);
         public event MessageLoggedEventHandler MessageLogged;
         private XNamespace IfcNs { get { return XNamespace.Get("http://www.buildingsmart-tech.org/ifcXML/IFC4/final"); } }
 
@@ -97,22 +97,22 @@ namespace Ifc.NET
             }
         }
 
-        private Dictionary<string, Ifc.NET.IfcPropertySetTemplate> m_IfcPropertySetTemplateCollection;
-        internal Dictionary<string, Ifc.NET.IfcPropertySetTemplate> IfcPropertySetTemplateCollection
+        private Dictionary<string, Ifc4.IfcPropertySetTemplate> m_IfcPropertySetTemplateCollection;
+        internal Dictionary<string, Ifc4.IfcPropertySetTemplate> IfcPropertySetTemplateCollection
         {
             get
             {
                 if (m_IfcPropertySetTemplateCollection == null)
                 {
                     m_IfcPropertySetTemplateCollection = new Dictionary<string, IfcPropertySetTemplate>();
-                    foreach (var item in this.IfcXmlDocument.Items.OfType<Ifc.NET.IfcPropertySetTemplate>())
+                    foreach (var item in this.IfcXmlDocument.Items.OfType<Ifc4.IfcPropertySetTemplate>())
                         m_IfcPropertySetTemplateCollection.Add(item.Id, item);
                 }
                 return m_IfcPropertySetTemplateCollection;
             }
         }
 
-        internal Ifc.NET.IfcPropertySetTemplate GetIfcPropertySetTemplate(string id)
+        internal Ifc4.IfcPropertySetTemplate GetIfcPropertySetTemplate(string id)
         {
             if (String.IsNullOrEmpty(id))
                 return null;
@@ -120,15 +120,15 @@ namespace Ifc.NET
             //if (m_IfcPropertySetTemplateCollection == null)
             //{
             //    m_IfcPropertySetTemplateCollection = new Dictionary<string, IfcPropertySetTemplate>();
-            //    foreach (var item in this.IfcXmlDocument.Items.OfType<Ifc.NET.IfcPropertySetTemplate>())
+            //    foreach (var item in this.IfcXmlDocument.Items.OfType<Ifc4.IfcPropertySetTemplate>())
             //        m_IfcPropertySetTemplateCollection.Add(item.Id, item);
             //}
 
-            //Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate;
+            //Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate;
             //if(m_IfcPropertySetTemplateCollection.TryGetValue(id, out ifcPropertySetTemplate))
             //    return ifcPropertySetTemplate;
 
-            Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate;
+            Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate;
             if (IfcPropertySetTemplateCollection.TryGetValue(id, out ifcPropertySetTemplate))
                 return ifcPropertySetTemplate;
 
@@ -147,22 +147,22 @@ namespace Ifc.NET
         }
 
         private IEnumerable<ABC> m_RelatedObjectsRefs = null;
-        public IEnumerable<Ifc.NET.IfcPropertySetTemplate> GetIfcPropertySetTemplateCollection(CcFacility facility)
+        public IEnumerable<Ifc4.IfcPropertySetTemplate> GetIfcPropertySetTemplateCollection(CcFacility facility)
         {
-            IEnumerable<Ifc.NET.IfcPropertySetTemplate> ifcPropertySetTemplateCollection = null;
+            IEnumerable<Ifc4.IfcPropertySetTemplate> ifcPropertySetTemplateCollection = null;
             if (facility != null && !String.IsNullOrEmpty(facility.ObjectTypeId))
             {
                 string objectTypeId = facility.ObjectTypeId;
                 if (m_RelatedObjectsRefs == null)
                 {
-                    Ifc.NET.Document document = facility.GetParent<Ifc.NET.Document>();
-                    IEnumerable<Ifc.NET.IfcRelAssociatesClassification> ifcRelAssociatesClassificationCollection = document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelAssociatesClassification>().ToList();
+                    Ifc4.Document document = facility.GetParent<Ifc4.Document>();
+                    IEnumerable<Ifc4.IfcRelAssociatesClassification> ifcRelAssociatesClassificationCollection = document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelAssociatesClassification>().ToList();
                     m_RelatedObjectsRefs = (from ifcRelAssociatesClassification in ifcRelAssociatesClassificationCollection
                                             from relatedObject in ifcRelAssociatesClassification.RelatedObjects.Items
                                             where ifcRelAssociatesClassification.RelatingClassification.Item != null // && ifcRelAssociatesClassification.RelatingClassification.Item.Ref == objectTypeId
                                             select new ABC(ifcRelAssociatesClassification.RelatingClassification.Item, relatedObject)).ToList();
 
-                    //m_IfcPropertySetTemplateCollection = document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcPropertySetTemplate>().ToList();
+                    //m_IfcPropertySetTemplateCollection = document.IfcXmlDocument.Items.OfType<Ifc4.IfcPropertySetTemplate>().ToList();
                 }
 
                 var relatedObjectsRefs = m_RelatedObjectsRefs.Where(item => item.A.Ref == objectTypeId).Select(item => item.B.Ref);
@@ -171,8 +171,8 @@ namespace Ifc.NET
             return ifcPropertySetTemplateCollection;
         }
 
-        //private Dictionary<string, Ifc.NET.IfcPropertySetTemplate> m_IfcPropertySetTemplateCollectionByIfcPropertySetId;
-        //internal Ifc.NET.IfcPropertySetTemplate GetIfcPropertySetTemplateFromIfcPropertySetId(string id)
+        //private Dictionary<string, Ifc4.IfcPropertySetTemplate> m_IfcPropertySetTemplateCollectionByIfcPropertySetId;
+        //internal Ifc4.IfcPropertySetTemplate GetIfcPropertySetTemplateFromIfcPropertySetId(string id)
         //{
         //    //<IfcRelDefinesByTemplate>
         //    //  <RelatedPropertySets>
@@ -188,9 +188,9 @@ namespace Ifc.NET
         //    {
         //        m_IfcPropertySetTemplateCollectionByIfcPropertySetId = new Dictionary<string, IfcPropertySetTemplate>();
 
-        //        IEnumerable<Ifc.NET.IfcRelDefinesByTemplate> ifcIfcRelDefinesByTemplateCollection = from item in this.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelDefinesByTemplate>()
+        //        IEnumerable<Ifc4.IfcRelDefinesByTemplate> ifcIfcRelDefinesByTemplateCollection = from item in this.IfcXmlDocument.Items.OfType<Ifc4.IfcRelDefinesByTemplate>()
         //                                                                                                          where item.RelatedPropertySets != null &&
-        //                                                                                                          item.RelatedPropertySets.Items.OfType<Ifc.NET.IfcPropertySet>().Any()
+        //                                                                                                          item.RelatedPropertySets.Items.OfType<Ifc4.IfcPropertySet>().Any()
         //                                                                                                          select item;
 
         //        string ifcPropertySetId;
@@ -209,7 +209,7 @@ namespace Ifc.NET
         //        }
         //    }
 
-        //    Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate;
+        //    Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate;
         //    if (m_IfcPropertySetTemplateCollectionByIfcPropertySetId.TryGetValue(id, out ifcPropertySetTemplate))
         //        return ifcPropertySetTemplate;
 
@@ -217,8 +217,8 @@ namespace Ifc.NET
 
         //}
 
-        private Dictionary<string, Ifc.NET.IfcPropertySetTemplate> m_IfcPropertySetTemplateCollectionByIfcClassificationReferenceId;
-        internal Ifc.NET.IfcPropertySetTemplate GetIfcPropertySetTemplateFromIfcClassificationReferenceId(string id)
+        private Dictionary<string, Ifc4.IfcPropertySetTemplate> m_IfcPropertySetTemplateCollectionByIfcClassificationReferenceId;
+        internal Ifc4.IfcPropertySetTemplate GetIfcPropertySetTemplateFromIfcClassificationReferenceId(string id)
         {
             if (String.IsNullOrEmpty(id))
                 return null;
@@ -227,9 +227,9 @@ namespace Ifc.NET
             {
                 m_IfcPropertySetTemplateCollectionByIfcClassificationReferenceId = new Dictionary<string, IfcPropertySetTemplate>();
 
-                IEnumerable<Ifc.NET.IfcRelAssociatesClassification> ifcRelAssociatesClassificationCollection = from item in this.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelAssociatesClassification>()
+                IEnumerable<Ifc4.IfcRelAssociatesClassification> ifcRelAssociatesClassificationCollection = from item in this.IfcXmlDocument.Items.OfType<Ifc4.IfcRelAssociatesClassification>()
                                                                                                                   where item.RelatedObjects != null &&
-                                                                                                                  item.RelatedObjects.Items.OfType<Ifc.NET.IfcPropertySetTemplate>().Any()
+                                                                                                                  item.RelatedObjects.Items.OfType<Ifc4.IfcPropertySetTemplate>().Any()
                                                                                                                   select item;
 
                 string ifcPropertySetTemplateId;
@@ -252,7 +252,7 @@ namespace Ifc.NET
                 }
             }
 
-            Ifc.NET.IfcPropertySetTemplate ifcPropertySetTemplate;
+            Ifc4.IfcPropertySetTemplate ifcPropertySetTemplate;
             if (m_IfcPropertySetTemplateCollectionByIfcClassificationReferenceId.TryGetValue(id, out ifcPropertySetTemplate))
                 return ifcPropertySetTemplate;
 
@@ -280,7 +280,7 @@ namespace Ifc.NET
         internal static void ResetId()
         {
             //gID = m_StartId;
-            Ifc.NET.Entity.AllIds = new List<string>();
+            Ifc4.Entity.AllIds = new List<string>();
             m_NextFreeRange = new Queue<int>();
         }
 
@@ -297,7 +297,7 @@ namespace Ifc.NET
 
                 if (!m_NextFreeRange.Any())
                 {
-                    var ids = Ifc.NET.Entity.AllIds.Where(item => item != null && item.StartsWith("i")).Select(item => Convert.ToInt32(item.Substring(1))).ToList();
+                    var ids = Ifc4.Entity.AllIds.Where(item => item != null && item.StartsWith("i")).Select(item => Convert.ToInt32(item.Substring(1))).ToList();
                     ids.Sort();
                     Enumerable.Range(m_StartId, Int32.MaxValue / 2).Except(ids).Take(10000).ToList().ForEach(id => m_NextFreeRange.Enqueue(id));
                 }
@@ -307,7 +307,7 @@ namespace Ifc.NET
                 // ist das zu langsam
                 // für Dateien, die mit diesem Tool erstellt wurden - kein Problem
                 //
-                //var l = Ifc.NET.Entity.AllIds.Where(item => item != null && item.StartsWith("i")).Select(item => Convert.ToInt32(item.Substring(1))).ToList();
+                //var l = Ifc4.Entity.AllIds.Where(item => item != null && item.StartsWith("i")).Select(item => Convert.ToInt32(item.Substring(1))).ToList();
                 //l.Sort();
                 //var a = l.ToArray();
                 //int n = a.Length;
@@ -347,15 +347,15 @@ namespace Ifc.NET
         }
 
         [System.ComponentModel.Browsable(false)]
-        public IEnumerable<Ifc.NET.IfcClassification> Classifications
+        public IEnumerable<Ifc4.IfcClassification> Classifications
         {
-            get { return IfcXmlDocument.Items.OfType<Ifc.NET.IfcClassification>(); }
+            get { return IfcXmlDocument.Items.OfType<Ifc4.IfcClassification>(); }
         }
 
         [System.ComponentModel.Browsable(false)]
-        public IEnumerable<Ifc.NET.IfcClassificationReference> ClassificationReferences
+        public IEnumerable<Ifc4.IfcClassificationReference> ClassificationReferences
         {
-            get { return IfcXmlDocument.Items.OfType<Ifc.NET.IfcClassificationReference>(); }
+            get { return IfcXmlDocument.Items.OfType<Ifc4.IfcClassificationReference>(); }
         }
 
         public void PopulateDefaultUosHeader()
@@ -370,9 +370,9 @@ namespace Ifc.NET
                 TimeStamp = DateTime.Now,
                 Author = System.Environment.UserName,
                 Organization = "eTASK Immobilien Software GmbH",
-                PreprocessorVersion = "IFC.NET",
-                OriginatingSystem = "IFC.NET Sample File",
-                Authorization = "file created with IFC.NET",
+                PreprocessorVersion = "Ifc4",
+                OriginatingSystem = "Ifc4 Sample File",
+                Authorization = "file created with Ifc4",
                 Documentation = "ViewDefinition [notYetAssigned]" // version 
             };
 
@@ -392,7 +392,7 @@ namespace Ifc.NET
                 TimeStamp = DateTime.Now,
                 Author = author,
                 Organization = organization,
-                PreprocessorVersion = "IFC.NET",
+                PreprocessorVersion = "Ifc4",
                 OriginatingSystem = originatingSystem,
                 Authorization = authorization,
                 Documentation = "ViewDefinition [notYetAssigned]" // version 
@@ -434,7 +434,7 @@ namespace Ifc.NET
             }
         }
 
-        internal IEnumerable<System.ComponentModel.PropertyDescriptor> GetCustomPropertyDescriptorsFromIfcClassificationReferenceId(Ifc.NET.CcFacility facility, string id)
+        internal IEnumerable<System.ComponentModel.PropertyDescriptor> GetCustomPropertyDescriptorsFromIfcClassificationReferenceId(Ifc4.CcFacility facility, string id)
         {
             IEnumerable<System.ComponentModel.PropertyDescriptor> propertyDescriptors = null;
 
@@ -449,7 +449,7 @@ namespace Ifc.NET
                 int position = 0;
                 int end = 1000;
                 propertyDescriptors = from pd in System.ComponentModel.TypeDescriptor.GetProperties(facility).Cast<System.ComponentModel.PropertyDescriptor>()
-                                          //where Ifc.NET.CustomModel.CustomPropertyDescriptor.TryGetFormVisiblePositionFromObject(null, pd, out position) && !Ifc.NET.CustomModel.CustomPropertyDescriptor.HasXmlIgnoreAttribute(pd)
+                                          //where Ifc4.CustomModel.CustomPropertyDescriptor.TryGetFormVisiblePositionFromObject(null, pd, out position) && !Ifc4.CustomModel.CustomPropertyDescriptor.HasXmlIgnoreAttribute(pd)
                                       let visiblePosition = position == 0 ? end++ : position
                                       orderby visiblePosition
                                       select pd;
@@ -463,11 +463,11 @@ namespace Ifc.NET
         }
 
 
-        public Ifc.NET.Units Units
+        public Ifc4.Units Units
         {
             get
             {
-                return Ifc.NET.Units.Current;
+                return Ifc4.Units.Current;
             }
         }
 
@@ -635,7 +635,7 @@ namespace Ifc.NET
 
         //}
 
-        public Ifc.NET.IfcXML IfcXmlDocument { get; internal set; }
+        public Ifc4.IfcXML IfcXmlDocument { get; internal set; }
 
         private void RemoveXsi(string fullName)
         {
@@ -683,7 +683,7 @@ namespace Ifc.NET
 
         public bool IsInOpenProcess { get; internal set; }
 
-        public Ifc.NET.IfcXML Open(string fullName, out string message, IfcFileType ifcFileType = IfcFileType.IfcXml)
+        public Ifc4.IfcXML Open(string fullName, out string message, IfcFileType ifcFileType = IfcFileType.IfcXml)
         {
             message = "";
             EventType eventType = BaseObject.LockEvents();
@@ -691,7 +691,7 @@ namespace Ifc.NET
             try
             {
 
-                Ifc.NET.IfcXML ifcXML = null;
+                Ifc4.IfcXML ifcXML = null;
 
 
                 string tempFullName = null;
@@ -707,8 +707,8 @@ namespace Ifc.NET
 
 
                         RemoveXsi(tempFullName);
-                        ifcXML = JV.XmlProcessing<Ifc.NET.IfcXML>.Read(tempFullName);
-                        // JV.XmlProcessing<Ifc.NET.IfcXML>.SerializeBinary("c:\\jv\\CAFM-Connect-Katalog.data", ifcXML);
+                        ifcXML = JV.XmlProcessing<Ifc4.IfcXML>.Read(tempFullName);
+                        // JV.XmlProcessing<Ifc4.IfcXML>.SerializeBinary("c:\\jv\\CAFM-Connect-Katalog.data", ifcXML);
 
                         try { System.IO.File.Delete(tempFullName); }
                         catch { }
@@ -718,9 +718,9 @@ namespace Ifc.NET
                     case IfcFileType.IfcXmlBin:
                         //tempFullName = System.IO.Path.GetTempFileName() + ".ifcxml";
                         //System.IO.File.Copy(fullName, tempFullName, true);
-                        //ifcXML = JV.XmlProcessing<Ifc.NET.IfcXML>.ReadBinary(tempFullName);
+                        //ifcXML = JV.XmlProcessing<Ifc4.IfcXML>.ReadBinary(tempFullName);
 
-                        ifcXML = JV.XmlProcessing<Ifc.NET.IfcXML>.ReadBinary(fullName);
+                        ifcXML = JV.XmlProcessing<Ifc4.IfcXML>.ReadBinary(fullName);
 
                         break;
 
@@ -738,14 +738,14 @@ namespace Ifc.NET
 
                 //// -------------------------------------------------------------
                 //// 3. Möglichkeit
-                //Ifc.NET.Serialization.IfcXmlSerializer ifcXmlSerializer = new Ifc.NET.Serialization.IfcXmlSerializer(typeof(Ifc.NET.IfcXML));
+                //Ifc4.Serialization.IfcXmlSerializer ifcXmlSerializer = new Ifc4.Serialization.IfcXmlSerializer(typeof(Ifc4.IfcXML));
                 //ifcXmlSerializer.MessageLogged += ifcXmlSerializer_MessageLogged;
 
 
-                //Ifc.NET.IfcXML ifcXML = null;
+                //Ifc4.IfcXML ifcXML = null;
                 //using (System.IO.FileStream fileStream = new System.IO.FileStream(fullName, FileMode.Open, FileAccess.Read, FileShare.Read))
                 //{
-                //    ifcXML = ifcXmlSerializer.Deserialize(fileStream) as Ifc.NET.IfcXML;
+                //    ifcXML = ifcXmlSerializer.Deserialize(fileStream) as Ifc4.IfcXML;
                 //}
                 //IfcXmlDocument = ifcXML;
                 //this.FullName = fullName;
@@ -753,7 +753,7 @@ namespace Ifc.NET
                 //return ifcXML;
                 // -------------------------------------------------------------
                 //// 4. Möglichkeit
-                //Ifc.NET.IfcXML ifcXML = JV.XmlProcessing<Ifc.NET.IfcXML>.Read(fullName);
+                //Ifc4.IfcXML ifcXML = JV.XmlProcessing<Ifc4.IfcXML>.Read(fullName);
                 //IfcXmlDocument = ifcXML;
 
                 //this.FullName = fullName;
@@ -879,7 +879,7 @@ namespace Ifc.NET
                 //    writer.Close();
                 //}
 
-                Ifc.NET.Serialization.IfcXmlSerializer ifcXmlSerializer = new Ifc.NET.Serialization.IfcXmlSerializer(typeof(Ifc.NET.IfcXML));
+                Ifc4.Serialization.IfcXmlSerializer ifcXmlSerializer = new Ifc4.Serialization.IfcXmlSerializer(typeof(Ifc4.IfcXML));
                 ifcXmlSerializer.MessageLogged += ifcXmlSerializer_MessageLogged;
 
                 Workspace.CurrentWorkspace.RaiseMessageLogged(String.Format("Save document '{0}'...", FullName));
@@ -897,7 +897,7 @@ namespace Ifc.NET
 
                 Workspace.CurrentWorkspace.RaiseMessageLogged(String.Format("Document '{0}' saved.", FullName));
                 this.ResetDirty();
-                Ifc.NET.Workspace.CurrentWorkspace.RaiseDocumentSaved(this, new Ifc.NET.Workspace.DocumentSavedEventArgs(this));
+                Ifc4.Workspace.CurrentWorkspace.RaiseDocumentSaved(this, new Ifc4.Workspace.DocumentSavedEventArgs(this));
 
                 ReadChecksum(FullName);
 
@@ -916,7 +916,7 @@ namespace Ifc.NET
 
         }
 
-        internal void ifcXmlSerializer_MessageLogged(object sender, Ifc.NET.EventArgs.MessageLoggedEventArgs e)
+        internal void ifcXmlSerializer_MessageLogged(object sender, Ifc4.EventArgs.MessageLoggedEventArgs e)
         {
             System.Diagnostics.Debug.WriteLine(e.Message);
             Workspace.CurrentWorkspace.RaiseMessageLogged(e.Message);
@@ -949,12 +949,12 @@ namespace Ifc.NET
 
         public bool Validate(string fullName)
         {
-            Ifc.NET.Validation validation = new Ifc.NET.Validation();
+            Ifc4.Validation validation = new Ifc4.Validation();
             validation.Info += validation_Info;
 
             bool schemaValidationResult = validation.Validate(fullName, true);
             // custom validation
-            CustomValidation customValidation = new Ifc.NET.Document.CustomValidation(this.Document);
+            CustomValidation customValidation = new Ifc4.Document.CustomValidation(this.Document);
             bool customValidationResult = customValidation.Validate();
 
             return (schemaValidationResult && customValidationResult);
@@ -966,11 +966,11 @@ namespace Ifc.NET
         }
 
 
-        private Ifc.NET.EventArgs.MessageLoggedEventArgs m_MessageLoggedEventArgs;
+        private Ifc4.EventArgs.MessageLoggedEventArgs m_MessageLoggedEventArgs;
         private void WriteLog(string s)
         {
             if (m_MessageLoggedEventArgs == null)
-                m_MessageLoggedEventArgs = new Ifc.NET.EventArgs.MessageLoggedEventArgs();
+                m_MessageLoggedEventArgs = new Ifc4.EventArgs.MessageLoggedEventArgs();
 
             m_MessageLoggedEventArgs.AddMessage(s);
         }
@@ -980,12 +980,12 @@ namespace Ifc.NET
         internal class CustomValidation
         {
 
-            public CustomValidation(Ifc.NET.Document document)
+            public CustomValidation(Ifc4.Document document)
             {
                 Document = document;
             }
 
-            private Ifc.NET.Document Document { get; set; }
+            private Ifc4.Document Document { get; set; }
 
             private bool m_IfcSystemValidationInitialized = false;
             private bool m_FacilityValidationInitialized = false;
@@ -1018,10 +1018,10 @@ namespace Ifc.NET
 
                 StringBuilder sbAll = new StringBuilder();
 
-                var originalIfcSites = Document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcSite>().ToList();
-                var originalIfcBuildings = Document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcBuilding>().ToList();
-                var originalIfcBuildingStoreys = Document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcBuildingStorey>().ToList();
-                var originalIfcSpaces = Document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcSpace>().ToList();
+                var originalIfcSites = Document.IfcXmlDocument.Items.OfType<Ifc4.IfcSite>().ToList();
+                var originalIfcBuildings = Document.IfcXmlDocument.Items.OfType<Ifc4.IfcBuilding>().ToList();
+                var originalIfcBuildingStoreys = Document.IfcXmlDocument.Items.OfType<Ifc4.IfcBuildingStorey>().ToList();
+                var originalIfcSpaces = Document.IfcXmlDocument.Items.OfType<Ifc4.IfcSpace>().ToList();
 
                 Workspace.CurrentWorkspace.RaiseMessageLogged(this, String.Empty.PadRight(n, '*'));
                 Workspace.CurrentWorkspace.RaiseMessageLogged(this, String.Format("Räumliche Struktur Objekte"));
@@ -1191,7 +1191,7 @@ namespace Ifc.NET
             }
 
 
-            private void FacilitiesCounter(Ifc.NET.CcFacilities<CcFacility> facilities)
+            private void FacilitiesCounter(Ifc4.CcFacilities<CcFacility> facilities)
             {
                 foreach (var facility in facilities)
                 {
@@ -1205,7 +1205,7 @@ namespace Ifc.NET
                 }
             }
 
-            private void ValidateFacilities(Ifc.NET.CcFacilities<CcFacility> facilities, StringBuilder sb)
+            private void ValidateFacilities(Ifc4.CcFacilities<CcFacility> facilities, StringBuilder sb)
             {
                 int errorCount = 0;
 
@@ -1252,7 +1252,7 @@ namespace Ifc.NET
                 }
             }
 
-            private void ValidatePropertySet(Ifc.NET.CcFacility facility, StringBuilder messages)
+            private void ValidatePropertySet(Ifc4.CcFacility facility, StringBuilder messages)
             {
                 if (facility == null)
                     return;
@@ -1281,13 +1281,13 @@ namespace Ifc.NET
                     IEnumerable<IfcProperty> properties = null;
 
                     if (ifcPropertySetTemplate.HasPropertyTemplates == null)
-                        messages.Append(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("[PropertySetTemplate] für Objekt ${0}$ hat keine Property Templates!", facility.TempId)));
+                        messages.Append(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("[PropertySetTemplate] für Objekt ${0}$ hat keine Property Templates!", facility.TempId)));
                     else
                         propertyTemplates = ifcPropertySetTemplate.HasPropertyTemplates.Items;
 
                     if (ifcPropertySet.HasProperties == null)
                     {
-                        messages.Append(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("[PropertySet] für Objekt ${0}$ hat keine Properties!", facility.TempId)));
+                        messages.Append(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("[PropertySet] für Objekt ${0}$ hat keine Properties!", facility.TempId)));
                         m_ErrorCount++;
                     }
                     else
@@ -1297,13 +1297,13 @@ namespace Ifc.NET
                     {
                         foreach (var name in propertyTemplates.Select(item => item.Name).Except(properties.Select(item => item.Name)))
                         {
-                            messages.Append(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("Objekt ${0}$ - [PropertySet] Property '{1}' nicht in IfcPropertySet id='{2}' enthalten! ", facility.TempId, name, ifcPropertySet.Id)));
+                            messages.Append(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("Objekt ${0}$ - [PropertySet] Property '{1}' nicht in IfcPropertySet id='{2}' enthalten! ", facility.TempId, name, ifcPropertySet.Id)));
                             m_ErrorCount++;
                         }
 
                         foreach (var name in properties.Select(item => item.Name).Except(propertyTemplates.Select(item => item.Name)))
                         {
-                            messages.Append(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("Objekt ${0}$ -[PropertySetTemplate] Property '{1}' nicht in IfcPropertySetTemplate id='{2}' enthalten!", facility.TempId, name, ifcPropertySetTemplate.Id)));
+                            messages.Append(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("Objekt ${0}$ -[PropertySetTemplate] Property '{1}' nicht in IfcPropertySetTemplate id='{2}' enthalten!", facility.TempId, name, ifcPropertySetTemplate.Id)));
                             m_ErrorCount++;
                         }
 
@@ -1319,7 +1319,7 @@ namespace Ifc.NET
                                 {
                                     if (!GetEnumerationValues(ifcSimplePropertyTemplate, messages).Contains(ifcLabelWrapper.Value))
                                     {
-                                        messages.Append(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("IfcPropertySet id='{0}' Property '{1}' Enum Wert '{2}' ist ungültig! ", ifcSimplePropertyTemplate.Id, ifcSimplePropertyTemplate.Name, ifcLabelWrapper.Value)));
+                                        messages.Append(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("IfcPropertySet id='{0}' Property '{1}' Enum Wert '{2}' ist ungültig! ", ifcSimplePropertyTemplate.Id, ifcSimplePropertyTemplate.Name, ifcLabelWrapper.Value)));
                                         m_ErrorCount++;
                                     }
                                 }
@@ -1332,7 +1332,7 @@ namespace Ifc.NET
             }
 
             private Dictionary<string, List<string>> m_IfcSimplePropertyTemplateEnumerationValues = new Dictionary<string, List<string>>();
-            private List<string> GetEnumerationValues(Ifc.NET.IfcSimplePropertyTemplate ifcSimplePropertyTemplate, StringBuilder messages)
+            private List<string> GetEnumerationValues(Ifc4.IfcSimplePropertyTemplate ifcSimplePropertyTemplate, StringBuilder messages)
             {
                 if (ifcSimplePropertyTemplate == null)
                     return new List<string>();
@@ -1342,7 +1342,7 @@ namespace Ifc.NET
                         ifcSimplePropertyTemplate.Enumerators.EnumerationValues == null
                     )
                 {
-                    messages.Append(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("IfcSimplePropertyTemplate id='{0}' Property '{1}' hat keine enum Werte! ", ifcSimplePropertyTemplate.Id, ifcSimplePropertyTemplate.Name)));
+                    messages.Append(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("IfcSimplePropertyTemplate id='{0}' Property '{1}' hat keine enum Werte! ", ifcSimplePropertyTemplate.Id, ifcSimplePropertyTemplate.Name)));
                     return new List<string>();
                 }
 
@@ -1357,23 +1357,23 @@ namespace Ifc.NET
 
             }
 
-            private void ValidateAttributeWithValue(Ifc.NET.CcFacility facility, StringBuilder messages)
+            private void ValidateAttributeWithValue(Ifc4.CcFacility facility, StringBuilder messages)
             {
                 if (facility == null)
                     return;
 
-                foreach (Ifc.NET.CustomModel.CustomPropertyDescriptor customPropertyDescriptor in System.ComponentModel.TypeDescriptor.GetProperties(facility).OfType<Ifc.NET.CustomModel.CustomPropertyDescriptor>())
+                foreach (Ifc4.CustomModel.CustomPropertyDescriptor customPropertyDescriptor in System.ComponentModel.TypeDescriptor.GetProperties(facility).OfType<Ifc4.CustomModel.CustomPropertyDescriptor>())
                 {
                     var value = customPropertyDescriptor.GetValue(facility);
 
                     if (customPropertyDescriptor.LastValueError != null)
                     {
-                        messages.Append(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("{0}", customPropertyDescriptor.ToString("I"))));
+                        messages.Append(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("{0}", customPropertyDescriptor.ToString("I"))));
                         if (customPropertyDescriptor.LastValueError.InnerException != null)
                         {
                             messages.Append
                                 (
-                                    Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage
+                                    Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage
                                         (
                                             String.Format("{0} Objekt ${1}$",
                                                 customPropertyDescriptor.LastValueError.InnerException.Message,

@@ -11,7 +11,7 @@
 // 
 // Dieser Quellcode wurde automatisch generiert von xsd, Version=4.0.30319.17929.
 // 
-namespace Ifc.NET.Pset
+namespace Ifc4.Pset
 {
     using System.Xml.Serialization;
 

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 
-namespace Ifc.NET.Attributes
+namespace Ifc4.Attributes
 {
 
     [AttributeUsageAttribute(AttributeTargets.All)]
@@ -23,7 +23,7 @@ namespace Ifc.NET.Attributes
 
         private static string GetTextFromResource(string resourceSid, string defaultText)
         {
-            string displayName = Ifc.NET.Properties.Resources.ResourceManager.GetString(resourceSid, Ifc.NET.Properties.Resources.Culture);
+            string displayName = Ifc4.Properties.Resources.ResourceManager.GetString(resourceSid, Ifc4.Properties.Resources.Culture);
             if (!String.IsNullOrEmpty(displayName))
                 return displayName;
 
@@ -46,7 +46,7 @@ namespace Ifc.NET.Attributes
 
         private static string GetTextFromResource(string resourceSid, string defaultText)
         {
-            string displayName = Ifc.NET.Properties.Resources.ResourceManager.GetString(resourceSid, Ifc.NET.Properties.Resources.Culture);
+            string displayName = Ifc4.Properties.Resources.ResourceManager.GetString(resourceSid, Ifc4.Properties.Resources.Culture);
             if (!String.IsNullOrEmpty(displayName))
                 return displayName;
 
@@ -70,7 +70,7 @@ namespace Ifc.NET.Attributes
 
         private static string GetTextFromResource(string resourceSid, string defaultText)
         {
-            string displayName = Ifc.NET.Properties.Resources.ResourceManager.GetString(resourceSid, Ifc.NET.Properties.Resources.Culture);
+            string displayName = Ifc4.Properties.Resources.ResourceManager.GetString(resourceSid, Ifc4.Properties.Resources.Culture);
             if (!String.IsNullOrEmpty(displayName))
                 return displayName;
 

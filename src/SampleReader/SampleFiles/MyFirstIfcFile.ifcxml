@@ -5,9 +5,9 @@
     <time_stamp>2016-09-09T21:14:48.3269438+02:00</time_stamp>
     <author>Aengenvoort</author>
     <organization>eTASK Immobilien Software GmbH</organization>
-    <preprocessor_version>IFC.NET</preprocessor_version>
-    <originating_system>IFC.NET Sample File</originating_system>
-    <authorization>file created with IFC.NET</authorization>
+    <preprocessor_version>Ifc4</preprocessor_version>
+    <originating_system>Ifc4 Sample File</originating_system>
+    <authorization>file created with Ifc4</authorization>
     <documentation>ViewDefinition [notYetAssigned]</documentation>
   </header>
   <IfcProject id="i100" GlobalId="3W_wCy4R58hgkAO0WsiUkm">

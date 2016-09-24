@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 
-namespace Ifc.NET.CustomModel
+namespace Ifc4.CustomModel
 {
     class CustomLongNullableTypeConverter : System.ComponentModel.TypeConverter
     {
@@ -171,7 +171,7 @@ namespace Ifc.NET.CustomModel
                         return result;
                 }
 
-                return Ifc.NET.CustomModel.CustomPropertyDescriptor.CustomChangeType<T>(value, typeof(T));
+                return Ifc4.CustomModel.CustomPropertyDescriptor.CustomChangeType<T>(value, typeof(T));
                 //return CustomChangeType<T>(value, typeof(T));
                 //return null;
             }

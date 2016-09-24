@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public partial class IfcSite
     {
@@ -72,7 +72,7 @@ namespace Ifc.NET
 
         public override Type GetAddObjectType()
         {
-            return typeof(Ifc.NET.IfcBuilding);
+            return typeof(Ifc4.IfcBuilding);
         }
 
     }

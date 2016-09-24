@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     using System;
     using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace Ifc.NET
 
     public class Validation
     {
-        public delegate void InfoEventHandler(object sender, Ifc.NET.EventArgs.MessageLoggedEventArgs e);
+        public delegate void InfoEventHandler(object sender, Ifc4.EventArgs.MessageLoggedEventArgs e);
         public event InfoEventHandler Info;
 
         private int _ErrorCounter = 0;
@@ -57,7 +57,7 @@ namespace Ifc.NET
 
             // Datei kann nicht gefunden werden oder fehlt
             // versuche die Datei aus den Resourcen zu erstellen
-            fullName = GetIfcSchemaFromResource(String.Concat("Ifc.NET.Schema.", fileName), fileName);
+            fullName = GetIfcSchemaFromResource(String.Concat("Ifc4.Schema.", fileName), fileName);
             return fullName;
         }
 
@@ -116,11 +116,11 @@ namespace Ifc.NET
                 target.Write(buffer, 0, bytesRead);
         }
 
-        private Ifc.NET.EventArgs.MessageLoggedEventArgs m_MessageLoggedEventArgs;
+        private Ifc4.EventArgs.MessageLoggedEventArgs m_MessageLoggedEventArgs;
         private void WriteLog(string s)
         {
             if (m_MessageLoggedEventArgs == null)
-                m_MessageLoggedEventArgs = new Ifc.NET.EventArgs.MessageLoggedEventArgs();
+                m_MessageLoggedEventArgs = new Ifc4.EventArgs.MessageLoggedEventArgs();
 
             m_MessageLoggedEventArgs.AddMessage(s);
         }
@@ -136,7 +136,7 @@ namespace Ifc.NET
         //        Type tmp = type;
         //        while (tmp != null)
         //        {
-        //            if (tmp == typeof(Ifc.NET.IfcProduct))
+        //            if (tmp == typeof(Ifc4.IfcProduct))
         //            {
         //                if (!type.IsAbstract)
         //                    l.Add(type.FullName);
@@ -261,16 +261,16 @@ namespace Ifc.NET
 
                 if (Info != null)
                 {
-                    Ifc.NET.EventArgs.MessageLogType result;
+                    Ifc4.EventArgs.MessageLogType result;
                     if (_ErrorCounter > 0)
                     {
-                        result = Ifc.NET.EventArgs.MessageLogType.Error;
+                        result = Ifc4.EventArgs.MessageLogType.Error;
                     }
                     else
                     {
-                        result = Ifc.NET.EventArgs.MessageLogType.Valid;
+                        result = Ifc4.EventArgs.MessageLogType.Valid;
                         if (_WarningCounter > 0)
-                            result |= Ifc.NET.EventArgs.MessageLogType.Warning;
+                            result |= Ifc4.EventArgs.MessageLogType.Warning;
                     }
 
                     m_MessageLoggedEventArgs.Type = result;

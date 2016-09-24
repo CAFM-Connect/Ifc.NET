@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public partial class IfcSlab
     {
@@ -16,7 +16,7 @@ namespace Ifc.NET
 
         private double _Width;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_WIDTH_DISPLAYNAME", "Width")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_WIDTH_DISPLAYNAME", "Width")]
         public double Width // Qto_SlabBaseQuantities
         {
             get { return _Width; }
@@ -34,7 +34,7 @@ namespace Ifc.NET
 
         private double _Length;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_LENGTH_DISPLAYNAME", "Length")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_LENGTH_DISPLAYNAME", "Length")]
         public double Length // Qto_SlabBaseQuantities
         {
             get { return _Length; }
@@ -52,7 +52,7 @@ namespace Ifc.NET
 
         private double _Depth;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_DEPTH_DISPLAYNAME", "Depth")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_DEPTH_DISPLAYNAME", "Depth")]
         public double Depth // Qto_SlabBaseQuantities
         {
             get { return _Depth; }
@@ -70,7 +70,7 @@ namespace Ifc.NET
 
         private double _Perimeter;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_PERIMETER_DISPLAYNAME", "Perimeter")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_PERIMETER_DISPLAYNAME", "Perimeter")]
         public double Perimeter // Qto_SlabBaseQuantities
         {
             get { return _Perimeter; }
@@ -89,7 +89,7 @@ namespace Ifc.NET
         private double _GrossArea;
         [System.ComponentModel.Browsable(false)]
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_GROSSAREA_DISPLAYNAME", "Bruttogrundfläche [m²]")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_GROSSAREA_DISPLAYNAME", "Bruttogrundfläche [m²]")]
         public double GrossArea // Qto_SlabBaseQuantities
         {
             get { return _GrossArea; }
@@ -107,7 +107,7 @@ namespace Ifc.NET
 
         private double _NetArea;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_NETAREA_DISPLAYNAME", "Nettogrundfläche [m²]")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_NETAREA_DISPLAYNAME", "Nettogrundfläche [m²]")]
         public double NetArea // Qto_SlabBaseQuantities
         {
             get { return _NetArea; }
@@ -125,7 +125,7 @@ namespace Ifc.NET
 
         private double _GrossVolume;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_GROSSVOLUME_DISPLAYNAME", "GrossVolume")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_GROSSVOLUME_DISPLAYNAME", "GrossVolume")]
         public double GrossVolume // Qto_SlabBaseQuantities
         {
             get { return _GrossVolume; }
@@ -143,7 +143,7 @@ namespace Ifc.NET
 
         private double _NetVolume;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_NETVOLUME_DISPLAYNAME", "NetVolume")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_NETVOLUME_DISPLAYNAME", "NetVolume")]
         public double NetVolume // Qto_SlabBaseQuantities
         {
             get { return _NetVolume; }
@@ -161,7 +161,7 @@ namespace Ifc.NET
 
         private double _GrossWeight;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_GROSSWEIGHT_DISPLAYNAME", "GrossWeight")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_GROSSWEIGHT_DISPLAYNAME", "GrossWeight")]
         public double GrossWeight // Qto_SlabBaseQuantities
         {
             get { return _GrossWeight; }
@@ -179,7 +179,7 @@ namespace Ifc.NET
 
         private double _NetWeight;
         [System.Xml.Serialization.XmlIgnore()]
-        [Ifc.NET.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_NETWEIGHT_DISPLAYNAME", "NetWeight")]
+        [Ifc4.Attributes.CustomDisplayNameAttribute("CLASS_IFCSLAB_PROPERTY_NETWEIGHT_DISPLAYNAME", "NetWeight")]
         public double NetWeight // Qto_SlabBaseQuantities
         {
             get { return _NetWeight; }
@@ -239,7 +239,7 @@ namespace Ifc.NET
 
         public void InitializeAdditionalProperties()
         {
-            Ifc.NET.IfcElementQuantity ifcElementQuantity = this.GetIfcElementQuantityFromRelatingPropertyDefinition();
+            Ifc4.IfcElementQuantity ifcElementQuantity = this.GetIfcElementQuantityFromRelatingPropertyDefinition();
             IEnumerable<IfcQuantityLength> ifcQuantityLengthCollection = this.Document.IfcXmlDocument.Items.OfType<IfcQuantityLength>().ToList();
             IEnumerable<IfcQuantityArea> ifcQuantityAreaCollection = this.Document.IfcXmlDocument.Items.OfType<IfcQuantityArea>().ToList();
             IEnumerable<IfcQuantityVolume> ifcQuantityVolumeCollection = this.Document.IfcXmlDocument.Items.OfType<IfcQuantityVolume>().ToList();
@@ -319,7 +319,7 @@ namespace Ifc.NET
                     };
                     m_IfcQuantityLengthCollection.Add(ifcQuantityLength);
                     this.Document.IfcXmlDocument.Items.Add(ifcQuantityLength);
-                    ifcElementQuantity.Quantities.Items.Add(new Ifc.NET.IfcQuantityLength() { Ref = ifcQuantityLength.Id });
+                    ifcElementQuantity.Quantities.Items.Add(new Ifc4.IfcQuantityLength() { Ref = ifcQuantityLength.Id });
                 }
                 else
                 {
@@ -350,7 +350,7 @@ namespace Ifc.NET
                     };
                     m_IfcQuantityAreaCollection.Add(ifcQuantityArea);
                     this.Document.IfcXmlDocument.Items.Add(ifcQuantityArea);
-                    ifcElementQuantity.Quantities.Items.Add(new Ifc.NET.IfcQuantityArea() { Ref = ifcQuantityArea.Id });
+                    ifcElementQuantity.Quantities.Items.Add(new Ifc4.IfcQuantityArea() { Ref = ifcQuantityArea.Id });
                 }
                 else
                 {
@@ -381,7 +381,7 @@ namespace Ifc.NET
                     };
                     m_IfcQuantityVolumeCollection.Add(ifcQuantityVolume);
                     this.Document.IfcXmlDocument.Items.Add(ifcQuantityVolume);
-                    ifcElementQuantity.Quantities.Items.Add(new Ifc.NET.IfcQuantityVolume() { Ref = ifcQuantityVolume.Id });
+                    ifcElementQuantity.Quantities.Items.Add(new Ifc4.IfcQuantityVolume() { Ref = ifcQuantityVolume.Id });
                 }
                 else
                 {
@@ -412,7 +412,7 @@ namespace Ifc.NET
                     };
                     m_IfcQuantityWeightCollection.Add(ifcQuantityWeight);
                     this.Document.IfcXmlDocument.Items.Add(ifcQuantityWeight);
-                    ifcElementQuantity.Quantities.Items.Add(new Ifc.NET.IfcQuantityWeight() { Ref = ifcQuantityWeight.Id });
+                    ifcElementQuantity.Quantities.Items.Add(new Ifc4.IfcQuantityWeight() { Ref = ifcQuantityWeight.Id });
                 }
                 else
                 {
@@ -429,11 +429,11 @@ namespace Ifc.NET
                 ifcElementQuantity.Name = "Qto_SlabBaseQuantities";
                 this.Document.IfcXmlDocument.Items.Add(ifcElementQuantity);
 
-                Ifc.NET.IfcRelDefinesByProperties ifcRelDefinesByProperties = new Ifc.NET.IfcRelDefinesByProperties();
+                Ifc4.IfcRelDefinesByProperties ifcRelDefinesByProperties = new Ifc4.IfcRelDefinesByProperties();
                 ifcRelDefinesByProperties.Id = this.Document.GetNextSid();
                 ifcRelDefinesByProperties.RelatedObjects = this.RefInstance();
-                ifcRelDefinesByProperties.RelatingPropertyDefinition = new Ifc.NET.IfcRelDefinesByPropertiesRelatingPropertyDefinition();
-                ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = new Ifc.NET.IfcElementQuantity() { Ref = ifcElementQuantity.Id };
+                ifcRelDefinesByProperties.RelatingPropertyDefinition = new Ifc4.IfcRelDefinesByPropertiesRelatingPropertyDefinition();
+                ifcRelDefinesByProperties.RelatingPropertyDefinition.Item = new Ifc4.IfcElementQuantity() { Ref = ifcElementQuantity.Id };
                 this.Document.IfcXmlDocument.Items.Add(ifcRelDefinesByProperties);
             }
 

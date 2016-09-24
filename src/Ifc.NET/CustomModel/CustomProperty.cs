@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ifc.NET.CustomModel
+namespace Ifc4.CustomModel
 {
 
     public class CustomPropertyStandardValue

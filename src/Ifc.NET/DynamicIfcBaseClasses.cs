@@ -5,11 +5,11 @@ using System.Linq.Expressions;
 using System.Text;
 using System.ComponentModel;
 using System.Linq.Expressions;
-using Ifc.NET.Interfaces;
-using Ifc.NET.Extensions;
+using Ifc4.Interfaces;
+using Ifc4.Extensions;
 
 
-namespace Ifc.NET.Interfaces
+namespace Ifc4.Interfaces
 {
     public interface IObject
     {
@@ -43,7 +43,7 @@ namespace Ifc.NET.Interfaces
 
 }
 
-namespace Ifc.NET
+namespace Ifc4
 {
 
     //public class BaseObjects_old<T> : BaseObject, IBaseObjects_old<T> where T : BaseObject
@@ -86,9 +86,9 @@ namespace Ifc.NET
     //        //throw new NotImplementedException();
 
     //        T instance = Activator.CreateInstance<T>() as T;
-    //        ((Ifc.NET.Interfaces.IBaseObjects<T>)this).Add(instance);
+    //        ((Ifc4.Interfaces.IBaseObjects<T>)this).Add(instance);
     //        instance.Parent = this;
-    //        Ifc.NET.Document document = this.GetParent<Ifc.NET.Document>();
+    //        Ifc4.Document document = this.GetParent<Ifc4.Document>();
     //        if (document != null)
     //        {
     //            Entity entity = instance as Entity;
@@ -413,9 +413,9 @@ namespace Ifc.NET
             //throw new NotImplementedException();
 
             T instance = Activator.CreateInstance<T>() as T;
-            ((Ifc.NET.Interfaces.IBaseObjects<T>)this).Add(instance);
+            ((Ifc4.Interfaces.IBaseObjects<T>)this).Add(instance);
             instance.Parent = this;
-            Ifc.NET.Document document = this.GetParent<Ifc.NET.Document>();
+            Ifc4.Document document = this.GetParent<Ifc4.Document>();
             if (document != null)
             {
                 Entity entity = instance as Entity;
@@ -832,7 +832,7 @@ namespace Ifc.NET
                 return null;
 
             if(m_ValidationProperties == null)
-                m_ValidationProperties = new Dictionary<string,List<Ifc.NET.ValidationProperty>>();
+                m_ValidationProperties = new Dictionary<string,List<Ifc4.ValidationProperty>>();
 
 
             string key = this.GetType().Name;
@@ -857,7 +857,7 @@ namespace Ifc.NET
         {
             errorCounter = 0;
 
-            var objectCustomDisplayNameAttribute = this.GetType().GetCustomAttributes(typeof(Ifc.NET.Attributes.CustomDisplayNameAttribute), false).SingleOrDefault() as Ifc.NET.Attributes.CustomDisplayNameAttribute;
+            var objectCustomDisplayNameAttribute = this.GetType().GetCustomAttributes(typeof(Ifc4.Attributes.CustomDisplayNameAttribute), false).SingleOrDefault() as Ifc4.Attributes.CustomDisplayNameAttribute;
             string objectDisplayName;
             if (objectCustomDisplayNameAttribute != null)
                 objectDisplayName = objectCustomDisplayNameAttribute.DisplayName;
@@ -961,7 +961,7 @@ namespace Ifc.NET
                         else
                             tempId = this.TempId;
 
-                        messages.Append(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("Feld {0} - [{1}] nicht gefüllt! ${2}$ ", objectDisplayName, propertyDisplayName, tempId)));
+                        messages.Append(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(String.Format("Feld {0} - [{1}] nicht gefüllt! ${2}$ ", objectDisplayName, propertyDisplayName, tempId)));
 
                         errorCounter++;
                     }
@@ -990,7 +990,7 @@ namespace Ifc.NET
         {
             if (propertyInfo != null)
             {
-                var propertyCustomDisplayNameAttribute = propertyInfo.GetCustomAttributes(typeof(Ifc.NET.Attributes.CustomDisplayNameAttribute), false).SingleOrDefault() as Ifc.NET.Attributes.CustomDisplayNameAttribute;
+                var propertyCustomDisplayNameAttribute = propertyInfo.GetCustomAttributes(typeof(Ifc4.Attributes.CustomDisplayNameAttribute), false).SingleOrDefault() as Ifc4.Attributes.CustomDisplayNameAttribute;
                 if (propertyCustomDisplayNameAttribute != null)
                     return propertyCustomDisplayNameAttribute.DisplayName;
             }
@@ -1216,9 +1216,9 @@ namespace Ifc.NET
                 //Siehe niteoad
 
 
-            if (this is Ifc.NET.Entity)
+            if (this is Ifc4.Entity)
             {
-                string sid = ((Ifc.NET.Entity)this).Id;
+                string sid = ((Ifc4.Entity)this).Id;
 
                 List<Entity> removeEntities = new List<Entity>();
 
@@ -1340,7 +1340,7 @@ namespace Ifc.NET
                     }
                 }
                 // ------------------------------------------------------------------------------
-                removeEntities.Add(((Ifc.NET.Entity)this));
+                removeEntities.Add(((Ifc4.Entity)this));
                 this.Document.IfcXmlDocument.Items.RemoveAll(item => removeEntities.Contains(item));
                 // ------------------------------------------------------------------------------
             }

@@ -4,7 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 
 
-namespace Ifc.NET
+namespace Ifc4
 {
 
     public class Workspace : BaseObject
@@ -46,7 +46,7 @@ namespace Ifc.NET
         public delegate void PropertySelectedEventHandler(object sender, PropertySelectedEventArgs e);
         public event PropertySelectedEventHandler PropertySelected;
 
-        public delegate void MessageLoggedEventHandler(object sender, Ifc.NET.EventArgs.MessageLoggedEventArgs e);
+        public delegate void MessageLoggedEventHandler(object sender, Ifc4.EventArgs.MessageLoggedEventArgs e);
         public event MessageLoggedEventHandler MessageLogged; 
 
         public delegate void MessagesClearedEventHandler(object sender, MessageClearedEventArgs e);
@@ -119,7 +119,7 @@ namespace Ifc.NET
                 Workspace.CurrentWorkspace.AfterCommandExecuted(sender, new AfterCommandExecutedEventArgs(command));
         }
 
-        //public void RaiseMessageLogged(object sender, Ifc.NET.EventArgs.MessageLoggedEventArgs e)
+        //public void RaiseMessageLogged(object sender, Ifc4.EventArgs.MessageLoggedEventArgs e)
         //{
         //    RaiseMessageLogged(sender, e.Message, String.Empty, false);
         //}
@@ -158,9 +158,9 @@ namespace Ifc.NET
             if (CurrentWorkspace.MessageLogged != null)
             {
                 if(addDateTime)
-                    CurrentWorkspace.MessageLogged(sender, new Ifc.NET.EventArgs.MessageLoggedEventArgs(Ifc.NET.EventArgs.MessageLoggedEventArgs.FormatMessage(message), EventArgs.MessageLogType.Info, doEvents, false));
+                    CurrentWorkspace.MessageLogged(sender, new Ifc4.EventArgs.MessageLoggedEventArgs(Ifc4.EventArgs.MessageLoggedEventArgs.FormatMessage(message), EventArgs.MessageLogType.Info, doEvents, false));
                 else
-                    CurrentWorkspace.MessageLogged(sender, new Ifc.NET.EventArgs.MessageLoggedEventArgs(message, EventArgs.MessageLogType.Info, doEvents, false));
+                    CurrentWorkspace.MessageLogged(sender, new Ifc4.EventArgs.MessageLoggedEventArgs(message, EventArgs.MessageLogType.Info, doEvents, false));
             }
         }
 
@@ -170,7 +170,7 @@ namespace Ifc.NET
             if (exc != null || Logging)
             {
                 if (CurrentWorkspace.MessageLogged != null)
-                    CurrentWorkspace.MessageLogged(sender, new Ifc.NET.EventArgs.MessageLoggedEventArgs(exc));
+                    CurrentWorkspace.MessageLogged(sender, new Ifc4.EventArgs.MessageLoggedEventArgs(exc));
             }
         }
 
@@ -180,7 +180,7 @@ namespace Ifc.NET
             if (exc != null || Logging)
             {
                 if (CurrentWorkspace.MessageLogged != null)
-                    CurrentWorkspace.MessageLogged(this, new Ifc.NET.EventArgs.MessageLoggedEventArgs(exc));
+                    CurrentWorkspace.MessageLogged(this, new Ifc4.EventArgs.MessageLoggedEventArgs(exc));
             }
         }
 
@@ -345,7 +345,7 @@ namespace Ifc.NET
             get { return Documents.ActiveDocument; }
         }
 
-        public Document OpenDocument(string fullName, Ifc.NET.Document.IfcFileType ifcFileType = Ifc.NET.Document.IfcFileType.IfcXml)
+        public Document OpenDocument(string fullName, Ifc4.Document.IfcFileType ifcFileType = Ifc4.Document.IfcFileType.IfcXml)
         {
             return Documents.Open(fullName, ifcFileType);
         }
@@ -355,11 +355,11 @@ namespace Ifc.NET
             return Documents.CreateDocument(fullName, overwriteIfExists);
         }
 
-        public Ifc.NET.IfcXML CreateIfcXmlFromStream(Stream stream)
+        public Ifc4.IfcXML CreateIfcXmlFromStream(Stream stream)
         {
             try
             {
-                Ifc.NET.IfcXML externalIfcXML = JV.XmlProcessing<Ifc.NET.IfcXML>.Read(stream);
+                Ifc4.IfcXML externalIfcXML = JV.XmlProcessing<Ifc4.IfcXML>.Read(stream);
                 return externalIfcXML;
             }
             catch (Exception exc)
@@ -517,8 +517,8 @@ namespace Ifc.NET
                 // bool validate = this.Validate(f0_Org);
                 System.IO.File.Copy(f0_Org, f0, true);
 
-                Ifc.NET.Document document = Ifc.NET.Workspace.CurrentWorkspace.OpenDocument(f0);
-                Ifc.NET.IfcXML ifcXML = document.IfcXmlDocument;
+                Ifc4.Document document = Ifc4.Workspace.CurrentWorkspace.OpenDocument(f0);
+                Ifc4.IfcXML ifcXML = document.IfcXmlDocument;
 
                 document.SaveAs(f0 + ".0");
 
@@ -556,10 +556,10 @@ namespace Ifc.NET
         {
 
             string schemaFullName;
-            Ifc.NET.Document document;
+            Ifc4.Document document;
 
             // create new ifc file
-            document = Ifc.NET.Workspace.CurrentWorkspace.CreateDocument(ifcFullName, true);
+            document = Ifc4.Workspace.CurrentWorkspace.CreateDocument(ifcFullName, true);
             document.MessageLogged += document_MessageLogged;
 
             // add project info
@@ -568,10 +568,10 @@ namespace Ifc.NET
             document.Project.LongName = "Cologne, Ehrenfelder Business Park";
             document.Project.Description = "Ehrenfelder Business Park";
 
-            Ifc.NET.IfcSite site;
-            Ifc.NET.IfcBuilding building;
-            Ifc.NET.IfcBuildingStorey buildingStorey;
-            Ifc.NET.IfcSpace space;
+            Ifc4.IfcSite site;
+            Ifc4.IfcBuilding building;
+            Ifc4.IfcBuildingStorey buildingStorey;
+            Ifc4.IfcSpace space;
 
             // --------------------------------------------------------------------------
             site = document.Project.Sites.AddNewSite();
@@ -746,7 +746,7 @@ namespace Ifc.NET
         public bool CreateTestIfc(string ifcFullName)
         {
 
-            Ifc.NET.Document document = Ifc.NET.Workspace.CurrentWorkspace.CreateDocument(ifcFullName, true);
+            Ifc4.Document document = Ifc4.Workspace.CurrentWorkspace.CreateDocument(ifcFullName, true);
             document.MessageLogged += document_MessageLogged;
 
             if (String.IsNullOrEmpty(ifcFullName))
@@ -898,15 +898,15 @@ namespace Ifc.NET
 
             };
 
-            //Ifc.NET.IfcClassification ifcClassification = (Ifc.NET.IfcClassification)document.Classifications.AddNew();
-            Ifc.NET.IfcClassification ifcClassification = document.AddNew<IfcClassification>();
+            //Ifc4.IfcClassification ifcClassification = (Ifc4.IfcClassification)document.Classifications.AddNew();
+            Ifc4.IfcClassification ifcClassification = document.AddNew<IfcClassification>();
             //ifcClassification.id = document.GetNextSid();
             ifcClassification.Edition = "Version 1.06";
             ifcClassification.EditionDate = "2014-08-14T09:39:57";
             ifcClassification.Name = "CAFM-Connect Katalog 2014";
 
-            // Ifc.NET.IfcRelAssociatesClassification ifcRelAssociatesClassification = (Ifc.NET.IfcRelAssociatesClassification)document.RelAssociatesClassifications.AddNew();
-            Ifc.NET.IfcRelAssociatesClassification ifcRelAssociatesClassification = document.AddNew<IfcRelAssociatesClassification>();
+            // Ifc4.IfcRelAssociatesClassification ifcRelAssociatesClassification = (Ifc4.IfcRelAssociatesClassification)document.RelAssociatesClassifications.AddNew();
+            Ifc4.IfcRelAssociatesClassification ifcRelAssociatesClassification = document.AddNew<IfcRelAssociatesClassification>();
             //ifcRelAssociatesClassification.id = document.GetNextSid();
             ifcRelAssociatesClassification.GlobalId = "1XiFKGEHP6PxQPxDU2E3PA";
             ifcRelAssociatesClassification.Name = "CAFM-Connect Katalog 2014 zu IfcClassification";
@@ -914,7 +914,7 @@ namespace Ifc.NET
             {
                 Items = new List<IfcRoot>()
                 {
-                    new Ifc.NET.IfcProject(){@Ref = document.Project.Id}
+                    new Ifc4.IfcProject(){@Ref = document.Project.Id}
                 }
             };
 
@@ -961,7 +961,7 @@ namespace Ifc.NET
 
         }
 
-        void document_MessageLogged(object sender, Ifc.NET.EventArgs.MessageLoggedEventArgs e)
+        void document_MessageLogged(object sender, Ifc4.EventArgs.MessageLoggedEventArgs e)
         {
             RaiseMessageLogged(sender, e.Message);
         }

@@ -12,7 +12,7 @@ using System.Globalization;
 using System.Threading;
 
 
-namespace Ifc.NET.CustomModel
+namespace Ifc4.CustomModel
 {
 
 	public class CustomAssembly

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET.Pset
+namespace Ifc4.Pset
 {
     public class Reader
     {

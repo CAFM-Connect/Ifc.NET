@@ -10,7 +10,7 @@ using System.IO;
 
 
 
-namespace Ifc.NET.Serialization
+namespace Ifc4.Serialization
 {
 
     // ifcXML4.xsd
@@ -82,7 +82,7 @@ namespace Ifc.NET.Serialization
     public class IfcXmlSerializer : System.Xml.Serialization.XmlSerializer
     {
         // public delegate void MessageLoggedEventHandler(object sender, MessageLoggedEventArgs e);
-        public event Ifc.NET.Workspace.MessageLoggedEventHandler MessageLogged;
+        public event Ifc4.Workspace.MessageLoggedEventHandler MessageLogged;
 
         public IfcXmlSerializer(Type type) : base(type)
         {
@@ -275,7 +275,7 @@ namespace Ifc.NET.Serialization
 
                     using (System.Xml.XmlWriter xmlWriter = System.Xml.XmlWriter.Create(memoryStream, xmlWriterSettings))
                     {
-                        Ifc.NET.Workspace.CurrentWorkspace.RaiseMessageLogged("Serialize...");
+                        Ifc4.Workspace.CurrentWorkspace.RaiseMessageLogged("Serialize...");
                         if (namespaces.Count > 0)
                             this.Serialize(xmlWriter, t.GetType(), namespaces);
                         else
@@ -297,7 +297,7 @@ namespace Ifc.NET.Serialization
             }
             catch (Exception exc)
             {
-                Ifc.NET.Workspace.CurrentWorkspace.RaiseMessageLogged(this, exc);
+                Ifc4.Workspace.CurrentWorkspace.RaiseMessageLogged(this, exc);
                 return String.Empty;
             }
         }
@@ -496,7 +496,7 @@ namespace JV
                     System.Diagnostics.Debug.WriteLine(innerException.Message);
                     innerException = innerException.InnerException;
                 }
-                Ifc.NET.Workspace.CurrentWorkspace.RaiseMessageLogged(exc);
+                Ifc4.Workspace.CurrentWorkspace.RaiseMessageLogged(exc);
                 throw new Exception(String.Format("Cannot deserialize file '{0}' to '{1}'.", fullName, t.GetType().FullName), exc);
             }
         }

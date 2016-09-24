@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public partial class IfcProject
     {
@@ -11,23 +11,23 @@ namespace Ifc.NET
         {
         }
 
-        private CcIfcSites<Ifc.NET.IfcSite> m_Sites;
+        private CcIfcSites<Ifc4.IfcSite> m_Sites;
         [System.Xml.Serialization.XmlIgnore]
-        public CcIfcSites<Ifc.NET.IfcSite> Sites
+        public CcIfcSites<Ifc4.IfcSite> Sites
         {
             get
             {
                 if (m_Sites == null)
                 {
-                    m_Sites = new CcIfcSites<Ifc.NET.IfcSite>(this);
+                    m_Sites = new CcIfcSites<Ifc4.IfcSite>(this);
                 }
                 return m_Sites;
             }
         }
 
-        private CcFacilities<Ifc.NET.CcFacility> m_Facilities;
+        private CcFacilities<Ifc4.CcFacility> m_Facilities;
         [System.Xml.Serialization.XmlIgnore]
-        public CcFacilities<Ifc.NET.CcFacility> Facilities
+        public CcFacilities<Ifc4.CcFacility> Facilities
         {
             get
             {

@@ -12,7 +12,7 @@ namespace SampleIfcReader
         [STAThreadAttribute()]
         static void Main(string[] args)
         {
-            Ifc.NET.Document ifcDocument;
+            Ifc4.Document ifcDocument;
 
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.Filter = "Ifc xml files (*.ifcxml)|*.ifcxml|All files (*.*)|*.*";
@@ -22,7 +22,7 @@ namespace SampleIfcReader
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-                ifcDocument = Ifc.NET.Workspace.CurrentWorkspace.OpenDocument(dlg.FileName);
+                ifcDocument = Ifc4.Workspace.CurrentWorkspace.OpenDocument(dlg.FileName);
             }
         }
     }

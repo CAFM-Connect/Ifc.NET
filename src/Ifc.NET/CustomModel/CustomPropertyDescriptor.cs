@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ifc.NET.CustomModel
+namespace Ifc4.CustomModel
 {
     public class CustomPropertyDescriptor : System.ComponentModel.PropertyDescriptor
     {
@@ -73,12 +73,12 @@ namespace Ifc.NET.CustomModel
         {
             m_LastValueError = null;
 
-            System.Reflection.MethodInfo methodInfo = typeof(Ifc.NET.CcFacility).GetMethod("GetValue");
+            System.Reflection.MethodInfo methodInfo = typeof(Ifc4.CcFacility).GetMethod("GetValue");
             System.Reflection.MethodInfo generic = methodInfo.MakeGenericMethod(this.PropertyType);
 
             try
             {
-                object value = generic.Invoke(((Ifc.NET.CcFacility)component), new object[] { this });
+                object value = generic.Invoke(((Ifc4.CcFacility)component), new object[] { this });
                 return value;
             }
             catch (Exception exc)
@@ -92,13 +92,13 @@ namespace Ifc.NET.CustomModel
         {
             m_LastValueError = null;
 
-            System.Reflection.MethodInfo methodInfo = typeof(Ifc.NET.CcFacility).GetMethod("SetValue");
+            System.Reflection.MethodInfo methodInfo = typeof(Ifc4.CcFacility).GetMethod("SetValue");
             System.Reflection.MethodInfo generic = methodInfo.MakeGenericMethod(this.PropertyType);
-            generic.Invoke(((Ifc.NET.CcFacility)component), new object[] { this, value });
+            generic.Invoke(((Ifc4.CcFacility)component), new object[] { this, value });
 
             try
             {
-                generic.Invoke(((Ifc.NET.CcFacility)component), new object[] { this, value });
+                generic.Invoke(((Ifc4.CcFacility)component), new object[] { this, value });
             }
             catch (Exception exc)
             {
@@ -259,11 +259,11 @@ namespace Ifc.NET.CustomModel
         //public delegate void AfterPropertyValueChangedEventHandler(object sender, PropertyEventHandler e);
         //public event AfterPropertyValueChangedEventHandler AfterPropertyValueChanged;
 
-        private Ifc.NET.CcFacility m_Facility = null;
+        private Ifc4.CcFacility m_Facility = null;
         internal CustomTypeDescriptorBag(System.ComponentModel.ICustomTypeDescriptor parent, object instance)
             : base(parent)
         {
-            m_Facility = (Ifc.NET.CcFacility)instance;
+            m_Facility = (Ifc4.CcFacility)instance;
         }
 
         public override System.ComponentModel.PropertyDescriptorCollection GetProperties(Attribute[] attributes)
@@ -271,31 +271,31 @@ namespace Ifc.NET.CustomModel
             return GetProperties();
         }
 
-        private List<CustomModel.CustomPropertyDescriptor> GetRuntimeProperties(Ifc.NET.BaseObject baseObject)
+        private List<CustomModel.CustomPropertyDescriptor> GetRuntimeProperties(Ifc4.BaseObject baseObject)
         {
             CustomModel.CustomPropertyDescriptor cpd;
             CustomModel.CustomProperty customProperty;
             List<CustomModel.CustomPropertyDescriptor> propertyDescriptorCollection = new List<CustomModel.CustomPropertyDescriptor>();
 
-            Ifc.NET.CcFacility facility = baseObject as Ifc.NET.CcFacility;
+            Ifc4.CcFacility facility = baseObject as Ifc4.CcFacility;
             if (facility == null || String.IsNullOrEmpty(facility.ObjectTypeId))
                 return propertyDescriptorCollection;
 
-            Ifc.NET.Document document = baseObject.GetParent<Ifc.NET.Document>();
+            Ifc4.Document document = baseObject.GetParent<Ifc4.Document>();
 
-            IEnumerable<Ifc.NET.IfcPropertySetTemplate> ifcPropertySetTemplateCollection = document.GetIfcPropertySetTemplateCollection(facility);
+            IEnumerable<Ifc4.IfcPropertySetTemplate> ifcPropertySetTemplateCollection = document.GetIfcPropertySetTemplateCollection(facility);
 
             ////string objectTypeId = null;
             ////if (facility != null && !String.IsNullOrEmpty(facility.ObjectTypeId))
             ////{
             ////    objectTypeId = facility.ObjectTypeId;
-            ////    IEnumerable<Ifc.NET.IfcRelAssociatesClassification> ifcRelAssociatesClassificationCollection = document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcRelAssociatesClassification>();
+            ////    IEnumerable<Ifc4.IfcRelAssociatesClassification> ifcRelAssociatesClassificationCollection = document.IfcXmlDocument.Items.OfType<Ifc4.IfcRelAssociatesClassification>();
             ////    IEnumerable<string> relatedObjectsRefs = from ifcRelAssociatesClassification in ifcRelAssociatesClassificationCollection
             ////                                             from relatedObject in ifcRelAssociatesClassification.RelatedObjects.Items
             ////                                             where ifcRelAssociatesClassification.RelatingClassification.Item != null && ifcRelAssociatesClassification.RelatingClassification.Item.Ref == objectTypeId
             ////                                             select relatedObject.Ref;
 
-            ////    ifcPropertySetTemplateCollection = document.IfcXmlDocument.Items.OfType<Ifc.NET.IfcPropertySetTemplate>().Where(item => relatedObjectsRefs.Contains(item.Id));
+            ////    ifcPropertySetTemplateCollection = document.IfcXmlDocument.Items.OfType<Ifc4.IfcPropertySetTemplate>().Where(item => relatedObjectsRefs.Contains(item.Id));
             ////}
 
             if(ifcPropertySetTemplateCollection == null)
@@ -306,7 +306,7 @@ namespace Ifc.NET.CustomModel
             {
                 foreach (var propertyTemplate in ifcPropertySetTemplate.HasPropertyTemplates.Items)
                 {
-                    Ifc.NET.IfcSimplePropertyTemplate simplePropertyTemplate = propertyTemplate as Ifc.NET.IfcSimplePropertyTemplate;
+                    Ifc4.IfcSimplePropertyTemplate simplePropertyTemplate = propertyTemplate as Ifc4.IfcSimplePropertyTemplate;
 
                     if (simplePropertyTemplate == null)
                         continue;
@@ -317,9 +317,9 @@ namespace Ifc.NET.CustomModel
                     string unit = null;
                     if (simplePropertyTemplate.PrimaryUnit != null)
                     {
-                        if (simplePropertyTemplate.PrimaryUnit.Item is Ifc.NET.IfcSIUnit)
+                        if (simplePropertyTemplate.PrimaryUnit.Item is Ifc4.IfcSIUnit)
                         {
-                            Ifc.NET.IfcSIUnit ifcSIUnit = GetUnit((Ifc.NET.IfcSIUnit)simplePropertyTemplate.PrimaryUnit.Item);    
+                            Ifc4.IfcSIUnit ifcSIUnit = GetUnit((Ifc4.IfcSIUnit)simplePropertyTemplate.PrimaryUnit.Item);    
                             if (ifcSIUnit.NameSpecified)
                             {
                                 if (ifcSIUnit.PrefixSpecified)
@@ -356,9 +356,9 @@ namespace Ifc.NET.CustomModel
                                 }
                             }
                         }
-                        else if (simplePropertyTemplate.PrimaryUnit.Item is Ifc.NET.IfcDerivedUnit)
+                        else if (simplePropertyTemplate.PrimaryUnit.Item is Ifc4.IfcDerivedUnit)
                         {
-                            Ifc.NET.IfcDerivedUnit ifcDerivedUnit = GetUnit<Ifc.NET.IfcDerivedUnit>((Ifc.NET.IfcDerivedUnit)simplePropertyTemplate.PrimaryUnit.Item);    
+                            Ifc4.IfcDerivedUnit ifcDerivedUnit = GetUnit<Ifc4.IfcDerivedUnit>((Ifc4.IfcDerivedUnit)simplePropertyTemplate.PrimaryUnit.Item);    
                             if (ifcDerivedUnit.UnitTypeSpecified)
                             {
                                 if (ifcDerivedUnit.UnitType == IfcDerivedUnitEnum.Heatfluxdensityunit)
@@ -389,7 +389,7 @@ namespace Ifc.NET.CustomModel
 
                     string primaryMeasureType = simplePropertyTemplate.PrimaryMeasureType;
 
-                    if (simplePropertyTemplate.TemplateType == Ifc.NET.IfcSimplePropertyTemplateTypeEnum.PSinglevalue)
+                    if (simplePropertyTemplate.TemplateType == Ifc4.IfcSimplePropertyTemplateTypeEnum.PSinglevalue)
                     {
                         // default
                         customPropertyType = typeof(System.String);
@@ -418,7 +418,7 @@ namespace Ifc.NET.CustomModel
                             }
                         }
                     }
-                    else if (simplePropertyTemplate.TemplateType == Ifc.NET.IfcSimplePropertyTemplateTypeEnum.PEnumeratedvalue)
+                    else if (simplePropertyTemplate.TemplateType == Ifc4.IfcSimplePropertyTemplateTypeEnum.PEnumeratedvalue)
                     {
                         customPropertyStandardValues = new CustomPropertyStandardValues();
                         attributes.Add(new System.ComponentModel.TypeConverterAttribute(typeof(CustomEnumTypeConverter)));
@@ -434,9 +434,9 @@ namespace Ifc.NET.CustomModel
                         foreach (var enumItem in simplePropertyTemplate.Enumerators.EnumerationValues.Items)
                         {
                             string enumValue;
-                            if (enumItem is Ifc.NET.IfcLabelwrapper)
+                            if (enumItem is Ifc4.IfcLabelwrapper)
                             {
-                                Ifc.NET.IfcLabelwrapper labelWrapper = enumItem as Ifc.NET.IfcLabelwrapper;
+                                Ifc4.IfcLabelwrapper labelWrapper = enumItem as Ifc4.IfcLabelwrapper;
                                 enumValue = labelWrapper.Value;
                             }
                             else
@@ -612,8 +612,8 @@ namespace Ifc.NET.CustomModel
                 return false;
 
             newValue = Convert.ChangeType(newValue, propertyInfo.PropertyType);
-            if (instance is Ifc.NET.BaseObject)
-                ((Ifc.NET.BaseObject)instance).Document.SetDirty();
+            if (instance is Ifc4.BaseObject)
+                ((Ifc4.BaseObject)instance).Document.SetDirty();
 
             propertyInfo.SetValue(instance, newValue, new object[] { });
             return true;

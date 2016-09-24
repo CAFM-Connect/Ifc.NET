@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public partial class IfcPropertySet
     {
 
-        public IEnumerable<T> GetIfcPropertyCollection<T>() where T : Ifc.NET.IfcProperty
+        public IEnumerable<T> GetIfcPropertyCollection<T>() where T : Ifc4.IfcProperty
         {
             if (this.HasProperties == null)
                 yield break;
 
             IEnumerable<T> ifcPropertyCollection = null;
 
-            foreach (Ifc.NET.IfcProperty ifcPropertyTmp in this.HasProperties.Items)
+            foreach (Ifc4.IfcProperty ifcPropertyTmp in this.HasProperties.Items)
             {
-                Ifc.NET.IfcProperty ifcProperty = null;
+                Ifc4.IfcProperty ifcProperty = null;
                 if (ifcPropertyTmp.IsRef)
                 {
                     if (ifcPropertyCollection == null)
@@ -35,16 +35,16 @@ namespace Ifc.NET
 
             }
         }
-        //public IEnumerable<T> GetIfcPropertyCollection<T>() where T : Ifc.NET.IfcProperty
+        //public IEnumerable<T> GetIfcPropertyCollection<T>() where T : Ifc4.IfcProperty
         //{
         //    if(this.HasProperties != null)
         //        yield break;
 
         //    IEnumerable<T> ifcPropertyCollection = null;
 
-        //    foreach (Ifc.NET.IfcProperty ifcPropertyTmp in this.HasProperties.Items)
+        //    foreach (Ifc4.IfcProperty ifcPropertyTmp in this.HasProperties.Items)
         //    {
-        //        Ifc.NET.IfcProperty ifcProperty = null;
+        //        Ifc4.IfcProperty ifcProperty = null;
         //        if (ifcPropertyTmp.IsRef)
         //        {
         //            if(ifcPropertyCollection == null)
@@ -57,22 +57,22 @@ namespace Ifc.NET
         //            ifcProperty = ifcPropertyTmp;
         //        }
 
-        //        if (ifcProperty != null && ifcProperty is Ifc.NET.IfcPropertySingleValue)
+        //        if (ifcProperty != null && ifcProperty is Ifc4.IfcPropertySingleValue)
         //        {
-        //            Ifc.NET.IfcPropertySingleValue ifcPropertySingleValue = (Ifc.NET.IfcPropertySingleValue)ifcProperty;
-        //            var nominalValue = ( Ifc.NET.IfcPropertySingleValueNominalValue)ifcPropertySingleValue.NominalValue;
-        //            if (nominalValue != null && nominalValue.Item is Ifc.NET.IfcLabelwrapper)
+        //            Ifc4.IfcPropertySingleValue ifcPropertySingleValue = (Ifc4.IfcPropertySingleValue)ifcProperty;
+        //            var nominalValue = ( Ifc4.IfcPropertySingleValueNominalValue)ifcPropertySingleValue.NominalValue;
+        //            if (nominalValue != null && nominalValue.Item is Ifc4.IfcLabelwrapper)
         //                yield return (T)ifcProperty;
         //        }
-        //        else if (ifcProperty != null && ifcProperty is Ifc.NET.IfcPropertyEnumeratedValue)
+        //        else if (ifcProperty != null && ifcProperty is Ifc4.IfcPropertyEnumeratedValue)
         //        {
-        //            Ifc.NET.IfcPropertyEnumeratedValue ifcPropertyEnumeratedValue = (Ifc.NET.IfcPropertyEnumeratedValue)ifcProperty;
-        //            var ifcPropertyEnumeratedValueEnumerationValues = (Ifc.NET.IfcPropertyEnumeratedValueEnumerationValues)ifcPropertyEnumeratedValue.EnumerationValues;
+        //            Ifc4.IfcPropertyEnumeratedValue ifcPropertyEnumeratedValue = (Ifc4.IfcPropertyEnumeratedValue)ifcProperty;
+        //            var ifcPropertyEnumeratedValueEnumerationValues = (Ifc4.IfcPropertyEnumeratedValueEnumerationValues)ifcPropertyEnumeratedValue.EnumerationValues;
         //            if (ifcPropertyEnumeratedValueEnumerationValues != null)
         //            {
         //                foreach(var enumeratedValue in ifcPropertyEnumeratedValueEnumerationValues.Items)
         //                {
-        //                    if (enumeratedValue is Ifc.NET.IfcLabelwrapper)
+        //                    if (enumeratedValue is Ifc4.IfcLabelwrapper)
         //                        yield return (T)ifcProperty;
 
         //                    break; // no flag

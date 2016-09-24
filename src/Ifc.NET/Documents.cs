@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Ifc.NET.Interfaces;
+using Ifc4.Interfaces;
 
-namespace Ifc.NET
+namespace Ifc4
 {
     public class Documents : BaseObjects<Document>
     {
@@ -83,7 +83,7 @@ namespace Ifc.NET
         //    System.IO.File.WriteAllText(fullName, s, Encoding.ASCII);
         //}
 
-        internal Document Open(string fullName, Ifc.NET.Document.IfcFileType ifcFileType)
+        internal Document Open(string fullName, Ifc4.Document.IfcFileType ifcFileType)
         {
             EventType eventType = BaseObject.LockEvents();
 
@@ -104,7 +104,7 @@ namespace Ifc.NET
 
                 //ConvertToIso8859_1(fullName);
 
-                Ifc.NET.CcFacility.ResetVariables();
+                Ifc4.CcFacility.ResetVariables();
 
                 document = AddNew() as Document;
                 if (document == null)
