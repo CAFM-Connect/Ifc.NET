@@ -7,9 +7,9 @@
     <ProjectGuid>{F1442C7F-190F-4518-B803-1B829DC03888}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ifc.NET</RootNamespace>
+    <RootNamespace>Ifc4</RootNamespace>
     <AssemblyName>Ifc.NET</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
