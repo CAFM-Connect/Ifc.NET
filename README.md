@@ -1,16 +1,17 @@
 # Ifc4
 Simple c# classes to read and write a file in the format IFC 4 XML.
 
-Start using Ifc4 with NUGET (https://www.nuget.org/packages/Ifc4). To install Ifc4 in your application, run the following command in the Package Manager Console in Visual Studio: "Install-Package Ifc4"
+Start using Ifc.NET with NUGET (https://www.nuget.org/packages/Ifc.NET).  
+To install Ifc.NET in your .NET application, run the following command in the Package Manager Console in Visual Studio: "Install-Package Ifc.NET"
 
-Your solution must run on the .NET Framework 4.6.1.
+Your solution must run on the .NET Framework 4.5.
 
 To read a file, please follow this steps:  
 
 
 ***
 
-Download an ifcxml sample file from here: https://github.com/CAFM-Connect/Ifc4/tree/master/src/SampleReader/SampleFiles and copy it to your computer.  
+Download an ifcxml sample file from here: https://github.com/CAFM-Connect/Ifc.NET/tree/master/src/SampleReader/SampleFiles and copy it to your computer.  
 
 Paste this code snippet into you code:  
 
