@@ -11,6 +11,20 @@ namespace Ifc4
         {
         }
 
+        private CcIfcDocumentContainer<Ifc4.IfcDocumentInformation> m_DocumentContainer;
+        [System.Xml.Serialization.XmlIgnore]
+        public CcIfcDocumentContainer<Ifc4.IfcDocumentInformation> DocumentContainer
+        {
+            get
+            {
+                if (m_DocumentContainer == null)
+                {
+                    m_DocumentContainer = new CcIfcDocumentContainer<Ifc4.IfcDocumentInformation>(this);
+                }
+                return m_DocumentContainer;
+            }
+        }
+
         private CcIfcSites<Ifc4.IfcSite> m_Sites;
         [System.Xml.Serialization.XmlIgnore]
         public CcIfcSites<Ifc4.IfcSite> Sites
@@ -51,10 +65,16 @@ namespace Ifc4
 
             sw.Reset();
             sw.Start();
-            //this.Facilities.Read(this, false);
             this.Facilities.Read(this, true);
             sw.Stop();
             System.Diagnostics.Debug.WriteLine("Facilities.Read: " + sw.ElapsedMilliseconds + "ms");
+
+            sw.Reset();
+            sw.Start();
+            this.DocumentContainer.Read(this);
+            sw.Stop();
+            System.Diagnostics.Debug.WriteLine("Facilities.Read: " + sw.ElapsedMilliseconds + "ms");
+
 
             return true;
         }

@@ -94,7 +94,6 @@ namespace Ifc4.CustomModel
 
             System.Reflection.MethodInfo methodInfo = typeof(Ifc4.CcFacility).GetMethod("SetValue");
             System.Reflection.MethodInfo generic = methodInfo.MakeGenericMethod(this.PropertyType);
-            generic.Invoke(((Ifc4.CcFacility)component), new object[] { this, value });
 
             try
             {
@@ -583,7 +582,6 @@ namespace Ifc4.CustomModel
             //        return;
             //}
             // --------------------------------------------------------------
-
 
             //if (BeforePropertyValueChanged != null) // steuert transactions
             //    BeforePropertyValueChanged(this, e);

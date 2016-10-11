@@ -83,7 +83,7 @@ namespace Ifc4
         //    System.IO.File.WriteAllText(fullName, s, Encoding.ASCII);
         //}
 
-        internal Document Open(string fullName, Ifc4.Document.IfcFileType ifcFileType)
+        internal Document Open(string fullName, Ifc4.Document.IfcFileType ifcFileType = Document.IfcFileType.Auto)
         {
             EventType eventType = BaseObject.LockEvents();
 

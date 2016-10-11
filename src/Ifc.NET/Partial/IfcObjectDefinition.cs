@@ -55,13 +55,9 @@ namespace Ifc4
             return ifcElementQuantity;
         }
 
-
         public IfcObjectDefinition RefInstance()
         {
-            var instance = Activator.CreateInstance(this.GetType());
-            var property = instance.GetType().GetProperty("Ref");
-            property.SetValue(instance, this.Id, new object[] { });
-            return instance as IfcObjectDefinition;
+            return RefInstance<IfcObjectDefinition>();
         }
 
     }

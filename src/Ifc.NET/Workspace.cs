@@ -1,12 +1,13 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Data;
 using System.IO;
 using System.Collections.Generic;
-
+using System.Linq;
+using System.Text;
 
 namespace Ifc4
 {
-
     public class Workspace : BaseObject
     {
         private Workspace()
@@ -138,7 +139,6 @@ namespace Ifc4
         {
             RaiseMessageLogged(null, message, String.Empty, false, false);
         }
-
 
         public void RaiseMessageLogged(string message, bool doEvents)
         {
@@ -345,7 +345,7 @@ namespace Ifc4
             get { return Documents.ActiveDocument; }
         }
 
-        public Document OpenDocument(string fullName, Ifc4.Document.IfcFileType ifcFileType = Ifc4.Document.IfcFileType.IfcXml)
+        public Document OpenDocument(string fullName, Ifc4.Document.IfcFileType ifcFileType = Ifc4.Document.IfcFileType.Auto)
         {
             return Documents.Open(fullName, ifcFileType);
         }
@@ -376,21 +376,83 @@ namespace Ifc4
             return false;
         }
 
+        public class SaveResult
+        {
+            public SaveResultType Success { get; internal set; }
+            public string Message { get; internal set; }
+        }
+        public class SaveOptions
+        {
+            public SaveOptions()
+            {
+                InternalOverwrite = false;
+                InternalSaveAsNewFile = false;
+            }
+
+            internal bool InternalOverwrite { get; set; }
+            internal bool InternalSaveAsNewFile { get; set; }
+        }
+
+        public enum SaveResultType
+        {
+            Error,
+            Success,
+            MissingFileName,
+            NoActiveDocument,
+            WrongFileExtension,
+            ZipArchiveEntryAlreadyExists,
+        }
+
         public bool SaveDocument()
         {
-            if (Documents.ActiveDocument != null)
-                return Documents.ActiveDocument.Save();
+            SaveResult saveResult = SaveDocument(new SaveOptions());
+            return saveResult.Success == SaveResultType.Success;
 
-            return false;
+        }
+        public SaveResult SaveDocument(SaveOptions saveOptions)
+        {
+            if (Documents.ActiveDocument != null)
+                return Documents.ActiveDocument.Save(saveOptions);
+
+            return new SaveResult()
+            {
+                Success = SaveResultType.NoActiveDocument,
+                Message = "No active document found."
+            };
         }
 
         public bool SaveDocument(string fullName)
         {
-            if (Documents.ActiveDocument != null)
-                return Documents.ActiveDocument.SaveAs(fullName);
-
-            return false;
+            SaveResult saveResult = SaveDocument(fullName, new SaveOptions());
+            return saveResult.Success == SaveResultType.Success;
         }
+
+        public SaveResult SaveDocument(string fullName, SaveOptions saveOptions)
+        {
+            SaveResult saveResult = new SaveResult();
+            if (Documents.ActiveDocument == null)
+            {
+                saveResult.Success = SaveResultType.NoActiveDocument;
+                saveResult.Message = "No active document found.";
+            }
+            else
+            {
+                //if (!String.IsNullOrWhiteSpace(Documents.ActiveDocument.FullName) && Documents.ActiveDocument.FullName != fullName)
+                //{
+                //    // Datei wird unter einem anderem Namen abgespeichert
+                //    saveOptions.InternalSaveAsNewFile = true;
+                //}
+                if (String.IsNullOrWhiteSpace(Documents.ActiveDocument.FullName) || Documents.ActiveDocument.FullName != fullName)
+                {
+                    // Datei wird unter einem anderem Namen abgespeichert
+                    saveOptions.InternalSaveAsNewFile = true;
+                }
+                saveOptions.InternalOverwrite = true;
+                saveResult = Documents.ActiveDocument.SaveAs(fullName, saveOptions);
+            }
+            return saveResult;
+        }
+
 
         public void CloseDocument()
         {
@@ -520,7 +582,7 @@ namespace Ifc4
                 Ifc4.Document document = Ifc4.Workspace.CurrentWorkspace.OpenDocument(f0);
                 Ifc4.IfcXML ifcXML = document.IfcXmlDocument;
 
-                document.SaveAs(f0 + ".0");
+                document.SaveAs(f0 + ".0", new SaveOptions());
 
                 //Correction(f0 + ".0");
                 //validate = this.Validate(f0 + ".0");
@@ -554,7 +616,6 @@ namespace Ifc4
 
         private bool InternalCreateCafmConnectTestFile(string ifcFullName)
         {
-
             string schemaFullName;
             Ifc4.Document document;
 
@@ -582,10 +643,8 @@ namespace Ifc4
 
             for (int nBuilding = 0; nBuilding < 10; nBuilding++) // buildings
             {
-
                 building = site.Buildings.AddNewBuilding();
-                building.Name = "CEBP01T01";
-                building.Name = String.Format("Site:{0} Builidng:{1}", "1", nBuilding);
+                building.Name = String.Format("Site:{0} Building:{1}", "1", nBuilding);
                 building.LongName = "Tower 01";
                 building.Description = "Tower 01";
 
@@ -601,75 +660,6 @@ namespace Ifc4
                     }
                 }
             }
-
-            //// --------------------------------------------------------------------------
-            //building = site.Buildings.AddNewBuilding();
-            //building.Name = "CEBP01YCC";
-            //building.LongName = "Yellow Chinese Center";
-            //building.Description = "Yellow Chinese Center";
-
-            //for (int nStorey = 0; nStorey < 10; nStorey++) // storeys
-            //{
-            //    buildingStorey = building.BuildingStoreys.AddNewBuildingStorey();
-            //    buildingStorey.Name = String.Format("Storey:{0}", nStorey);
-
-            //    for (int nSpace = 0; nSpace < 3; nSpace++) // rooms
-            //    {
-            //        space = buildingStorey.Spaces.AddNewSpace();
-            //        space.Name = String.Format("Storey:{0} Space:{1}", nStorey, nSpace);
-            //    }
-            //}
-            //// --------------------------------------------------------------------------
-
-            ////// --------------------------------------------------------------------------
-            ////site = document.Project.Sites.AddNewSite();
-            ////site.Name = "CEBP01";
-            ////site.LongName = "Cologne, Ehrenfelder Tower";
-            ////site.Description = "Cologne Ehrenfelder Tower";
-            ////// --------------------------------------------------------------------------
-            ////building = site.Buildings.AddNewBuilding();
-            ////building.Name = "CEBP01T01";
-            ////building.LongName = "Tower 01";
-            ////building.Description = "Tower 01";
-
-            ////for (int nStorey = 0; nStorey < 10; nStorey++) // storeys
-            ////{
-            ////    buildingStorey = building.BuildingStoreys.AddNewStorey();
-            ////    buildingStorey.Name = String.Format("Storey:{0}", nStorey);
-
-            ////    for (int nSpace = 0; nSpace < 3; nSpace++) // rooms
-            ////    {
-            ////        space = buildingStorey.Spaces.AddNewSpace();
-            ////        space.Name = String.Format("Storey:{0} Space:{1}", nStorey, nSpace);
-            ////    }
-            ////}
-            ////// --------------------------------------------------------------------------
-            ////building = site.Buildings.AddNewBuilding();
-            ////building.Name = "CEBP01YCC";
-            ////building.LongName = "Yellow Chinese Center";
-            ////building.Description = "Yellow Chinese Center";
-
-            ////for (int nStorey = 0; nStorey < 10; nStorey++) // storeys
-            ////{
-            ////    buildingStorey = building.BuildingStoreys.AddNewStorey();
-            ////    buildingStorey.Name = String.Format("Storey:{0}", nStorey);
-
-            ////    for (int nSpace = 0; nSpace < 3; nSpace++) // rooms
-            ////    {
-            ////        space = buildingStorey.Spaces.AddNewSpace();
-            ////        space.Name = String.Format("Storey:{0} Space:{1}", nStorey, nSpace);
-            ////    }
-            ////}
-            ////// --------------------------------------------------------------------------
-
-
-            //CcPostalAddress postalAddress;
-            //postalAddress = document.PostalAddresses.AddNewPostalAddress();
-            //postalAddress.AddressLines = "eTASK Headquarter Wilhelm-Ruppert-Straße 38 Gebäude K15";
-            //postalAddress.Region = "NRW";
-            //postalAddress.Town = "Cologne";
-            //postalAddress.Country = "Germany";
-            //postalAddress.PostalCode = "51147";
 
             IfcPostalAddress postalAddress;
             postalAddress = new IfcPostalAddress();
@@ -688,14 +678,6 @@ namespace Ifc4
 
             document.IfcXmlDocument.Items.Add(postalAddress);
 
-
-            //postalAddress = document.PostalAddresses.AddNewPostalAddress();
-            //postalAddress.AddressLines = "Joachim Vollberg\r\nHadersleber Str. 28\r\n50825 Köln";
-            //postalAddress.Region = "NRW";
-            //postalAddress.Town = "Cologne";
-            //postalAddress.Country = "Germany";
-            //postalAddress.PostalCode = "51147";
-
             postalAddress = new IfcPostalAddress();
             postalAddress.AddressLines = new IfcPostalAddressAddressLines();
             postalAddress.AddressLines.IfcLabelwrapper = new List<IfcLabelwrapper>();
@@ -712,17 +694,11 @@ namespace Ifc4
 
             document.IfcXmlDocument.Items.Add(postalAddress);
 
-            //EntityComparer entityComparer = new EntityComparer();
-            //document.IfcXmlDocument.Items.Sort(entityComparer);
-
             try
             {
-
-                document.Save();
+                document.Save(new SaveOptions());
                 document.Close();
-
                 return true;
-
             }
             catch (Exception exc)
             {
@@ -739,8 +715,6 @@ namespace Ifc4
             {
                 document.MessageLogged -= document_MessageLogged;
             }
-
-
         }
 
         public bool CreateTestIfc(string ifcFullName)
@@ -898,14 +872,12 @@ namespace Ifc4
 
             };
 
-            //Ifc4.IfcClassification ifcClassification = (Ifc4.IfcClassification)document.Classifications.AddNew();
             Ifc4.IfcClassification ifcClassification = document.AddNew<IfcClassification>();
             //ifcClassification.id = document.GetNextSid();
             ifcClassification.Edition = "Version 1.06";
             ifcClassification.EditionDate = "2014-08-14T09:39:57";
             ifcClassification.Name = "CAFM-Connect Katalog 2014";
 
-            // Ifc4.IfcRelAssociatesClassification ifcRelAssociatesClassification = (Ifc4.IfcRelAssociatesClassification)document.RelAssociatesClassifications.AddNew();
             Ifc4.IfcRelAssociatesClassification ifcRelAssociatesClassification = document.AddNew<IfcRelAssociatesClassification>();
             //ifcRelAssociatesClassification.id = document.GetNextSid();
             ifcRelAssociatesClassification.GlobalId = "1XiFKGEHP6PxQPxDU2E3PA";
@@ -936,12 +908,12 @@ namespace Ifc4
             try
             {
 
-                document.Save();
+                document.Save(new SaveOptions());
                 document.Close();
 
                 string message;
                 document.Open(ifcFullName, out message);
-                document.SaveAs(ifcFullName + ".0");
+                document.SaveAs(ifcFullName + ".0", new SaveOptions());
                 RaiseMessageLogged(this, System.IO.File.ReadAllText(document.FullName));
 
                 return true;

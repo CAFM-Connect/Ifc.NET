@@ -53,13 +53,13 @@
     <None Include="SampleFiles\MyFirstIfcFile.ifcxml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SampleFiles\Pset_SpaceCommon.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Ifc.NET\Ifc.NET.csproj">
       <Project>{f1442c7f-190f-4518-b803-1b829dc03888}</Project>
       <Name>Ifc.NET</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="SampleFiles\Pset_SpaceCommon.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -7475,6 +7475,15 @@ namespace Ifc4.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Document type.
+        /// </summary>
+        internal static string CLASS_IFCDOCUMENTINFORMATION_PROPERTY_IFCCLASSIFICATIONREFERENCE_DISPLAYNAME {
+            get {
+                return ResourceManager.GetString("CLASS_IFCDOCUMENTINFORMATION_PROPERTY_IFCCLASSIFICATIONREFERENCE_DISPLAYNAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to IntendedUse.
         /// </summary>
         internal static string CLASS_IFCDOCUMENTINFORMATION_PROPERTY_INTENDEDUSE_DisplayName {

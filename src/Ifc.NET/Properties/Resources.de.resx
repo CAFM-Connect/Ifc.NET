@@ -2605,13 +2605,13 @@
     <value>DE:RelationshipType</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_DisplayName" xml:space="preserve">
-    <value>DE:IfcDocumentInformation</value>
+    <value>Dokument</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_CONFIDENTIALITY_DisplayName" xml:space="preserve">
-    <value>DE:Confidentiality</value>
+    <value>Vertraulichkeitsstufe</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_CREATIONTIME_DisplayName" xml:space="preserve">
-    <value>DE:CreationTime</value>
+    <value>Erstelldatum</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_DESCRIPTION_DisplayName" xml:space="preserve">
     <value>Beschreibung</value>
@@ -2623,40 +2623,43 @@
     <value>DE:Editors</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_ELECTRONICFORMAT_DisplayName" xml:space="preserve">
-    <value>DE:ElectronicFormat</value>
+    <value>Dateiformat</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
     <value>IDentification</value>
   </data>
+  <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_IFCCLASSIFICATIONREFERENCE_DISPLAYNAME" xml:space="preserve">
+    <value>Dokumenttyp</value>
+  </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_INTENDEDUSE_DisplayName" xml:space="preserve">
-    <value>DE:IntendedUse</value>
+    <value>Beabsichtiger Nutzungszweck</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_LASTREVISIONTIME_DisplayName" xml:space="preserve">
-    <value>DE:LastRevisionTime</value>
+    <value>Letzer Speicherung</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_LOCATION_DisplayName" xml:space="preserve">
-    <value>DE:Location</value>
+    <value>Speicherort/-pfad</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_NAME_DisplayName" xml:space="preserve">
     <value>Name</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_PURPOSE_DisplayName" xml:space="preserve">
-    <value>DE:Purpose</value>
+    <value>Zweck</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_REVISION_DisplayName" xml:space="preserve">
-    <value>DE:Revision</value>
+    <value>Version</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_SCOPE_DisplayName" xml:space="preserve">
-    <value>DE:Scope</value>
+    <value>Geltungsbereich</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_STATUS_DisplayName" xml:space="preserve">
-    <value>DE:Status</value>
+    <value>Status</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_VALIDFROM_DisplayName" xml:space="preserve">
-    <value>DE:ValidFrom</value>
+    <value>Gültig ab</value>
   </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_VALIDUNTIL_DisplayName" xml:space="preserve">
-    <value>DE:ValidUntil</value>
+    <value>Gültig bis</value>
   </data>
   <data name="CLASS_IFCDOCUMENTREFERENCE_DisplayName" xml:space="preserve">
     <value>DE:IfcDocumentReference</value>

@@ -222,10 +222,6 @@ namespace Ifc4
 
                 string source = System.IO.File.ReadAllText(xmlFullName);
 
-                //source = source.Replace("<Ifc", "<ifc:Ifc");
-                //source = source.Replace("</Ifc", "</ifc:Ifc");
-                //source = source.Replace(" xmlns:ifc=\"http://www.buildingsmart-tech.org/ifcXML/IFC4/final\"", " xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"");
-
                 using (MemoryStream stream = new MemoryStream())
                 {
                     using(StreamWriter writer = new StreamWriter(stream))
@@ -317,5 +313,34 @@ namespace Ifc4
 
 
     }
+
+    public enum ValidationEnumType
+    {
+        NotDefined,
+        IsNotNull,
+        IsNotNullOrNotEmpty,
+        GreaterThan,
+        GreaterThanOrEqual
+    }
+
+    public class ValidationProperty
+    {
+        public ValidationProperty(string propertyName, Type propertyType, ValidationEnumType validationType, object compareValue)
+        {
+            PropertyName = propertyName;
+            PropertyType = propertyType;
+            ValidationType = validationType;
+            CompareValue = compareValue;
+        }
+
+        public string PropertyName { get; private set; }
+
+        public Type PropertyType { get; private set; }
+
+        public ValidationEnumType ValidationType { get; private set; }
+
+        public object CompareValue { get; private set; }
+    }
+
 
 }

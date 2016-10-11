@@ -7,7 +7,7 @@ using System.ComponentModel;
 
 namespace Ifc4.CustomModel
 {
-    class CustomLongNullableTypeConverter : System.ComponentModel.TypeConverter
+    public class CustomLongNullableTypeConverter : System.ComponentModel.TypeConverter
     {
         public CustomLongNullableTypeConverter()
         {
@@ -66,7 +66,7 @@ namespace Ifc4.CustomModel
         }
     }
 
-    class CustomBooleanNullableTypeConverter : System.ComponentModel.TypeConverter
+    public class CustomBooleanNullableTypeConverter : System.ComponentModel.TypeConverter
     {
 
         string[] trueArray = new string[] { Boolean.TrueString, "Wahr", "Ja", "1" };
@@ -124,7 +124,7 @@ namespace Ifc4.CustomModel
         }
     }
 
-    class CustomNullableTypeConverter<T> : System.ComponentModel.TypeConverter
+    public class CustomNullableTypeConverter<T> : System.ComponentModel.TypeConverter
     {
         public CustomNullableTypeConverter()
         {
@@ -193,7 +193,7 @@ namespace Ifc4.CustomModel
 
     }
 
-    class CustomEnumTypeConverter : System.ComponentModel.TypeConverter
+    public class CustomEnumTypeConverter : System.ComponentModel.TypeConverter
 	{
         public CustomEnumTypeConverter()
 		{

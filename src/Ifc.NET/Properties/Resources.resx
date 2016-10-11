@@ -2628,6 +2628,9 @@
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_IDENTIFICATION_DisplayName" xml:space="preserve">
     <value>Identification</value>
   </data>
+  <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_IFCCLASSIFICATIONREFERENCE_DISPLAYNAME" xml:space="preserve">
+    <value>Document type</value>
+  </data>
   <data name="CLASS_IFCDOCUMENTINFORMATION_PROPERTY_INTENDEDUSE_DisplayName" xml:space="preserve">
     <value>IntendedUse</value>
   </data>
