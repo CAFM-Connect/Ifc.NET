@@ -156,7 +156,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Ifc.NET.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IfcIcon.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>"$(SDK40ToolsPath)sgen.exe" /force /assembly:"$(TargetPath)" /type:Ifc4.IfcXML</PostBuildEvent>
