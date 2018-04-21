@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Ifc.NET</id>
-    <version>%APPVEYOR_BUILD_VERSION%</version>
+    <version>$version$</version>
     <title>Ifc.NET</title>
     <authors>CAFM Ring e.V.</authors>
     <owners>CAFM Ring e.V.</owners>
