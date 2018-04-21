@@ -1,3 +1,5 @@
+![https://ci.appveyor.com/api/projects/status/3qdshrr7383fos7w?svg=true](https://ci.appveyor.com/api/projects/status/3qdshrr7383fos7w?svg=true)
+
 # Ifc4
 Simple c# classes to read and write a file in the format IFC 4 XML.
 
