@@ -10,14 +10,9 @@
     <projectUrl>https://github.com/CAFM-Connect/Ifc4</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/CAFM-Connect/Ifc4/master/src/Ifc4/IfcIcon.PNG</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>IFC.NET is a simple class library to read and write IFCXML files.</description>
+    <description>IFC.NET is a simple class library to read and write IFCxml files.</description>
     <releaseNotes></releaseNotes>
-    <copyright>Copyright 2016</copyright>
+    <copyright>Copyright 2018</copyright>
     <tags>IFC,IFC4,IFC4XML,CAFM-Connect,CAFM-Ring,buildingSMART</tags>
   </metadata>
-  <files>
-    <file src="Ifc.NET*.*" target="lib\net40"/> 
-	  <file src="de\Ifc.NET*.*" target="lib\net40\de"/> 
-	  <file src="en\Ifc.NET*.*" target="lib\net40\en"/> 
-</files>
 </package>
