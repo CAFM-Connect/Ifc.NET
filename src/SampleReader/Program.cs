@@ -12,18 +12,29 @@ namespace SampleIfcReader
         [STAThreadAttribute()]
         static void Main(string[] args)
         {
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "Ifc xml files (*.ifcxml)|*.ifcxml|All files (*.*)|*.*";
-            dlg.InitialDirectory = Path.GetDirectoryName(typeof(SampleIfcReader.Program).Assembly.Location);
-            dlg.CheckFileExists = true;
-            dlg.Multiselect = false;
+            OpenFileDialog dlgFile = new OpenFileDialog();
+            dlgFile.Filter = "Ifc xml files (*.ifcxml)|*.ifcxml|All files (*.*)|*.*";
+            dlgFile.InitialDirectory = Path.GetDirectoryName(typeof(SampleIfcReader.Program).Assembly.Location);
+            dlgFile.CheckFileExists = true;
+            dlgFile.Multiselect = false;
+            dlgFile.Title = "Select the file, you want to open...";
 
-            if (dlg.ShowDialog() == DialogResult.OK)
+
+            FolderBrowserDialog dlgNewFolder = new FolderBrowserDialog();
+            dlgNewFolder.Description = "Select the target folder, for your file";
+
+            if (dlgFile.ShowDialog() == DialogResult.OK)
             {
-                Ifc4.Document ifcDocument = Ifc4.Workspace.CurrentWorkspace.OpenDocument(dlg.FileName);
+                Ifc4.Document ifcDocument = Ifc4.Workspace.CurrentWorkspace.OpenDocument(dlgFile.FileName);
 
+                string targetFolder=string.Empty;
+                if (dlgNewFolder.ShowDialog() == DialogResult.OK)
+                {
+                    targetFolder = dlgNewFolder.SelectedPath;
+                }
                 var header = ifcDocument.IfcXmlDocument.Header;
                 header.Organization = "My Organisation";
+                header.Documentation = "https://github.com/CAFM-Connect/Ifc.NET";
 
                 var ifcSite = ifcDocument.Project.Sites.AddNewSite();
                 ifcSite.LongName = "Site";
@@ -37,7 +48,10 @@ namespace SampleIfcReader
                 var ifcSpace = ifcBuildingStorey.Spaces.AddNewSpace();
                 ifcSpace.LongName = "Room";
 
-                ifcDocument.Workspace.SaveDocument(dlg.FileName);
+                ifcDocument.Workspace.SaveDocument(dlgFile.FileName);
+
+                Console.WriteLine(string.Format("New file saved as {0}", Path.Combine(targetFolder,Path.GetFileName(dlgFile.FileName))));
+                Console.ReadLine();
             }
         }
     }
